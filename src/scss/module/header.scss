@@ -2,9 +2,7 @@
   height: 117px;
 
   &__nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include position-sb (flex, space-between, center);
   }
 
 
@@ -34,9 +32,9 @@
 }
 
 .button-s {
-
   &__text {
     color: $white;
+    background: transparent;
   }
 }
 
@@ -44,15 +42,15 @@
   &__list {
     @include font-size (600, 16px, 24px);
     color: $black-light;
-    margin-right: 50px;
+    margin-left: 50px;
   }
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 7.6%;
-  padding-right: 3.6%;
-  align-items: center;
+  @include position-sb(flex, space-between, center);
+  margin-left: 7.6%;
+  margin-right: 7.6%;
+  padding-bottom: 26px;
   padding-top: 57px;
+  border-bottom: 2px solid#C4C4C4;
 }
