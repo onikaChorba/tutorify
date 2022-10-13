@@ -1,21 +1,3 @@
-* {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  max-width: 100%;
-  color: #6C6C6C;
-}
-
-a {
-  text-decoration: none;
-}
-
 $black: #0000;
 $black-light: #393939;
 $grey: #6C6C6C;
@@ -29,3 +11,22 @@ $green-light: #058E6E;
 $orang-strong: #FF922F;
 $orang: #FB9C46;
 $orang-light: #F2BF62;
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  max-width: 100%;
+  background: $background;
+}
+
+a {
+  text-decoration: none;
+}
