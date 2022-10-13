@@ -1,0 +1,58 @@
+.header {
+  height: 117px;
+
+  &__nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__logo {
+    @include font-size (700, 18px, 27px);
+    color: $black-light;
+  }
+
+
+  &__button-s-g {
+    width: 102px;
+    height: 44px;
+    border-radius: 8px;
+    background: $green;
+    color: $white;
+    @include position-center(flex, column, center, center);
+  }
+
+
+  &__button-s-o {
+    width: 102px;
+    height: 44px;
+    border-radius: 8px;
+    background: $orang;
+    @include position-center(flex, column, center, center);
+  }
+}
+
+.button-s {
+
+  &__text {
+    color: $white;
+  }
+}
+
+.nav-bar {
+  &__list {
+    @include font-size (600, 16px, 24px);
+    color: $black-light;
+    margin-right: 50px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7.6%;
+  padding-right: 3.6%;
+  align-items: center;
+  padding-top: 57px;
+}

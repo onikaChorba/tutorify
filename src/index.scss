@@ -1,3 +1,4 @@
-.App {
-  color: red;
-}
+@import './scss/globall/globall.scss';
+@import './scss/globall/mixin.scss';
+
+@import './scss/module/header.scss';
