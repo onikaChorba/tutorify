@@ -1,5 +1,5 @@
-import Header from './js/module/Header.js';
-import MainTitle from './js/module/components/Main-title.js';
+import Header from './js/module/Header';
+import MainTitle from './components/Main-title/Main-title';
 import heroImg from './img/hero-img.png';
 
 

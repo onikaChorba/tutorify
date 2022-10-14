@@ -1,3 +1,5 @@
+import Button from "../../components/Button/Button";
+
 function Header() {
   return (
     <header className="header">
@@ -18,12 +20,12 @@ function Header() {
           <a className="nav-bar__list" href="#">
             About Us
           </a>
-          <button className=" button-s header__button-s-g" >
+          <Button green>
             <a className="button-s__text " href="#">Login</a>
-          </button>
-          <button className="button-s header__button-s-o">
+          </Button>
+          <Button orange>
             <a className="button-s__text " href="#"> Sign Up</a>
-          </button>
+          </Button>
         </div>
       </div>
 

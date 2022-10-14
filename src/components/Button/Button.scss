@@ -1,0 +1,20 @@
+@import '../../theme/index.scss';
+
+.button {
+  cursor: pointer;
+  width: 102px;
+  height: 44px;
+  border-radius: 8px;
+  @include position-center(flex, column, center, center);
+  margin-left: 50px;
+  color: $white;
+
+  &__green {
+    background: $green;
+  }
+
+
+  &__orange {
+    background: $orang;
+  }
+}

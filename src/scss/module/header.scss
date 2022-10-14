@@ -12,36 +12,8 @@
   }
 
 
-  &__button-s-g {
-    width: 102px;
-    height: 44px;
-    border-radius: 8px;
-    background: $green;
-    color: $white;
-    @include position-center(flex, column, center, center);
-    margin-left: 50px;
-  }
-
-
-  &__button-s-o {
-    width: 102px;
-    height: 44px;
-    border-radius: 8px;
-    background: $orang;
-    margin-left: 50px;
-    @include position-center(flex, column, center, center);
-  }
 }
 
-.button-s {
-  cursor: pointer;
-
-  &__text {
-    color: $white;
-    @include font-size(600, 16px, 24px);
-    background: transparent;
-  }
-}
 
 .nav-bar {
   &__list {
