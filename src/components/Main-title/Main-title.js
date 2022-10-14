@@ -1,3 +1,4 @@
+import './Main-title.scss';
 function MainTitle() {
   return (
     <div className='main-title'>
@@ -12,7 +13,7 @@ function MainTitle() {
         <div className='main-text text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Id interdum dui mollis . Suspendisse nulla :</div>
         <button className='button-m'>
-          <a className='button-text'>Try Free Lessons</a>
+          <a href="#" className='button-text'>Try Free Lessons</a>
         </button>
       </div>
     </div>
