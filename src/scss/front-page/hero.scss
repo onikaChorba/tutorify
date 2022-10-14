@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+
+  &__img {
+    position: relative;
+  }
+}
+
+.bg-img {
+  width: 462px;
+  height: 625px;
+  background: $orang-light;
+  border-radius: 204px;
+}
+
+.hero-img {
+  width: 553px;
+  height: 666px;
+}

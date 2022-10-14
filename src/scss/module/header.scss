@@ -19,6 +19,7 @@
     background: $green;
     color: $white;
     @include position-center(flex, column, center, center);
+    margin-left: 50px;
   }
 
 
@@ -27,13 +28,17 @@
     height: 44px;
     border-radius: 8px;
     background: $orang;
+    margin-left: 50px;
     @include position-center(flex, column, center, center);
   }
 }
 
 .button-s {
+  cursor: pointer;
+
   &__text {
     color: $white;
+    @include font-size(600, 16px, 24px);
     background: transparent;
   }
 }
@@ -43,8 +48,15 @@
     @include font-size (600, 16px, 24px);
     color: $black-light;
     margin-left: 50px;
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: $orang-strong;
+      border-bottom: 5px solid $orang-strong;
+    }
   }
 }
+
 
 .header-container {
   @include position-sb(flex, space-between, center);
