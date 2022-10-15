@@ -3,6 +3,7 @@ import heroImg from '../../img/hero-img.png';
 import flet1 from '../../img/flet1.png';
 import flet2 from '../../img/flet2.png';
 import flet3 from '../../img/flet3.png';
+import UserOnline from '../User-online/User-online';
 
 function MainImg() {
   return (<div className='mainImg'>
@@ -11,7 +12,9 @@ function MainImg() {
 
     <img className='main-flet__1' src={flet1} alt="flet" />
     <img className='main-flet__2' src={flet2} alt="flet" />
-    <img className='main-flet__3' src={flet3} alt="flet" /></div>
+    <img className='main-flet__3' src={flet3} alt="flet" />
+    <UserOnline />
+  </div>
   );
 }
 
