@@ -1,6 +1,8 @@
-import Header from './js/module/Header';
+import Header from './components/Header/Header';
 import MainTitle from './components/Main-title/Main-title';
-import heroImg from './img/hero-img.png';
+import MainImg from './components/Main-img/Main-img';
+
+import './Pages/Front-page/Front-page.scss';
 
 
 
@@ -10,9 +12,7 @@ function App() {
       <Header />
       <div className='hero main-container'>
         <MainTitle />
-        <div className='hero__img'>
-          <div className='bg-img'></div>
-          <img className='hero-img' src={heroImg} alt="men" /></div>
+        <MainImg />
       </div>
     </div>
   );

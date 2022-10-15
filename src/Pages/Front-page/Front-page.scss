@@ -1,5 +1,8 @@
+@import '../../theme/index.scss';
+
 .hero {
   display: flex;
+  padding-top: 95px;
 
   &__img {
     position: relative;

@@ -1,5 +1,6 @@
-import Button from "../../components/Button/Button";
+import Button from "../Button/Button";
 
+import './Header.scss';
 function Header() {
   return (
     <header className="header">
@@ -20,12 +21,14 @@ function Header() {
           <a className="nav-bar__list" href="#">
             About Us
           </a>
-          <Button green>
-            <a className="button-s__text " href="#">Login</a>
-          </Button>
-          <Button orange>
-            <a className="button-s__text " href="#"> Sign Up</a>
-          </Button>
+          <a className="nav-bar__list" href="#"> <Button green small>
+            <a className="button__text " href="#">Login</a>
+          </Button></a>
+          <a className="nav-bar__list" href="#">
+            <Button orange small>
+              <a className="button__text " href="#"> Sign Up</a>
+            </Button>
+          </a>
         </div>
       </div>
 
