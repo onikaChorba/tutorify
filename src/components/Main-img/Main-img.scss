@@ -1,0 +1,46 @@
+@import '../../theme/index.scss';
+
+.bg-img {
+  width: 462px;
+  height: 625px;
+  background: $orang-light;
+  border-radius: 204px;
+}
+
+.mainImg {
+  position: relative;
+  width: 553px;
+  height: 666px;
+}
+
+.main-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.main-flet {
+  &__1 {
+    position: absolute;
+    top: 19.7%;
+    bottom: 80.3%;
+    right: 88%;
+  }
+
+  &__2 {
+    position: absolute;
+    top: 0%;
+    bottom: 100%;
+    right: 6%;
+  }
+
+  &__3 {
+    position: absolute;
+    top: 43%;
+    right: -13%;
+    border-radius: 50%;
+    border: 5px solid $white;
+  }
+}
