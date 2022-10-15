@@ -1,3 +1,5 @@
+@import '../../theme/index.scss';
+
 .header {
   height: 117px;
 
@@ -10,8 +12,6 @@
     @include font-size (700, 18px, 27px);
     color: $black-light;
   }
-
-
 }
 
 

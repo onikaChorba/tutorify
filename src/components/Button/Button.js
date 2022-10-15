@@ -2,7 +2,7 @@ import './Button.scss';
 
 function Button(props) {
 
-  const { orange, green, children, small } = props
+  const { orange, green, children, small, medium } = props
 
   const createParamsClass = ({ green, orange, small }) => {
     let colorClassName = 'button__'
@@ -11,7 +11,7 @@ function Button(props) {
 
     let sizeClassName = ' button__size_'
     if (small) sizeClassName += 'xs'
-
+    if (medium) sizeClassName += 'm'
     return colorClassName + sizeClassName
   }
 
