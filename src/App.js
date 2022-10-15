@@ -3,6 +3,7 @@ import MainTitle from './components/Main-title/Main-title';
 import MainImg from './components/Main-img/Main-img';
 
 import './Pages/Front-page/Front-page.scss';
+import UserOnline from './components/User-online/User-online';
 
 
 

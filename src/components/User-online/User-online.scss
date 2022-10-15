@@ -1,0 +1,49 @@
+@import '../../theme/index.scss';
+
+.user-online {
+  width: 238px;
+  height: 122px;
+  background: $white;
+  border-radius: 21px;
+  position: relative;
+
+  @include position-center(flex, column, center, center);
+
+  &__title {
+    @include font-size(600, 16px, 24px);
+    color: black;
+    padding-bottom: 12px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -19px;
+    left: -15px;
+  }
+}
+
+.userButton {
+  cursor: pointer;
+  background: $green-light;
+  border-radius: 50%;
+  width: 49.27px;
+  height: 49.27px;
+  margin-left: -15px;
+
+  &__text {
+    color: $white;
+    @include font-size (600, 16px, 24px)
+  }
+}
+
+.user {
+  display: inline-block;
+  margin-left: -20px;
+}
+
+.user__animation {
+  transform: translate(-90%);
+  transition-property: transform;
+  transition-duration: 9s;
+  transition-timing-function: linear;
+}
