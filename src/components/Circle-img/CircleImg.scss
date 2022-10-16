@@ -1,1 +1,24 @@
 @import '../../theme/index.scss';
+
+.circle-img {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  &__circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #F0D9CA;
+    width: 386.28px;
+    height: 386.28px;
+  }
+}
