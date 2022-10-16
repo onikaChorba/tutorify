@@ -8,14 +8,16 @@ import icon5 from '../../img/circleIcon5.png';
 function CircleImg() {
   return (
     <div className="circle-img">
+      <div className='circle-img__img'></div>
       <img className='circle-img__img' src={mainImg} />
-      <div color='circle-img__circle'></div>
-      <div color='circle-img__line'></div>
+      <div className='circle-img__circle'></div>
+      <div className='circle-img__line'></div>
       <img className='circle-icon' src={icon1} />
       <img className='circle-icon' src={icon2} />
       <img className='circle-icon circleIcon' src={icon3} />
       <img className='circle-icon' src={icon4} />
       <img className='circle-icon circleIcon' src={icon5} />
+
     </div>
   );
 }

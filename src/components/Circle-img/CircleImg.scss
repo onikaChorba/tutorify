@@ -1,24 +1,29 @@
 @import '../../theme/index.scss';
 
+
 .circle-img {
   position: relative;
+  width: 500px;
+  height: 500px;
+  border: 5px solid rgba(255, 146, 47, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
 
   &__img {
+    background-image: url('../../img/Circle-img.png');
+    z-index: 1200;
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 30px;
+    top: 35px;
   }
 
   &__circle {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 56px;
+    top: 58px;
     background: #F0D9CA;
-    width: 386.28px;
-    height: 386.28px;
+    border-radius: 50%;
+    width: 386px;
+    height: 386px;
   }
 }
