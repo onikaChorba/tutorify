@@ -1,0 +1,22 @@
+@import '../../theme/index.scss';
+
+.second-title {
+  &__title {
+    color: black;
+    @include font-size (600, 36px, 58px);
+    letter-spacing: 3.5%;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    color: $grey;
+    @include font-size (400, 18px, 29px);
+    padding-bottom: 40px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+}
