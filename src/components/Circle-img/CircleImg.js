@@ -13,9 +13,9 @@ function CircleImg() {
       <div color='circle-img__line'></div>
       <img className='circle-icon' src={icon1} />
       <img className='circle-icon' src={icon2} />
-      <img className='circle-icon' src={icon3} />
+      <img className='circle-icon circleIcon' src={icon3} />
       <img className='circle-icon' src={icon4} />
-      <img className='circle-icon' src={icon5} />
+      <img className='circle-icon circleIcon' src={icon5} />
     </div>
   );
 }
