@@ -15,7 +15,7 @@ function MainTitle() {
         Online Languange Tutors</div>
       <div className='main-title__text text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Id interdum dui mollis . Suspendisse nulla :</div>
-      <Button green medium>
+      <Button green big>
         <a className="button__text " href="#"> Try Free Lessons</a>
       </Button>
     </div>

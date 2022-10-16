@@ -4,6 +4,7 @@ import MainImg from './components/Main-img/Main-img';
 
 import './Pages/Front-page/Front-page.scss';
 import UserOnline from './components/User-online/User-online';
+import SecondTitle from './components/Second-title/SecondTitle';
 
 
 
@@ -15,6 +16,13 @@ function App() {
         <MainTitle />
         <MainImg />
       </div>
+      <div className='Purchase main-container'>
+        <SecondTitle
+          title="Purchase your awesome lessons and find your tutors"
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
+        />
+      </div>
+
     </div>
   );
 }

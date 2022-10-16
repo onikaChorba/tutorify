@@ -4,15 +4,21 @@
   cursor: pointer;
   border-radius: 8px;
   @include position-center(flex, column, center, center);
-  color: $white;
 
   &__green {
     background: $green;
+
   }
 
 
   &__orange {
     background: $orang;
+  }
+
+  &__white {
+    background: #E5E5E5;
+    border: 3px solid $orang-strong;
+    color: $orang-strong;
   }
 
   &__text {
@@ -23,6 +29,11 @@
   &__size_xs {
     width: 102px;
     height: 44px;
+  }
+
+  &__size_s {
+    width: 199px;
+    height: 61px;
   }
 
   &__size_m {
