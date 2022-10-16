@@ -15,10 +15,16 @@
     background: $orang;
   }
 
-  &__white {
+  &__white-orange {
     background: #E5E5E5;
     border: 3px solid $orang-strong;
-    color: $orang-strong;
+
+  }
+
+  &__white-green {
+    background: #E5E5E5;
+    border: 3px solid $green-light;
+
   }
 
   &__text {

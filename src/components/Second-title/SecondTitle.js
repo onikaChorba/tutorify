@@ -9,7 +9,7 @@ function SecondTitle(props) {
         <Button medium orange>
           <a className="button__text " href="#"> Book Your Lessons</a>
         </Button >
-        <Button medium white>
+        <Button medium whiteOrange>
           <a className="button__text" style={{ color: "#FB9C46" }} href="#"> Find Your Tutors</a>
         </Button >
       </div>

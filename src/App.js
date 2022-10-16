@@ -5,6 +5,7 @@ import MainImg from './components/Main-img/Main-img';
 import './Pages/Front-page/Front-page.scss';
 import UserOnline from './components/User-online/User-online';
 import SecondTitle from './components/Second-title/SecondTitle';
+import CircleImg from './components/Circle-img/CircleImg';
 
 
 
@@ -22,7 +23,7 @@ function App() {
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
         />
       </div>
-
+      <CircleImg></CircleImg>
     </div>
   );
 }

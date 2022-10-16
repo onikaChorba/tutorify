@@ -2,13 +2,14 @@ import './Button.scss';
 
 function Button(props) {
 
-  const { orange, green, white, children, small, big, medium } = props
+  const { orange, green, whiteOrange, whiteGreen, children, small, big, medium } = props
 
   const createParamsClass = ({ green, orange, small }) => {
     let colorClassName = 'button__'
     if (green) colorClassName += 'green'
     if (orange) colorClassName += 'orange'
-    if (white) colorClassName += 'white'
+    if (whiteOrange) colorClassName += 'white-orange'
+    if (whiteGreen) colorClassName += 'white-green'
 
     let sizeClassName = ' button__size_'
     if (small) sizeClassName += 'xs'
