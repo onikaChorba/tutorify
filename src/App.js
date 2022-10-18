@@ -22,7 +22,8 @@ function App() {
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
         />
       </div>
-      <CircleImg />
+      <div className='Purchase main-container'>
+        <CircleImg /></div>
     </div>
   );
 }
