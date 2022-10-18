@@ -32,8 +32,6 @@
 
 .header-container {
   @include position-sb(flex, space-between, center);
-  margin-left: 7.6%;
-  margin-right: 7.6%;
   padding-bottom: 26px;
   padding-top: 57px;
   border-bottom: 2px solid#C4C4C4;
