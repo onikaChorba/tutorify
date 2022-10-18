@@ -14,3 +14,13 @@
   bottom: 79px;
   left: -140px;
 }
+
+.purchase {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    width: 52%;
+    @include position-center (flex, column, center, left);
+  }
+}

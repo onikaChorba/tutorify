@@ -16,14 +16,15 @@ function App() {
         <MainTitle />
         <MainImg />
       </div>
-      <div className='Purchase main-container'>
-        <SecondTitle
-          title="Purchase your awesome lessons and find your tutors"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
-        />
+      <div className='purchase main-container'>
+        <div className="purchase__info">
+          <SecondTitle
+            title="Purchase your awesome lessons and find your tutors"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
+          />
+        </div>
+        <CircleImg />
       </div>
-      <div className='Purchase main-container'>
-        <CircleImg /></div>
     </div>
   );
 }
