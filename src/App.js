@@ -5,6 +5,7 @@ import MainImg from './components/Main-img/Main-img';
 import './Pages/Front-page/Front-page.scss';
 import SecondTitle from './components/Second-title/SecondTitle';
 import CircleImg from './components/Circle-img/CircleImg';
+import TitleIsland from './components/Title-island/Title-island';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         </div>
         <CircleImg />
       </div>
+      <TitleIsland></TitleIsland>
     </div>
   );
 }
