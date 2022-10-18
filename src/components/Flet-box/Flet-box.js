@@ -1,19 +1,23 @@
 import './Flet-box.scss';
+import arrow from '../../img/arrow.png';
 const fletIcon = [
-  { src: './img/flet-icon1.png', title: "icon1" },
-  { src: './img/flet-icon2.png', title: "icon2" },
-  { src: './img/flet-icon3.png', title: "icon3" },
-  { src: './img/flet-icon4.png', title: "icon4" },
-  { src: './img/flet-icon5.png', title: "icon5" },
-  { src: './img/flet-icon6.png', title: "icon6" },
-  { src: './img/flet-icon7.png', title: "icon7" }
+  { src: './img/flet-icon1.png', title: "icon1", className: "flet-icon" },
+  { src: './img/flet-icon2.png', title: "icon2", className: "flet-icon" },
+  { src: './img/flet-icon3.png', title: "icon3", className: "flet-icon" },
+  { src: './img/flet-icon4.png', title: "icon4", className: "flet-icon" },
+  { src: './img/flet-icon5.png', title: "icon5", className: "flet-icon" },
+  { src: './img/flet-icon6.png', title: "icon6", className: "flet-icon" },
+  { src: './img/flet-icon7.png', title: "icon7", className: "flet-icon" }
 ];
 
 function FletBox() {
   return (
-
-
-    fletIcon.map((index) => <img src={index.src} title={index.title} alt='flet' />)
+    <div className='fletBox'>
+      <div className='fletBox__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna nec faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet ullamcorper et, ante venenatis.</div>
+      {fletIcon.map((index) => <img src={index.src} title={index.title} alt='flet' className={index.className} />)}
+      <button className='fletBox__button'> View All</button>
+      <img src={arrow} alt="arrow" />
+    </div>
   )
 };
 export default FletBox;

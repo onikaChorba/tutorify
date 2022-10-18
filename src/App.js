@@ -12,13 +12,19 @@ import FletBox from './components/Flet-box/Flet-box';
 
 function App() {
   return (
-    <div className='wrapper'>
+    <div className='wrapper main-container'>
       <Header />
-      <div className='hero main-container'>
+      <div className='hero'>
         <MainTitle />
         <MainImg />
       </div>
-      <div className='purchase main-container'>
+      <div className='learn '>
+        <div className="learn__info">
+          <TitleIsland /></div>
+        <div className="learn__flet">
+          <FletBox /></div>
+      </div>
+      <div className='purchase '>
         <div className="purchase__info">
           <SecondTitle
             title="Purchase your awesome lessons and find your tutors"
@@ -27,8 +33,7 @@ function App() {
         </div>
         <CircleImg />
       </div>
-      <TitleIsland></TitleIsland>
-      <FletBox />
+
     </div>
   );
 }

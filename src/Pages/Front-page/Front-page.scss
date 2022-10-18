@@ -15,6 +15,21 @@
   left: -140px;
 }
 
+.learn {
+  display: flex;
+  padding-top: 85px;
+  padding-bottom: 122px;
+
+  &__info {
+    width: 54%;
+    padding-right: 40px;
+  }
+
+  &__flet {
+    padding-right: 60px;
+  }
+}
+
 .purchase {
   display: flex;
   justify-content: space-between;
