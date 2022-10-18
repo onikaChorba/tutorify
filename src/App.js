@@ -6,6 +6,7 @@ import './Pages/Front-page/Front-page.scss';
 import SecondTitle from './components/Second-title/SecondTitle';
 import CircleImg from './components/Circle-img/CircleImg';
 import TitleIsland from './components/Title-island/Title-island';
+import FletBox from './components/Flet-box/Flet-box';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <CircleImg />
       </div>
       <TitleIsland></TitleIsland>
+      <FletBox />
     </div>
   );
 }
