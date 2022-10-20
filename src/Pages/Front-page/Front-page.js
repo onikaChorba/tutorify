@@ -1,5 +1,5 @@
-
 import './Front-page.scss';
+import data from './Front-page-data';
 import Header from "../../components/Header/Header.js";
 import SecondTitle from '../../components/Second-title/SecondTitle';
 import CircleImg from '../../components/Circle-img/CircleImg';
@@ -9,26 +9,8 @@ import List from '../../components/List/List';
 import MainTitle from '../../components/Main-title/Main-title';
 import MainImg from '../../components/Main-img/Main-img';
 import Button from '../../components/Button/Button';
-
+import willImg from '../../img/will-img.png';
 function FrontPage() {
-
-  const data = [
-    {
-      title: '1-on-1 lessons in more than 150 languages',
-      text: 'Learn from certified teachers with proven experience...',
-      linkText: 'read more'
-    },
-    {
-      title: 'Practice for free with the italki community',
-      text: 'Develop your language skills by building connections with others...',
-      linkText: 'read more'
-    },
-    {
-      title: 'Take learning beyond the classroom',
-      text: 'Learn from certified teachers with proven experience...',
-      linkText: 'read more'
-    },
-  ]
 
   return (
     <div className='wrapper main-container'>
@@ -61,7 +43,11 @@ function FrontPage() {
         <CircleImg />
       </div>
       <div className='willGet'>
-        <div className='willGet__img'></div>
+        <div className='willGet__content'>
+          <div className='willGet__square'>
+          </div>
+          <img src={willImg} alt="girl" className='willGet__img' />
+        </div>
         <div className='willGet__list'>
           <SecondTitle title="What Will You" span='Get' text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
@@ -74,7 +60,7 @@ Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
           }
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
