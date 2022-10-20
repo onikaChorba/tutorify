@@ -9,7 +9,7 @@ import List from '../../components/List/List';
 import MainTitle from '../../components/Main-title/Main-title';
 import MainImg from '../../components/Main-img/Main-img';
 import Button from '../../components/Button/Button';
-import willImg from '../../img/will-img.png';
+import ImgSquare from '../../components/ImgSquare/ImgSquare';
 function FrontPage() {
 
   return (
@@ -43,13 +43,9 @@ function FrontPage() {
         <CircleImg />
       </div>
       <div className='willGet'>
-        <div className='willGet__content'>
-          <div className='willGet__square'>
-          </div>
-          <img src={willImg} alt="girl" className='willGet__img' />
-        </div>
+        <ImgSquare />
         <div className='willGet__list'>
-          <SecondTitle title="What Will You" span='Get' text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          <SecondTitle title="What Will You" span='Get?' text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
           {
             data.map((el, key) =>
