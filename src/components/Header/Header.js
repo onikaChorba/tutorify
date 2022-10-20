@@ -21,12 +21,14 @@ function Header() {
           <a className="nav-bar__list" href="#">
             About Us
           </a>
-          <a className="nav-bar__list" href="#"> <Button green small>
-            <a className="button__text " href="#">Login</a>
-          </Button></a>
+          <a className="nav-bar__list" href="#">
+            <Button green small>
+              <span className="button__text " href="#">Login</span>
+            </Button>
+          </a>
           <a className="nav-bar__list" href="#">
             <Button orange small>
-              <a className="button__text " href="#"> Sign Up</a>
+              <span className="button__text " href="#"> Sign Up</span>
             </Button>
           </a>
         </div>
