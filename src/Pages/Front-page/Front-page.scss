@@ -43,3 +43,29 @@
 .list-block {
   padding-bottom: 20px;
 }
+
+.willGet {
+  //display: flex;
+
+  &__square {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    background: #F0D9CA;
+    left: 0;
+    bottom: 0;
+    border-radius: 49px;
+    z-index: 0;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 3000;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    position: relative;
+  }
+}
