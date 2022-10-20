@@ -14,7 +14,7 @@ function FletBox() {
   return (
     <div className='fletBox'>
       <div className='fletBox__text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna nec faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet ullamcorper et, ante venenatis.</div>
-      {fletIcon.map((index) => <img src={index.src} title={index.title} alt='flet' className={index.className} />)}
+      {fletIcon.map((index, key) => <img key={key} src={index.src} title={index.title} alt='flet' className={index.className} />)}
       <button className='fletBox__button'> View All</button>
       <img src={arrow} alt="arrow" />
     </div>
