@@ -1,5 +1,5 @@
 import './Front-page.scss';
-import data from './Front-page-data';
+import dataGreenList from './Front-page-data';
 import Header from "../../components/Header/Header.js";
 import SecondTitle from '../../components/Second-title/SecondTitle';
 import CircleImg from '../../components/Circle-img/CircleImg';
@@ -13,7 +13,6 @@ import ImgSquare from '../../components/ImgSquare/ImgSquare';
 import VideoBlock from '../../components/VideoBlock/VideoBlock';
 
 function FrontPage() {
-
   return (
     <div className='wrapper main-container'>
       <Header />
@@ -35,10 +34,10 @@ function FrontPage() {
           />
           <div className="second-title__button">
             <Button medium orange>
-              <a className="button__text " href="#"> Book Your Lessons</a>
+              <div className="button__text " > Book Your Lessons</div>
             </Button >
             <Button medium whiteOrange>
-              <a className="button__text" style={{ color: "#FB9C46" }} href="#"> Find Your Tutors</a>
+              <div className="button__text" style={{ color: "#FB9C46" }}> Find Your Tutors</div>
             </Button >
           </div>
         </div>
@@ -50,16 +49,23 @@ function FrontPage() {
           <SecondTitle title="What Will You" span='Get?' text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
           {
-            data.map((el, key) =>
-              <div className='list-block' key={key.toString()}>
-                <List title={el.title} text={el.text} span={el.linkText} />
-              </div>
+            dataGreenList.map((el, key) =>
+              <List small green
+                title={el.title} text={el.text} span={el.linkText} key={key.toString()} src={el.src} />
             )
           }
         </div>
       </div>
       <div className='works'>
-        <SecondTitle title="Here’s how it " span="works" text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.'></SecondTitle>
+        <div className='works__list'>
+          <SecondTitle title="Here’s how it " span="works" text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.'></SecondTitle>
+          {
+            dataGreenList.map((el, key) =>
+              <List medium orang
+                title={el.title} text={el.text} span={el.linkText} key={key.toString()} src={el.src} />
+            )
+          }
+        </div>
         <VideoBlock></VideoBlock>
       </div>
     </div >

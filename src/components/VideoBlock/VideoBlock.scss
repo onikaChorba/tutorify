@@ -4,6 +4,10 @@
   width: 500px;
   height: 414px;
   position: relative;
+
+  &__video {
+    width: 100%;
+  }
 }
 
 .play {
