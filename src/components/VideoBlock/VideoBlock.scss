@@ -1,0 +1,25 @@
+@import '../../theme/index.scss';
+
+.videoBlock {
+  width: 500px;
+  height: 414px;
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  top: 173px;
+  left: 236px;
+  z-index: 3000;
+  width: 66px;
+  height: 66px;
+  border: 2px solid $white;
+  border-radius: 50%;
+  @include position-center (flex, column, center, center);
+}
+
+.bookmark {
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+}

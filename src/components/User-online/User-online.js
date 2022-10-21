@@ -1,13 +1,15 @@
 import './User-online.scss';
 import heroIcon from '../../img/hero-icon.png';
-import user1 from '../../img/user1.png';
-import user2 from '../../img/user2.png';
-import user3 from '../../img/user3.png';
-import user4 from '../../img/user4.png';
 
-const user = { user1, user2, user3, user4 }
+const user = [
+  { src: './img/user1.png', className: 'user', alt: "user1" },
+  { src: './img/user2.png', className: 'user', alt: "user2" },
+  { src: './img/user3.png', className: 'user', alt: "user3" },
+  { src: './img/user4.png', className: 'user', alt: "user4" }
+]
 function buttonClick() {
-  alert("Hi");
+  user.push({ src: './img/user4.png', className: 'user', alt: "user4" }, { src: './img/user4.png', className: 'user', alt: "user4" });
+  alert(user.length)
 };
 function UserOnline() {
 
@@ -17,10 +19,7 @@ function UserOnline() {
         200+ Tutors Online
       </div>
       <div className='user-online__img'>
-        <img className='user' src={user1} alt="user1" />
-        <img className='user' src={user2} alt="user2" />
-        <img className='user' src={user3} alt="user3" />
-        <img className='user' src={user4} alt="user4" />
+        {user.map((index, key) => <img key={key} src={index.src} alt={index.alt} className={index.className} />)}
         <button onClick={buttonClick} className='userButton' >
           <div className='userButton__text'>+3 </div></button>
       </div>
