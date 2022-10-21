@@ -10,6 +10,8 @@ import MainTitle from '../../components/Main-title/Main-title';
 import MainImg from '../../components/Main-img/Main-img';
 import Button from '../../components/Button/Button';
 import ImgSquare from '../../components/ImgSquare/ImgSquare';
+import VideoBlock from '../../components/VideoBlock/VideoBlock';
+
 function FrontPage() {
 
   return (
@@ -55,6 +57,10 @@ Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
             )
           }
         </div>
+      </div>
+      <div className='works'>
+        <SecondTitle title="Here’s how it " span="works" text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.'></SecondTitle>
+        <VideoBlock></VideoBlock>
       </div>
     </div >
   );
