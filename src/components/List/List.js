@@ -1,5 +1,4 @@
 import './List.scss';
-// import check from '../../img/check.png';
 function List(props) {
 
   const { small, medium, green, orang } = props;

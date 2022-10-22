@@ -29,10 +29,10 @@ function FrontPage() {
       </div>
       <div className='purchase '>
         <div className="purchase__info">
-          <SecondTitle
-            title="Purchase your awesome lessons and find your tutors"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
-          />
+          {
+            data.dataPurchaseSecondTitle.map((el, key) => <SecondTitle title={el.title} text={el.text} key={key.toString()} />)
+          }
+
           <div className="second-title__button">
             <Button medium orange>
               <div className="button__text " > Book Your Lessons</div>
@@ -47,8 +47,9 @@ function FrontPage() {
       <div className='willGet'>
         <ImgSquare />
         <div className='willGet__list'>
-          <SecondTitle title="What Will You" span='Get?' text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
+          {
+            data.dataWillGetSecondTitle.map((el, key) => <SecondTitle title={el.title} span={el.span} text={el.text} key={key.toString()} />)
+          }
           {
             data.dataGreenList.map((el, key) =>
               <List small green
@@ -59,7 +60,9 @@ Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
       </div>
       <div className='works'>
         <div className='works__list'>
-          <SecondTitle title="Here’s how it " span="works" text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.'></SecondTitle>
+          {
+            data.dataWorksSecondTitle.map((el, key) => <SecondTitle title={el.title} span={el.span} text={el.text} key={key.toString()} />)
+          }
           {
             data.dataOrangList.map((el, key) =>
               <List medium orang
@@ -71,12 +74,15 @@ Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
       </div>
       <div className='edu'>
         <div className='edu__info'>
-          <SecondTitle title=" Edu Smart it's about mastering a timeless skill" text='cultivating new perspectives, and connecting with fascinating people
-from around the world.'></SecondTitle>
+          {
+            data.dataEduSecondTitle.map((el, key) => <SecondTitle title={el.title} text={el.text} key={key.toString()} />)
+          }
         </div>
         <div className='edu__slider'>
           <Slider></Slider>
         </div>
+      </div>
+      <div className='learn'>
 
       </div>
     </div >
