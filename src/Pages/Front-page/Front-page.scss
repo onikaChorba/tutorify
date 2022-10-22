@@ -65,3 +65,21 @@
     width: 50%;
   }
 }
+
+.edu {
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    width: 45%;
+  }
+
+  &__slider {
+    width: 45%;
+  }
+}
+
+.orang {
+  color: aqua;
+}
