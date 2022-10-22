@@ -1,5 +1,5 @@
 import './Front-page.scss';
-import dataGreenList from './Front-page-data';
+import data from './Front-page-data';
 import Header from "../../components/Header/Header.js";
 import SecondTitle from '../../components/Second-title/SecondTitle';
 import CircleImg from '../../components/Circle-img/CircleImg';
@@ -49,7 +49,7 @@ function FrontPage() {
           <SecondTitle title="What Will You" span='Get?' text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
           {
-            dataGreenList.map((el, key) =>
+            data.dataGreenList.map((el, key) =>
               <List small green
                 title={el.title} text={el.text} span={el.linkText} key={key.toString()} src={el.src} />
             )
@@ -60,7 +60,7 @@ Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
         <div className='works__list'>
           <SecondTitle title="Here’s how it " span="works" text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.'></SecondTitle>
           {
-            dataGreenList.map((el, key) =>
+            data.dataOrangList.map((el, key) =>
               <List medium orang
                 title={el.title} text={el.text} span={el.linkText} key={key.toString()} src={el.src} />
             )
