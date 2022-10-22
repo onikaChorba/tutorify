@@ -1,0 +1,61 @@
+@import '../../theme/index.scss';
+
+.star {
+  padding-right: 8px;
+  padding-bottom: 14px;
+}
+
+.slider {
+  position: relative;
+  padding-left: 15%;
+  padding-right: 10%;
+
+  &__info {
+    @include font-size(400, 16px, 32px);
+    color: #90A3B4;
+    padding-bottom: 20px;
+  }
+
+}
+
+.user-info {
+  display: flex;
+
+  &__icon {
+    padding-right: 15px;
+  }
+}
+
+.user-name {
+  @include font-size(700, 20px, 24px);
+  color: $orang-strong;
+  padding-bottom: 4px;
+}
+
+.user-prof {
+  @include font-size(400, 16px, 28px);
+  color: #90A3B4;
+}
+
+.paws {
+  position: absolute;
+  left: -40px;
+  top: -40px;
+  z-index: 3000;
+}
+
+.splide__pagination li {
+  margin-bottom: -70px;
+}
+
+.splide__pagination__page.is-active {
+  background: $orang-strong;
+}
+
+.splide__arrow {
+  background: $orang-strong;
+}
+
+.splide__arrow svg {
+  fill: $black-light;
+}

@@ -11,6 +11,7 @@ import MainImg from '../../components/Main-img/Main-img';
 import Button from '../../components/Button/Button';
 import ImgSquare from '../../components/ImgSquare/ImgSquare';
 import VideoBlock from '../../components/VideoBlock/VideoBlock';
+import Slider from '../../components/Slider/Slider';
 
 function FrontPage() {
   return (
@@ -67,6 +68,16 @@ Id interdum dui mollis . Suspendisse nulla :"></SecondTitle>
           }
         </div>
         <VideoBlock></VideoBlock>
+      </div>
+      <div className='edu'>
+        <div className='edu__info'>
+          <SecondTitle title=" Edu Smart it's about mastering a timeless skill" text='cultivating new perspectives, and connecting with fascinating people
+from around the world.'></SecondTitle>
+        </div>
+        <div className='edu__slider'>
+          <Slider></Slider>
+        </div>
+
       </div>
     </div >
   );
