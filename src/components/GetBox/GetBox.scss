@@ -19,6 +19,7 @@
   color: $white;
   @include font-size(500, 14px, 32px);
   padding-left: 15px;
+  cursor: pointer;
 }
 
 .getBox-button {
