@@ -25,6 +25,12 @@ const data = {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet."
     }
   ],
+  dataGetBoxSecondTitle: [
+    {
+      title: "Learn more than just a language",
+      text: "Over 100,000 students join us monthly"
+    }
+  ],
   dataGreenList: [
     {
       title: '1-on-1 lessons in more than 150 languages',

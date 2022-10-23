@@ -12,6 +12,7 @@ import Button from '../../components/Button/Button';
 import ImgSquare from '../../components/ImgSquare/ImgSquare';
 import VideoBlock from '../../components/VideoBlock/VideoBlock';
 import Slider from '../../components/Slider/Slider';
+import GetBox from '../../components/GetBox/GetBox';
 
 function FrontPage() {
   return (
@@ -82,8 +83,8 @@ function FrontPage() {
           <Slider></Slider>
         </div>
       </div>
-      <div className='learn'>
-
+      <div className='getLessons'>
+        <GetBox />
       </div>
     </div >
   );
