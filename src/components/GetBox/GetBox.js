@@ -9,6 +9,11 @@ const userGet = [
   { src: './img/user4.png', className: 'user-box', alt: "user4" },
   { src: './img/user4.png', className: 'user-box', alt: "user4" }
 ]
+function GetUsers() {
+  return (
+    <div></div>
+  )
+}
 function GetBox() {
   return (
     <div className="getBox">
@@ -26,7 +31,7 @@ function GetBox() {
         </div>
       </div>
       <div className="getBox__button">
-        <button className='getBox-button'>
+        <button className='getBox-button' onClick={GetUsers}>
           <div className='getBox-button__text'>
             Get your free lessons now
           </div>
