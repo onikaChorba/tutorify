@@ -29,7 +29,7 @@ function UserOnline() {
       <div className='user-online__img'>
         {user.map((index, key) => <img key={key} src={index.src} alt={index.alt} className={index.className} />)}
         <button onClick={onClickUser} className='userButton' >
-          <img src={isAdded ? '../../img/user1.png' : '../../img/3+.png'} className='userButton__text' alt='plus'>
+          <img src={isAdded ? './img/user1.png' : '../../img/3+.png'} alt='plus'>
           </img>
         </button>
       </div>

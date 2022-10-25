@@ -29,11 +29,6 @@
   width: 49.27px;
   height: 49.27px;
   margin-left: -15px;
-
-  &__text {
-    color: $white;
-    @include font-size (600, 16px, 24px)
-  }
 }
 
 .user {
