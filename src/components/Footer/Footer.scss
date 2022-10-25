@@ -1,0 +1,50 @@
+@import '../../theme/index.scss';
+
+.footer {
+  background: $orang-light;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 88px 110px 177px 41px;
+}
+
+.footer-autor {
+  padding-bottom: 74px;
+  @include font-size(700, 16px, 21px);
+  color: $white;
+  text-align: center;
+}
+
+.subscribe {
+  &__logo {
+    color: $white;
+    @include font-size (600, 16px, 24px);
+    padding-bottom: 32px;
+  }
+
+  &__info {
+    color: $white;
+    @include font-size (600, 16px, 28px);
+    width: 263px;
+    padding-bottom: 32px;
+  }
+
+  &__icon {
+    padding-right: 6px;
+  }
+}
+
+.footer-title {
+  color: $white;
+  @include font-size (700, 18px, 24px);
+  padding-bottom: 33px;
+}
+
+.footer-link {
+  display: block;
+  color: $white;
+  @include font-size (400, 16px, 21px);
+  padding-bottom: 25px;
+}
