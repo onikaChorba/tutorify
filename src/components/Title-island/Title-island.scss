@@ -9,7 +9,9 @@
 
   &__title {
     color: $black-light;
-    @include font-size(600, 48px, 76px);
+
+    @include font-size(600, 30px, 48px);
+    // @include font-size(600, 48px, 76px);
     letter-spacing: 3.5%;
     padding-bottom: 10px;
   }

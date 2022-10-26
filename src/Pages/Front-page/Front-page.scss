@@ -1,42 +1,54 @@
 @import '../../theme/index.scss';
 
 .hero {
-  display: flex;
-  padding-top: 95px;
+  //display: flex;
+  padding-top: 35px;
+  // padding-top: 95px;
 
   &__img {
     position: relative;
+    padding-right: 20px;
+    padding-top: 66px;
   }
 }
+
 
 .user-online-hero {
   position: absolute;
-  bottom: 79px;
-  left: -140px;
+  top: -50px;
+  left: 20px;
 }
 
 .learn {
-  display: flex;
-  padding-top: 85px;
-  padding-bottom: 122px;
+  padding-top: 30px;
+  padding-bottom: 62px;
+  // display: flex;
+  //padding-top: 85px;
+  //padding-bottom: 122px;
 
   &__info {
-    width: 60%;
-    padding-right: 40px;
+    width: 100%;
+    //width: 60%;
+    //padding-right: 40px;
   }
 
-  &__flet {
-    padding-right: 60px;
-  }
+  // &__flet {
+  //   //padding-right: 60px;
+  // }
 }
 
 .purchase {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
   &__info {
-    width: 52%;
+    width: 100%; // width: 52%;
     @include position-center (flex, column, center, left);
+  }
+
+  &__img {
+    padding-top: 66px;
+    padding-left: 10%;
   }
 }
 
@@ -45,10 +57,11 @@
 }
 
 .willGet {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-top: 88px;
+  padding-top: 66px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // padding-top: 88px;
 
   &__list {
     width: 50%;

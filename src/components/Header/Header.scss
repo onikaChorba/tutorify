@@ -4,13 +4,18 @@
   height: 117px;
 
   &__nav-bar {
-    @include position-sb (flex, space-between, center);
+    display: none;
+    //@include position-sb (flex, space-between, center);
   }
 
 
   &__logo {
     @include font-size (700, 18px, 27px);
     color: $black-light;
+  }
+
+  &__menu {
+    cursor: pointer;
   }
 }
 
