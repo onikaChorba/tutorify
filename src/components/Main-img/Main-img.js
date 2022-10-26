@@ -3,9 +3,9 @@ import heroImg from '../../img/hero-img.png';
 import UserOnline from '../User-online/User-online';
 
 const flet = [
-  { src: './img/flet1.png', className: 'main-flet__1' },
-  { src: './img/flet2.png', className: 'main-flet__2' },
-  { src: './img/flet3.png', className: 'main-flet__3' }
+  { src: './img/flet1.png', className: 'main-flet__1 main-flet' },
+  { src: './img/flet2.png', className: 'main-flet__2 main-flet' },
+  { src: './img/flet3.png', className: 'main-flet__3 main-flet' }
 ]
 
 function MainImg() {

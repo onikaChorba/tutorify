@@ -8,10 +8,13 @@
   }
 
   &__title {
-    @include font-size (700, 48px, 76px);
+    @include font-size (700, 32px, 51px);
+    //@include font-size (700, 48px, 76px);
     letter-spacing: 3.5%;
-    width: 80%;
-    padding-bottom: 44px;
+    width: 100%;
+    //width: 80%;
+    //padding-bottom: 44px;
+    padding-bottom: 15px;
 
     span {
       color: $orang;
@@ -20,9 +23,11 @@
 
   &__text {
     color: $grey;
-    @include font-size (400, 18px, 29px);
-    width: 70%;
-    padding-bottom: 28px;
+    @include font-size (400, 14px, 28px);
+    //@include font-size (400, 18px, 29px);
+    //width: 70%;
+    //padding-bottom: 28px;
+    padding-bottom: 15px;
   }
 }
 

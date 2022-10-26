@@ -1,5 +1,5 @@
 import Button from "../Button/Button";
-
+import menu from '../../img/menu.png';
 import './Header.scss';
 function Header() {
   return (
@@ -7,6 +7,9 @@ function Header() {
       <div className="header-container">
         <div className="header__logo">
           Tutorify
+        </div>
+        <div className="header__menu">
+          <img src={menu} alt='menu' />
         </div>
         <div className="header__nav-bar">
           <a className="nav-bar__list" href="#">

@@ -29,7 +29,8 @@
 
   &__text {
     color: $white;
-    @include font-size(600, 16px, 24px);
+    @include font-size(600, 12px, 18px);
+    // @include font-size(600, 16px, 24px);
   }
 
   &__size_xs {
@@ -38,8 +39,10 @@
   }
 
   &__size_s {
-    width: 199px;
-    height: 61px;
+    width: 153px;
+    height: 47px;
+    // width: 199px;
+    // height: 61px;
   }
 
   &__size_m {

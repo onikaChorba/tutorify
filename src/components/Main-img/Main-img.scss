@@ -1,24 +1,38 @@
 @import '../../theme/index.scss';
 
 .bg-img {
-  width: 462px;
-  height: 625px;
+  max-width: 462px;
+  width: 80%;
+  float: right;
+  //width: 100%;
+  height: 370px;
+  //height: 625px;
   background-image: linear-gradient(#F1C365, #FF922F);
   border-radius: 204px;
 }
 
 .mainImg {
   position: relative;
-  width: 553px;
-  height: 666px;
+  width: 100%;
+  // max-width: 553px;
+  // width: 80%;
+  // height: 400px;
+  // //height: 666px;
+}
+
+.main-flet {
+  width: 70px;
+  //width: 98px;
 }
 
 .main-img {
   position: absolute;
-  left: 0;
+  left: 13%;
   right: 0;
   bottom: 0;
   top: 0;
+  //height: 400px;
+  width: 90%;
 }
 
 .main-flet {
@@ -26,20 +40,23 @@
     position: absolute;
     top: 19.7%;
     bottom: 80.3%;
-    right: 88%;
+    left: 8%;
+    //left: 10%;
   }
 
   &__2 {
     position: absolute;
     top: 0%;
     bottom: 100%;
-    right: 6%;
+    right: 0px;
+    //right: 20%;
   }
 
   &__3 {
     position: absolute;
     top: 43%;
-    right: -13%;
+    right: -30px;
+    // right: 7%;
     border-radius: 50%;
     border: 5px solid $white;
   }

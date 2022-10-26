@@ -22,7 +22,9 @@ function FrontPage() {
         <Header />
         <div className='hero'>
           <MainTitle />
-          <MainImg />
+          <div className='hero__img'>
+            <MainImg />
+          </div>
         </div>
         <div className='learn'>
           <div className="learn__info">
@@ -45,10 +47,12 @@ function FrontPage() {
               </Button >
             </div>
           </div>
-          <CircleImg />
+          <div className="purchase__img">
+            <CircleImg /></div>
         </div>
         <div className='willGet'>
-          <ImgSquare />
+          <div className='willGet__img'>
+            <ImgSquare /></div>
           <div className='willGet__list'>
             {
               data.dataWillGetSecondTitle.map((el, key) => <SecondTitle title={el.title} span={el.span} text={el.text} key={key.toString()} />)
