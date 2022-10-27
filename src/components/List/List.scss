@@ -16,11 +16,13 @@
   }
 
   &__listSmall {
-    width: 500px;
+    width: 325px;
+    // width: 500px;
   }
 
   &__listMedium {
-    width: 600px;
+    width: 325px;
+    // width: 600px;
   }
 }
 
@@ -32,7 +34,8 @@
 
 .list-title {
   color: $black-light;
-  @include font-size (600, 16px, 27px);
+  @include font-size (600, 12px, 20px);
+  //@include font-size (600, 16px, 27px);
   padding-bottom: 7px;
   padding-left: 30px;
   width: 90%;
@@ -40,7 +43,8 @@
 
 .list-text {
   color: #8D8D8D;
-  @include font-size (400, 14px, 23px);
+  @include font-size (400, 10px, 20px);
+  // @include font-size (400, 14px, 23px);
   padding-left: 30px;
   width: 90%;
   padding-bottom: 18px;

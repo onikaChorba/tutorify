@@ -51,8 +51,6 @@ function FrontPage() {
             <CircleImg /></div>
         </div>
         <div className='willGet'>
-          <div className='willGet__img'>
-            <ImgSquare /></div>
           <div className='willGet__list'>
             {
               data.dataWillGetSecondTitle.map((el, key) => <SecondTitle title={el.title} span={el.span} text={el.text} key={key.toString()} />)
@@ -64,6 +62,8 @@ function FrontPage() {
               )
             }
           </div>
+          <div className='willGet__img'>
+            <ImgSquare /></div>
         </div>
         <div className='works'>
           <div className='works__list'>

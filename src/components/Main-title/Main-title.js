@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 function MainTitle() {
   return (
     <div className='main-title'>
+
       <div className='main-title__pre-title'>
         <div className='main-pre-title'>
           <div className='pre-title__text'>We are The Best </div>
@@ -21,5 +22,6 @@ function MainTitle() {
     </div>
   );
 };
+
 
 export default MainTitle;
