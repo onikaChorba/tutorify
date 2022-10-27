@@ -7,19 +7,28 @@
 
 .slider {
   position: relative;
-  padding-left: 15%;
-  padding-right: 10%;
+  // padding-left: 15%;
+  // padding-right: 10%;
 
   &__info {
-    @include font-size(400, 16px, 32px);
+    width: 65%;
+    margin: 0 auto;
+    @include font-size(400, 12px, 24px);
+    //@include font-size(400, 16px, 32px);
     color: #90A3B4;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+  }
+
+  &__star {
+    padding-left: 15%;
   }
 
 }
 
 .user-info {
   display: flex;
+  width: 65%;
+  margin: 0 auto;
 
   &__icon {
     padding-right: 15px;
@@ -27,13 +36,15 @@
 }
 
 .user-name {
-  @include font-size(700, 20px, 24px);
+  @include font-size(700, 10px, 24px);
+  // @include font-size(700, 20px, 24px);
   color: $orang-strong;
-  padding-bottom: 4px;
+  //padding-bottom: 4px;
 }
 
 .user-prof {
-  @include font-size(400, 16px, 28px);
+  @include font-size(400, 8px, 18px);
+  //@include font-size(400, 16px, 28px);
   color: #90A3B4;
 }
 
@@ -54,6 +65,7 @@
 
 .splide__arrow {
   background: $orang-strong;
+
 }
 
 .splide__arrow svg {

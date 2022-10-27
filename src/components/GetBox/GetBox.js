@@ -1,7 +1,6 @@
 import './GetBox.scss';
 import data from '../../Pages/Front-page/Front-page-data';
 import SecondTitle from '../../components/Second-title/SecondTitle';
-import background from '../../img/background.png';
 const userGet = [
   { src: './img/user1.png', className: 'user-box', alt: "user1" },
   { src: './img/user2.png', className: 'user-box', alt: "user2" },
@@ -18,7 +17,6 @@ function GetBox() {
   return (
     <div className="getBox">
       <div className="getBox__info">
-        <img src={background} alt='background' style={{ width: "100%" }}></img>
         <div className='getBox__title'>
 
           {

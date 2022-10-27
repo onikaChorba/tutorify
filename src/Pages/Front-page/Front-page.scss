@@ -58,39 +58,51 @@
 
 .willGet {
   padding-top: 66px;
+  width: 100%;
+
   // display: flex;
   // justify-content: space-between;
   // align-items: flex-end;
   // padding-top: 88px;
-
-  &__list {
-    width: 50%;
+  &__img {
+    padding-top: 340px;
+    width: 100%;
   }
+
+  // &__list {
+  //   // width: 50%;
+  // }
 }
 
 .works {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-top: 111px;
+  padding-top: 66px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-end;
+  // padding-top: 111px;
 
   &__list {
-    width: 50%;
+    width: 100%;
+    // width: 50%;
   }
 }
 
 .edu {
-  padding-top: 110px;
-  padding-bottom: 114px;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  // padding-top: 110px;
+  // padding-bottom: 114px;
+  // display: flex;
+  // justify-content: space-between;
 
   &__info {
-    width: 45%;
+    width: 100%;
+    //width: 45%;
   }
 
   &__slider {
-    width: 45%;
+    width: 100%;
+    //width: 45%;
   }
 }
 
@@ -99,5 +111,6 @@ span {
 }
 
 .getLessons {
-  padding-bottom: 126px;
+  padding-bottom: 66px;
+  //padding-bottom: 126px;
 }

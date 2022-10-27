@@ -6,10 +6,11 @@ import bookMark from '../../img/bookmark.png';
 function VideoBlock() {
   return (
     <div className='videoBlock'>
+      <img src={bookMark} className='bookmark'></img>
       <img className='videoBlock__video' src={imgVideo} alt='video'></img>
       <div className='play'>
         <img src={arrowRight} alt='play'></img></div>
-      <img src={bookMark} className='bookmark'></img>
+
     </div>
   );
 }

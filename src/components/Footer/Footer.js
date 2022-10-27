@@ -1,4 +1,6 @@
 import './Footer.scss';
+import arrow from '../../img/errowDown.png';
+import React from 'react';
 
 function Footer() {
   const icon = [
@@ -7,6 +9,12 @@ function Footer() {
     { src: '../../img/icon-instagram.png', alt: 'icon', className: 'icon-subscribe' },
     { src: '../../img/icon-linkedin.png', alt: 'icon', className: 'icon-subscribe' }
   ]
+  const [isAddList, setIsAddList] = React.useState();
+  const onClickArrowList = () => {
+    setIsAddList(!isAddList);
+  }
+
+
   return (
     <div className="footer">
       <div className="footer-content">
@@ -21,12 +29,22 @@ function Footer() {
           </div>
         </div>
         <div className="footer__find ">
-          <div className="footer-title">Find Teacher</div>
-          <a href="#" className="footer-link">English Teachers</a>
-          <a href="#" className="footer-link">Chinese Teachers</a>
-          <a href="#" className="footer-link">French Teachers</a>
-          <a href="#" className="footer-link">Spanish Teachers</a>
-          <a href="#" className="footer-link">Other Teachers</a>
+          <div className="footer-title">
+            <div className="footer-title__title">
+              Find Teacher
+            </div>
+            <button onClick={onClickArrowList} className="footer-title__arrow">
+              <img src={arrow}></img>
+            </button>
+          </div>
+
+          <ul className='footer-list' style={isAddList ? { display: 'none' } : { display: 'block' }}>
+            <li><a href="#" className="footer-link">English Teachers</a></li>
+            <li><a href="#" className="footer-link">Chinese Teachers</a></li>
+            <li> <a href="#" className="footer-link">French Teachers</a></li>
+            <li><a href="#" className="footer-link">Spanish Teachers</a></li>
+            <li><a href="#" className="footer-link">Other Teachers</a></li>
+          </ul>
         </div>
         <div className="footer__lessons ">
           <div className="footer-title">Lessons</div>

@@ -2,12 +2,17 @@
 
 .getBox {
   position: relative;
+  height: 375px;
+  background: url('../../img/background.png');
 
   &__title {
-    width: 40%;
+    width: 90%;
+    // width: 40%;
     position: absolute;
-    left: 10%;
-    top: 20%;
+    top: 64px;
+    left: 25px;
+    // left: 10%;
+    // top: 20%;
   }
 }
 
@@ -29,8 +34,10 @@
   border-radius: 4px;
   @include position-center(flex, column, center, center);
   position: absolute;
-  right: 5%;
-  top: 45%;
+  bottom: 5%;
+  left: 10%;
+  // right: 5%;
+  // top: 45%;
   cursor: pointer;
 
   &__text {
