@@ -67,6 +67,31 @@ const data = {
       text: 'Simple as that, you’re learning a language.',
       src: '../../img/user-icon.png', alt: 'check'
     },
+  ],
+
+  linkFind: [
+    { href: '#', className: "footer-link", text: "English Teachers" },
+    { href: '#', className: "footer-link", text: "Chinese Teachers" },
+    { href: '#', className: "footer-link", text: "French Teachers" },
+    { href: '#', className: "footer-link", text: "Spanish Teachers" },
+    { href: '#', className: "footer-link", text: "Other Teachers" },
+  ],
+  linkLearn: [
+    { href: '#', className: "footer-link", text: "Learn Chinese" },
+    { href: '#', className: "footer-link", text: "Learn Englishs" },
+    { href: '#', className: "footer-link", text: "Learn Spanis" },
+    { href: '#', className: "footer-link", text: "Learn French" },
+    { href: '#', className: "footer-link", text: "Learn French" },
+    { href: '#', className: "footer-link", text: "Learn More Languages" },
+  ],
+  linkCompany: [
+    { href: '#', className: "footer-link", text: "How it Works" },
+    { href: '#', className: "footer-link", text: "Term" },
+    { href: '#', className: "footer-link", text: "Privacy Policy" }
+  ],
+  linkMore: [
+    { href: '#', className: "footer-link", text: "Documentation" },
+    { href: '#', className: "footer-link", text: "Documentation" }
   ]
 }
 export default data;
