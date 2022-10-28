@@ -10,6 +10,7 @@ function Footer() {
     { src: '../../img/icon-linkedin.png', alt: 'icon', className: 'icon-subscribe' }
   ]
   const [isAddList, setIsAddList] = React.useState();
+
   const onClickArrowList = () => {
     setIsAddList(!isAddList);
   }
@@ -34,11 +35,11 @@ function Footer() {
               Find Teacher
             </div>
             <button onClick={onClickArrowList} className="footer-title__arrow">
-              <img src={arrow}></img>
+              <img src={arrow} alt='arrow'></img>
             </button>
           </div>
 
-          <ul className='footer-list' style={isAddList ? { display: 'none' } : { display: 'block' }}>
+          <ul className='footer-list' style={isAddList ? { display: 'block' } : { display: 'none' }}>
             <li><a href="#" className="footer-link">English Teachers</a></li>
             <li><a href="#" className="footer-link">Chinese Teachers</a></li>
             <li> <a href="#" className="footer-link">French Teachers</a></li>
@@ -46,25 +47,49 @@ function Footer() {
             <li><a href="#" className="footer-link">Other Teachers</a></li>
           </ul>
         </div>
-        <div className="footer__lessons ">
-          <div className="footer-title">Lessons</div>
-          <a href="#" className="footer-link">Learn Englishs</a>
-          <a href="#" className="footer-link">Learn Chinese</a>
-          <a href="#" className="footer-link">Learn French</a>
-          <a href="#" className="footer-link">Learn Spanish</a>
-          <a href="#" className="footer-link">Learn More Languages</a>
+        <div className='footer__lessons'>
+          <div className="footer-title">
+            <div className="footer-title__title">Lessons</div>
+            <button onClick={onClickArrowList} className="footer-title__arrow">
+              <img src={arrow} alt='arrow'></img>
+            </button>
+          </div>
+          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
+            <li><a href="#" className="footer-link">Learn Englishs</a></li>
+            <li><a href="#" className="footer-link">Learn Chinese</a></li>
+            <li><a href="#" className="footer-link">Learn Chinese</a></li>
+            <li><a href="#" className="footer-link">Learn Chinese</a></li>
+            <li><a href="#" className="footer-link">Learn French</a></li>
+            <li><a href="#" className="footer-link">Learn Spanish</a></li>
+            <li> <a href="#" className="footer-link">Learn More Languages</a></li>
+          </ul>
         </div>
-        <div className="footer__company company ">
-          <div className="footer-title">Company</div>
-          <a href="#" className="footer-link">About</a>
-          <a href="#" className="footer-link">How it Works</a>
-          <a href="#" className="footer-link">Term</a>
-          <a href="#" className="footer-link">Privacy Policy</a>
+
+        <div className="footer__company">
+          <div className="footer-title">
+            <div className="footer-title__title">Company</div>
+            <button onClick={onClickArrowList} className="footer-title__arrow">
+              <img src={arrow} alt='arrow'></img>
+            </button>
+          </div>
+          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
+            <li> <a href="#" className="footer-link">About</a></li>
+            <li><a href="#" className="footer-link">How it Works</a></li>
+            <li><a href="#" className="footer-link">Term</a></li>
+            <li><a href="#" className="footer-link">Privacy Policy</a></li>
+          </ul>
         </div>
         <div className="footer__more">
-          <div className="footer-title">More</div>
-          <a href="#" className="footer-link">Documentation</a>
-          <a href="#" className="footer-link">Documentation</a>
+          <div className="footer-title">
+            <div className="footer-title__title">More</div>
+            <button onClick={onClickArrowList} className="footer-title__arrow">
+              <img src={arrow} alt='arrow'></img>
+            </button>
+          </div>
+          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
+            <li><a href="#" className="footer-link">Documentation</a></li>
+            <li><a href="#" className="footer-link">Documentation</a></li>
+          </ul>
         </div>
       </div>
       <div className="footer-autor">
