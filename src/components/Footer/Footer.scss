@@ -13,16 +13,20 @@
 
 .footer-autor {
   padding-bottom: 74px;
+  padding-top: 60px;
   @include font-size(700, 16px, 21px);
   color: $white;
   text-align: center;
 }
 
 .subscribe {
+  margin-left: 10%;
+
   &__logo {
     color: $white;
     @include font-size (600, 24px, 36px);
     padding-bottom: 20px;
+    padding-top: 48px;
     //@include font-size (600, 16px, 24px);
     //padding-bottom: 32px;
   }

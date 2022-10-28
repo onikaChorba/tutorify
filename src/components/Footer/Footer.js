@@ -10,6 +10,7 @@ function Footer() {
     { src: '../../img/icon-linkedin.png', alt: 'icon', className: 'icon-subscribe' }
   ]
   const [isAddList, setIsAddList] = React.useState();
+
   const onClickArrowList = () => {
     setIsAddList(!isAddList);
   }
@@ -38,7 +39,7 @@ function Footer() {
             </button>
           </div>
 
-          <ul className='footer-list' style={isAddList ? { display: 'none' } : { display: 'block' }}>
+          <ul className='footer-list' style={isAddList ? { display: 'block' } : { display: 'none' }}>
             <li><a href="#" className="footer-link">English Teachers</a></li>
             <li><a href="#" className="footer-link">Chinese Teachers</a></li>
             <li> <a href="#" className="footer-link">French Teachers</a></li>
@@ -53,8 +54,7 @@ function Footer() {
               <img src={arrow} alt='arrow'></img>
             </button>
           </div>
-          <ul className="footer-list" style={isAddList ? { display: 'none' } : { display: 'block' }}>
-
+          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
             <li><a href="#" className="footer-link">Learn Englishs</a></li>
             <li><a href="#" className="footer-link">Learn Chinese</a></li>
             <li><a href="#" className="footer-link">Learn Chinese</a></li>
@@ -72,7 +72,7 @@ function Footer() {
               <img src={arrow} alt='arrow'></img>
             </button>
           </div>
-          <ul className="footer-list" style={isAddList ? { display: 'none' } : { display: 'block' }}>
+          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
             <li> <a href="#" className="footer-link">About</a></li>
             <li><a href="#" className="footer-link">How it Works</a></li>
             <li><a href="#" className="footer-link">Term</a></li>
@@ -86,7 +86,7 @@ function Footer() {
               <img src={arrow} alt='arrow'></img>
             </button>
           </div>
-          <ul className="footer-list" style={isAddList ? { display: 'none' } : { display: 'block' }}>
+          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
             <li><a href="#" className="footer-link">Documentation</a></li>
             <li><a href="#" className="footer-link">Documentation</a></li>
           </ul>
