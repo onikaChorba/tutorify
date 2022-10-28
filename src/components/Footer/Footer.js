@@ -1,6 +1,6 @@
 import './Footer.scss';
-import arrow from '../../img/errowDown.png';
-import React from 'react';
+import data from '../../Pages/Front-page/Front-page-data';
+import Links from '../Links/Links';
 
 function Footer() {
   const icon = [
@@ -9,11 +9,7 @@ function Footer() {
     { src: '../../img/icon-instagram.png', alt: 'icon', className: 'icon-subscribe' },
     { src: '../../img/icon-linkedin.png', alt: 'icon', className: 'icon-subscribe' }
   ]
-  const [isAddList, setIsAddList] = React.useState();
 
-  const onClickArrowList = () => {
-    setIsAddList(!isAddList);
-  }
 
 
   return (
@@ -30,66 +26,25 @@ function Footer() {
           </div>
         </div>
         <div className="footer__find ">
-          <div className="footer-title">
-            <div className="footer-title__title">
-              Find Teacher
-            </div>
-            <button onClick={onClickArrowList} className="footer-title__arrow">
-              <img src={arrow} alt='arrow'></img>
-            </button>
-          </div>
-
-          <ul className='footer-list' style={isAddList ? { display: 'block' } : { display: 'none' }}>
-            <li><a href="#" className="footer-link">English Teachers</a></li>
-            <li><a href="#" className="footer-link">Chinese Teachers</a></li>
-            <li> <a href="#" className="footer-link">French Teachers</a></li>
-            <li><a href="#" className="footer-link">Spanish Teachers</a></li>
-            <li><a href="#" className="footer-link">Other Teachers</a></li>
-          </ul>
+          <Links title='Find Tutors' li={
+            data.linkFind.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+          } />
         </div>
         <div className='footer__lessons'>
-          <div className="footer-title">
-            <div className="footer-title__title">Lessons</div>
-            <button onClick={onClickArrowList} className="footer-title__arrow">
-              <img src={arrow} alt='arrow'></img>
-            </button>
-          </div>
-          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
-            <li><a href="#" className="footer-link">Learn Englishs</a></li>
-            <li><a href="#" className="footer-link">Learn Chinese</a></li>
-            <li><a href="#" className="footer-link">Learn Chinese</a></li>
-            <li><a href="#" className="footer-link">Learn Chinese</a></li>
-            <li><a href="#" className="footer-link">Learn French</a></li>
-            <li><a href="#" className="footer-link">Learn Spanish</a></li>
-            <li> <a href="#" className="footer-link">Learn More Languages</a></li>
-          </ul>
+          <Links title='Lessons' li={
+            data.linkLearn.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+          }></Links>
         </div>
 
         <div className="footer__company">
-          <div className="footer-title">
-            <div className="footer-title__title">Company</div>
-            <button onClick={onClickArrowList} className="footer-title__arrow">
-              <img src={arrow} alt='arrow'></img>
-            </button>
-          </div>
-          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
-            <li> <a href="#" className="footer-link">About</a></li>
-            <li><a href="#" className="footer-link">How it Works</a></li>
-            <li><a href="#" className="footer-link">Term</a></li>
-            <li><a href="#" className="footer-link">Privacy Policy</a></li>
-          </ul>
+          <Links title="Company" li={
+            data.linkCompany.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+          }></Links>
         </div>
         <div className="footer__more">
-          <div className="footer-title">
-            <div className="footer-title__title">More</div>
-            <button onClick={onClickArrowList} className="footer-title__arrow">
-              <img src={arrow} alt='arrow'></img>
-            </button>
-          </div>
-          <ul className="footer-list" style={isAddList ? { display: 'block' } : { display: 'none' }}>
-            <li><a href="#" className="footer-link">Documentation</a></li>
-            <li><a href="#" className="footer-link">Documentation</a></li>
-          </ul>
+          <Links title="More" li={
+            data.linkMore.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+          }></Links>
         </div>
       </div>
       <div className="footer-autor">
