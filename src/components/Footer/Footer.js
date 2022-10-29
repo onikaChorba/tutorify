@@ -44,7 +44,7 @@ function Footer() {
         <div className="footer__more">
           <Links title="More" li={
             data.linkMore.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
-          }></Links>
+          } ></Links>
         </div>
       </div>
       <div className="footer-autor">
