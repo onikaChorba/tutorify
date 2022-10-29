@@ -1,12 +1,19 @@
 @import '../../theme/index.scss';
 
 .hero {
-  //display: flex;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 35px;
-  // padding-top: 95px;
+
+
+  @include screen-tb {
+    padding-top: 95px;
+    flex-wrap: nowrap;
+  }
+
 
   &__img {
-    position: relative;
+    width: 100%;
     padding-right: 20px;
     padding-top: 66px;
   }
@@ -20,35 +27,62 @@
 }
 
 .learn {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 62px;
-  // display: flex;
-  //padding-top: 85px;
-  //padding-bottom: 122px;
+
+  @include screen-tb {
+    padding-top: 95px;
+    flex-wrap: nowrap;
+    padding-bottom: 122px;
+  }
+
+
+
 
   &__info {
     width: 100%;
-    //width: 60%;
-    //padding-right: 40px;
+
+    @include screen-tb {
+      width: 60%;
+      padding-right: 40px;
+    }
+
   }
 
-  // &__flet {
-  //   //padding-right: 60px;
-  // }
+  &__flet {
+    @include screen-tb {
+      padding-right: 60px;
+    }
+  }
 }
 
 .purchase {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include screen-tb {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
 
   &__info {
-    width: 100%; // width: 52%;
+    width: 100%;
     @include position-center (flex, column, center, left);
+
+    @include screen-tb {
+      width: 52%;
+    }
   }
 
   &__img {
     padding-top: 66px;
-    padding-left: 10%;
+
+    @include screen-tb {
+      width: 40%;
+    }
   }
 }
 
@@ -59,50 +93,91 @@
 .willGet {
   padding-top: 66px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: flex-end;
-  // padding-top: 88px;
+  @include screen-tb {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 88px;
+  }
+
   &__img {
     padding-top: 340px;
     width: 100%;
+
+    @include screen-tb {
+      width: 45%;
+      margin-bottom: 20px;
+    }
   }
 
-  // &__list {
-  //   // width: 50%;
-  // }
+  &__list {
+    @include screen-tb {
+      width: 45%;
+    }
+
+  }
 }
 
 .works {
   padding-top: 66px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: flex-end;
-  // padding-top: 111px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include screen-tb {
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 111px;
+  }
+
 
   &__list {
     width: 100%;
-    // width: 50%;
+
+    @include screen-tb {
+      width: 45%;
+    }
+  }
+
+  &__video {
+    @include screen-tb {
+      width: 45%;
+      margin-bottom: 20px;
+    }
   }
 }
 
 .edu {
   padding-top: 66px;
   padding-bottom: 66px;
-  // padding-top: 110px;
-  // padding-bottom: 114px;
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include screen-tb {
+    padding-top: 110px;
+    padding-bottom: 114px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
 
   &__info {
     width: 100%;
-    //width: 45%;
+
+    @include screen-tb {
+      width: 45%;
+    }
+
   }
 
   &__slider {
     width: 100%;
-    //width: 45%;
+
+    @include screen-tb {
+      width: 50%;
+    }
   }
 }
 
@@ -112,5 +187,9 @@ span {
 
 .getLessons {
   padding-bottom: 66px;
-  //padding-bottom: 126px;
+
+  @include screen-tb {
+    padding-bottom: 126px;
+  }
+
 }

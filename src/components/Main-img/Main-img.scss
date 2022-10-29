@@ -1,22 +1,21 @@
 @import '../../theme/index.scss';
 
 .bg-img {
-  max-width: 462px;
-  width: 80%;
-  float: right;
+  position: relative;
+  width: 218px;
+  // float: right;
   //width: 100%;
-  height: 370px;
+  height: 300px;
   //height: 625px;
   background-image: linear-gradient(#F1C365, #FF922F);
   border-radius: 204px;
 }
 
 .mainImg {
-  position: relative;
-  width: 100%;
+
   // max-width: 553px;
   // width: 80%;
-  // height: 400px;
+  //height: 400px;
   // //height: 666px;
 }
 
@@ -27,24 +26,29 @@
 
 .main-img {
   position: absolute;
-  left: 13%;
+  left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   //height: 400px;
-  width: 90%;
+  width: 218px;
+  height: 300px;
 }
 
 .main-flet {
   &__1 {
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 19.7%;
     bottom: 80.3%;
-    left: 8%;
+    left: -9%;
     //left: 10%;
   }
 
   &__2 {
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 0%;
     bottom: 100%;
@@ -53,6 +57,8 @@
   }
 
   &__3 {
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 43%;
     right: -30px;

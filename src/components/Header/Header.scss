@@ -5,8 +5,6 @@
 
   &__nav-bar {
     background: $background;
-    // display: none;
-    //@include position-sb (flex, space-between, center);
   }
 
 
@@ -17,14 +15,18 @@
 
   &__menu {
     cursor: pointer;
+
+    @include screen-tb {
+      display: none;
+    }
   }
 }
 
-// .navBar-active {
-//   @include position-sb (flex, space-between, center);
-// }
 
 .nav-bar {
+  @include screen-tb {
+    @include position-center (flex, space-between, center, center);
+  }
 
   &__list {
     @include font-size (600, 16px, 24px);
@@ -43,8 +45,12 @@
 .header-container {
   display: block;
   flex-direction: column;
-  // @include position-sb(flex, space-between, center);
+
   padding-bottom: 26px;
   padding-top: 57px;
   border-bottom: 2px solid#C4C4C4;
+
+  @include screen-tb {
+    @include position-sb(flex, space-between, center);
+  }
 }

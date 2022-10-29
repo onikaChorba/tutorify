@@ -77,7 +77,8 @@ function FrontPage() {
               )
             }
           </div>
-          <VideoBlock></VideoBlock>
+          <div className='works__video'>
+            <VideoBlock></VideoBlock></div>
         </div>
         <div className='edu'>
           <div className='edu__info'>

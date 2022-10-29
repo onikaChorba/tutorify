@@ -7,12 +7,16 @@
 
   &__title {
     width: 90%;
-    // width: 40%;
     position: absolute;
     top: 64px;
     left: 25px;
-    // left: 10%;
-    // top: 20%;
+
+    @include screen-tb {
+      width: 40%;
+      left: 10%;
+      top: 20%;
+    }
+
   }
 }
 
@@ -36,9 +40,13 @@
   position: absolute;
   bottom: 5%;
   left: 10%;
-  // right: 5%;
-  // top: 45%;
+
   cursor: pointer;
+
+  @include screen-tb {
+    left: 55%;
+    bottom: 40%;
+  }
 
   &__text {
     color: $orang-strong;
