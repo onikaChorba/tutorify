@@ -17,8 +17,8 @@ function Links(props) {
           <img src={arrow} alt='arrow'></img>
         </button>
       </div>
-      <ul className='footer-list' style={isAddList ? { display: 'block' } : { display: 'none' }}>
-        {props.li}
+      <ul className='footer-list' style={isAddList ? null : { display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <li>{props.li}</li>
       </ul>
     </div>
   );

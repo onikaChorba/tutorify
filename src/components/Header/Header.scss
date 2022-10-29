@@ -4,7 +4,8 @@
   height: 117px;
 
   &__nav-bar {
-    display: none;
+    background: $background;
+    // display: none;
     //@include position-sb (flex, space-between, center);
   }
 
@@ -19,8 +20,12 @@
   }
 }
 
+// .navBar-active {
+//   @include position-sb (flex, space-between, center);
+// }
 
 .nav-bar {
+
   &__list {
     @include font-size (600, 16px, 24px);
     color: $black-light;
@@ -36,7 +41,9 @@
 
 
 .header-container {
-  @include position-sb(flex, space-between, center);
+  display: block;
+  flex-direction: column;
+  // @include position-sb(flex, space-between, center);
   padding-bottom: 26px;
   padding-top: 57px;
   border-bottom: 2px solid#C4C4C4;
