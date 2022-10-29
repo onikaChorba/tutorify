@@ -21,7 +21,7 @@ function Header() {
             <img src={menu} alt='menu' onClick={onClickMenu} />
           </div>
         </div>
-        <ul className="header__nav-bar" style={isAddMenu ? { display: 'flex', flexDirection: 'column', alignItems: 'flex-end', float: 'right', paddingTop: '40px', transitionDuration: '5s' } : { display: 'none' }}>
+        <ul className="header__nav-bar" style={isAddMenu ? { display: 'flex', flexDirection: 'column', alignItems: 'flex-end', float: 'right', paddingTop: '40px' } : { display: 'none' }}>
           <li><a className="nav-bar__list" href="#">
             Home
           </a></li>
@@ -47,7 +47,7 @@ function Header() {
         </ul>
       </div>
 
-    </header>
+    </header >
   );
 }
 

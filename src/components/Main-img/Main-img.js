@@ -10,9 +10,11 @@ const flet = [
 
 function MainImg() {
   return (<div className='mainImg'>
-    <div className='bg-img'></div>
-    <img className='main-img' src={heroImg} alt="men" />
-    {flet.map((index, key) => <img key={key} src={index.src} title={index.title} alt='flet' className={index.className} />)}
+    <div className='bg-img'><img className='main-img' src={heroImg} alt="men" />
+      {flet.map((index, key) => <img key={key} src={index.src} title={index.title} alt='flet' className={index.className} />)}
+    </div>
+
+
     <UserOnline />
   </div>
   );

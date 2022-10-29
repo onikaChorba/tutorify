@@ -10,8 +10,6 @@ function Footer() {
     { src: '../../img/icon-linkedin.png', alt: 'icon', className: 'icon-subscribe' }
   ]
 
-
-
   return (
     <div className="footer">
       <div className="footer-content">
@@ -27,23 +25,23 @@ function Footer() {
         </div>
         <div className="footer__find ">
           <Links title='Find Tutors' li={
-            data.linkFind.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+            data.linkFind.map((el, key) => <a href={el.href} className={el.className} key={key.toString()}>{el.text}</a>)
           } />
         </div>
         <div className='footer__lessons'>
           <Links title='Lessons' li={
-            data.linkLearn.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+            data.linkLearn.map((el, key) => <a href={el.href} className={el.className} key={key.toString()}>{el.text}</a>)
           }></Links>
         </div>
 
         <div className="footer__company">
           <Links title="Company" li={
-            data.linkCompany.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+            data.linkCompany.map((el, key) => <a href={el.href} className={el.className} key={key.toString()}>{el.text}</a>)
           }></Links>
         </div>
         <div className="footer__more">
           <Links title="More" li={
-            data.linkMore.map((el, key) => <li><a href={el.href} className={el.className} key={key.toString()}>{el.text}</a></li>)
+            data.linkMore.map((el, key) => <a href={el.href} className={el.className} key={key.toString()}>{el.text}</a>)
           } ></Links>
         </div>
       </div>
