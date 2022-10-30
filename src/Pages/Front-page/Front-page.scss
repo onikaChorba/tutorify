@@ -9,6 +9,7 @@
   @include screen-tb {
     padding-top: 95px;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
 
@@ -16,9 +17,24 @@
     width: 100%;
     padding-right: 20px;
     padding-top: 66px;
+
+    @include screen-tb {
+      width: 50%;
+    }
+  }
+
+  &__info {
+    width: 100%;
+
+    @include screen-tb {
+      width: 50%;
+    }
   }
 }
 
+.none {
+  display: none;
+}
 
 .user-online-hero {
   position: absolute;

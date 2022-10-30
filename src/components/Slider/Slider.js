@@ -23,7 +23,7 @@ function Slider() {
           <div className="slider__user">
             <div className="user-info">
               <div className="user-info__icon">
-                <img src={user}></img>
+                <img src={user} alt='user'></img>
               </div>
               <div className="user-info__info">
                 <div className="user-name">Jaquon Hart</div>
@@ -43,7 +43,7 @@ function Slider() {
           <div className="slider__user">
             <div className="user-info">
               <div className="user-info__icon">
-                <img src={user}></img>
+                <img src={user} alt='user'></img >
               </div>
               <div className="user-info__info">
                 <div className="user-name">Jaquon Hart</div>
