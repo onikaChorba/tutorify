@@ -3,21 +3,28 @@
 .user-online {
   width: 112px;
   height: 58x;
-  // width: 238px;
-  // height: 122px;
+
   background: $white;
   border-radius: 21px;
   position: relative;
   padding-bottom: 6px;
   @include position-center(flex, column, center, center);
 
+  @include screen-lp {
+    width: 238px;
+    height: 122px;
+  }
+
   &__title {
     @include font-size(600, 8px, 12px);
-    // @include font-size(600, 16px, 24px);
     color: black;
     padding-bottom: 5px;
     padding-top: 6px;
-    //padding-bottom: 12px;
+
+    @include screen-lp {
+      @include font-size(600, 16px, 24px);
+      padding-bottom: 12px;
+    }
   }
 
   &__icon {
@@ -26,6 +33,11 @@
     height: 21px;
     top: -19px;
     left: -15px;
+
+    @include screen-lp {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
@@ -36,9 +48,12 @@
   width: 23px;
   height: 23px;
   margin-left: -5px;
-  // width: 49.27px;
-  // height: 49.27px;
-  // margin-left: -15px;
+
+  @include screen-lp {
+    width: 49.27px;
+    height: 49.27px;
+    margin-left: -20px;
+  }
 }
 
 .user {
@@ -46,12 +61,18 @@
   height: 23px;
   display: inline-block;
   margin-left: -5px;
-  // margin-left: -20px;
+
+  @include screen-lp {
+    width: 49.27px;
+    height: 49.27px;
+    margin-left: -20px;
+  }
+
 }
 
-.user__animation {
-  transform: translate(-90%);
-  transition-property: transform;
-  transition-duration: 9s;
-  transition-timing-function: linear;
-}
+// .user__animation {
+//   transform: translate(-90%);
+//   transition-property: transform;
+//   transition-duration: 9s;
+//   transition-timing-function: linear;
+// }

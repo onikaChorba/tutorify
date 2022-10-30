@@ -4,17 +4,23 @@
   &__title {
     color: black;
     @include font-size (600, 30px, 48px);
-    //@include font-size (600, 36px, 58px);
     letter-spacing: 3.5%;
     padding-bottom: 20px;
+
+    @include screen-lp {
+      @include font-size (600, 36px, 58px);
+    }
   }
 
   &__text {
     color: $grey;
     @include font-size (400, 12px, 24px);
     padding-bottom: 23px;
-    //@include font-size (400, 18px, 29px);
-    // padding-bottom: 40px;
+
+    @include screen-lp {
+      @include font-size (400, 18px, 29px);
+      padding-bottom: 40px;
+    }
   }
 
   &__button {

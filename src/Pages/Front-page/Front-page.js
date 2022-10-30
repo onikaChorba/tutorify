@@ -21,7 +21,8 @@ function FrontPage() {
       <div className='main-container'>
         <Header />
         <div className='hero'>
-          <MainTitle />
+          <div className='hero__info'>
+            <MainTitle /></div>
           <div className='hero__img'>
             <MainImg />
           </div>

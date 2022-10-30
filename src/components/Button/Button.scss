@@ -30,7 +30,10 @@
   &__text {
     color: $white;
     @include font-size(600, 12px, 18px);
-    // @include font-size(600, 16px, 24px);
+
+    @include screen-lp {
+      @include font-size(600, 16px, 24px);
+    }
   }
 
   &__size_xs {
@@ -41,13 +44,19 @@
   &__size_s {
     width: 153px;
     height: 47px;
-    // width: 199px;
-    // height: 61px;
+
+    @include screen-lp {
+      width: 199px;
+      height: 61px;
+    }
   }
 
   &__size_m {
     width: 240px;
     height: 62px;
-    // width: 290px;
+
+    @include screen-lp {
+      width: 290px;
+    }
   }
 }
