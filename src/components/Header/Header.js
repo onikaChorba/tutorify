@@ -22,26 +22,26 @@ function Header() {
           </div>
         </div>
         <ul className="header__nav-bar" style={isAddMenu ? { display: 'flex', flexDirection: 'column', alignItems: 'flex-end', float: 'right', paddingTop: '40px' } : { display: 'none' }}>
-          <li><a className="nav-bar__list" href="#">
+          <li className="nav-bar__list" ><a href="#" className="nav-link">
             Home
           </a></li>
-          <li><a className="nav-bar__list" href="#">
+          <li className="nav-bar__list"><a href="#" className="nav-link">
             Lessons
           </a></li>
-          <li><a className="nav-bar__list" href="#">
+          <li className="nav-bar__list"><a href="#" className="nav-link">
             Find Tutors
           </a></li>
-          <li><a className="nav-bar__list" href="#">
+          <li className="nav-bar__list" ><a href="#" className="nav-link">
             About Us
           </a></li>
-          <li><a className="nav-bar__list" href="#">
+          <li className="nav-bar__list" ><a href="#" className="nav-link">
             <Button green small>
-              <span className="button__text " href="#">Login</span>
+              <span className="button__text " >Login</span>
             </Button>
           </a></li>
-          <li><a className="nav-bar__list" href="#">
+          <li className="nav-bar__list" ><a href="#" className="nav-link">
             <Button orange small>
-              <span className="button__text " href="#"> Sign Up</span>
+              <span className="button__text "> Sign Up</span>
             </Button>
           </a></li>
         </ul>

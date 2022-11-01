@@ -5,6 +5,12 @@
 
   &__nav-bar {
     background: $background;
+
+    @include screen-lp {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
 
@@ -16,7 +22,7 @@
   &__menu {
     cursor: pointer;
 
-    @include screen-tb {
+    @include screen-lp {
       display: none;
     }
   }
@@ -24,33 +30,37 @@
 
 
 .nav-bar {
-  @include screen-tb {
-    @include position-center (flex, space-between, center, center);
-  }
+  // @include screen-tb {
+  //   @include position-center (flex, space-between, center, center);
+  // }
 
   &__list {
     @include font-size (600, 16px, 24px);
     color: $black-light;
     margin-left: 50px;
     transition-duration: 0.2s;
-
-    &:hover {
-      color: $orang-strong;
-      border-bottom: 5px solid $orang-strong;
-    }
   }
 }
 
 
 .header-container {
-  display: block;
+  display: flex;
   flex-direction: column;
-
   padding-bottom: 26px;
   padding-top: 57px;
   border-bottom: 2px solid#C4C4C4;
 
-  @include screen-tb {
-    @include position-sb(flex, space-between, center);
+  @include screen-lp {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+}
+
+.nav-link {
+  color: $black-light;
+
+  &:hover {
+    color: $orang-strong;
+    border-bottom: 5px solid $orang-strong;
   }
 }
