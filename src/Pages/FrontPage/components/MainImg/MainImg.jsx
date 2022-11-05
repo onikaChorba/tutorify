@@ -1,6 +1,6 @@
 import "./MainImg.scss";
-import heroImg from "../../../../assets/img/hero-img.png";
-import UserOnline from "../UserOnline/UserOnline";
+import heroImg from "@/assets/img/hero-img.png";
+import UserOnline from "../UserOnline/";
 
 const flet = [
   { src: "./img/flet1.png", className: "main-flet__1 main-flet" },

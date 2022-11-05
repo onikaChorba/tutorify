@@ -1,6 +1,5 @@
-import Button from "../Button/Button";
-//import menu from ".@assets/img/menu.png";
-import menu from "../../assets/img/menu.png";
+import Button from "../Button";
+import menu from "@/assets/img/menu.png";
 import "./Header.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";

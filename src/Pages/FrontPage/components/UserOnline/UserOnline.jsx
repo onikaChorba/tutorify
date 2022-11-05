@@ -1,5 +1,5 @@
 import "./UserOnline.scss";
-import heroIcon from "../../../../assets/img/hero-icon.png";
+import heroIcon from "@/assets/img/hero-icon.png";
 import React from "react";
 const user = [
   { src: "./img/user1.png", className: "user", alt: "user1" },
@@ -7,11 +7,6 @@ const user = [
   { src: "./img/user3.png", className: "user", alt: "user3" },
   { src: "./img/user4.png", className: "user", alt: "user4" },
 ];
-// const user1 = [
-//   { src: './img/user4.png', className: 'user', alt: "user4" },
-//   { src: './img/user4.png', className: 'user', alt: "user4" },
-//   { src: './img/user4.png', className: 'user', alt: "user4" }
-// ]
 
 function UserOnline() {
   const [isAdded, setIsAdded] = React.useState();
@@ -23,7 +18,7 @@ function UserOnline() {
 
   return (
     <div className="user-online  user-online-hero">
-      <div className="user-online__title">200+ Tutors Online</div>
+      <p className="user-online__title">200+ Tutors Online</p>
       <div className="user-online__img">
         {user.map((index, key) => (
           <img

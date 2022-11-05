@@ -1,11 +1,9 @@
 import { Hero } from "./sections/Hero/Hero";
 import { Learn } from "./sections/Learn/Learn";
-// import data from "./FrontPageData";
-// import Header from "../../components/Header/Header";
+
 // import SecondTitle from "./components/SecondTitle/SecondTitle";
 // import CircleImg from "./components/CircleImg/CircleImg";
-// import TitleIsland from "./components/TitleIsland/TitleIsland";
-// import FletBox from "./components/FletBox/FletBox";
+
 // import List from "./components/List/List";
 // import MainTitle from "./components/MainTitle/MainTitle";
 // import MainImg from "./components/MainImg/MainImg";
@@ -21,15 +19,7 @@ function FrontPage() {
     <menu>
       <Hero />
       <Learn />
-      {/* <div className="main-container">
-        <div className="learn">
-          <div className="learn__info">
-            <TitleIsland />
-          </div>
-          <div className="learn__flet">
-            <FletBox />
-          </div>
-        </div>
+      {/* 
         <div className="purchase ">
           <div className="purchase__info">
             {data.dataPurchaseSecondTitle.map((el, key) => (

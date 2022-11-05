@@ -1,6 +1,6 @@
 import "./GetBox.scss";
-import data from "../../Pages/FrontPage/FrontPageData";
-import SecondTitle from "../../Pages/FrontPage/components/SecondTitle/SecondTitle";
+import data from "@/Pages/FrontPage/FrontPageData";
+import SecondTitle from "@/Pages/FrontPage/components/SecondTitle";
 const userGet = [
   { src: "./img/user1.png", className: "user-box", alt: "user1" },
   { src: "./img/user2.png", className: "user-box", alt: "user2" },

@@ -1,5 +1,5 @@
 import "./FletBox.scss";
-import arrow from "../../../../assets/img/arrow.png";
+import arrow from "@/assets/img/arrow.png";
 const fletIcon = [
   { src: "./img/flet-icon1.png", title: "icon1", className: "flet-icon" },
   { src: "./img/flet-icon2.png", title: "icon2", className: "flet-icon" },
@@ -13,11 +13,11 @@ const fletIcon = [
 function FletBox() {
   return (
     <div className="fletBox">
-      <div className="fletBox__text">
+      <p className="fletBox__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna nec
         faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet
         ullamcorper et, ante venenatis.
-      </div>
+      </p>
       {fletIcon.map((index, key) => (
         <img
           key={key}

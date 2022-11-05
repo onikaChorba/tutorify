@@ -1,7 +1,6 @@
 import "./Learn.scss";
-import TitleIsland from "../../components/TitleIsland/TitleIsland";
-import FletBox from "../../components/FletBox/FletBox";
-
+import TitleIsland from "@/Pages/FrontPage/components/TitleIsland";
+import FletBox from "@/Pages/FrontPage/components/FletBox";
 export const Learn = () => {
   return (
     <section className="learn">
