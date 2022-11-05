@@ -1,0 +1,10 @@
+@import '@/theme/index.scss';
+.getLessons {
+  padding-top: 66px;
+  padding-bottom: 66px;
+
+  @include screen-tb {
+    padding-top: 126px;
+    padding-bottom: 126px;
+  }
+}

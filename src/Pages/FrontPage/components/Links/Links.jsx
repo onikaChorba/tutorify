@@ -1,5 +1,5 @@
 import React from 'react';
-import arrow from '../../img/errowDown.png';
+import arrow from '@/assets/img/errowDown.png';
 function Links(props) {
   const [isAddList, setIsAddList] = React.useState();
 

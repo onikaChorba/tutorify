@@ -1,7 +1,7 @@
 import './VideoBlock.scss';
-import imgVideo from '../../img/video.png';
-import arrowRight from '../../img/arrowRight.png';
-import bookMark from '../../img/bookmark.png';
+import imgVideo from '@/assets/img/video.png';
+import arrowRight from '@/assets/img/arrowRight.png';
+import bookMark from '@/assets/img/bookmark.png';
 
 function VideoBlock() {
   return (
@@ -10,7 +10,6 @@ function VideoBlock() {
       <img className='videoBlock__video' src={imgVideo} alt='video'></img>
       <div className='play'>
         <img src={arrowRight} alt='play'></img></div>
-
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import "./CircleImg.scss";
-import mainImg from "../../img/Circle-img.png";
-import icon1 from "../../img/circleIcon1.png";
-import icon2 from "../../img/circleIcon2.png";
-import icon3 from "../../img/circleIcon3.png";
-import icon4 from "../../img/circleIcon4.png";
-import icon5 from "../../img/circleIcon5.png";
+import mainImg from "@/assets/img/Circle-img.png";
+import icon1 from "@/assets/img/circleIcon1.png";
+import icon2 from "@/assets/img/circleIcon2.png";
+import icon3 from "@/assets/img/circleIcon3.png";
+import icon4 from "@/assets/img/circleIcon4.png";
+import icon5 from "@/assets/img/circleIcon5.png";
 function CircleImg() {
   return (
     <div className="circle-container">

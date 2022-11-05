@@ -27,11 +27,11 @@ function Footer() {
   ];
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-content">
         <div className="footer__subscribe subscribe ">
           <div className="subscribe__logo">Tutorify</div>
-          <div className="subscribe__info">Learn more than just a language</div>
+          <p className="subscribe__info">Learn more than just a language</p>
           <div className="subscribe__icon">
             {icon.map((el, key) => (
               <img
@@ -86,7 +86,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-autor">Copyright © 2021. Created with love.</div>
-    </div>
+    </footer>
   );
 }
 export default Footer;
