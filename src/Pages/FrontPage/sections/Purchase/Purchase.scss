@@ -1,0 +1,31 @@
+@import '@/theme/index.scss';
+.purchase {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include screen-tb {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+
+  &__info {
+    width: 100%;
+    @include position-center (flex, column, center, left);
+
+    @include screen-tb {
+      width: 52%;
+    }
+  }
+
+  &__img {
+    padding-top: 66px;
+
+    @include screen-tb {
+      width: 40%;
+    }
+  }
+}
+.list-block {
+  padding-bottom: 20px;
+}

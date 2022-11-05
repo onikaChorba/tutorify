@@ -1,0 +1,31 @@
+@import '@/theme/index.scss';
+.willGet {
+  padding-top: 66px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include screen-tb {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 88px;
+  }
+
+  &__img {
+    padding-top: 340px;
+    width: 100%;
+
+    @include screen-tb {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    @include screen-tb {
+      width: 45%;
+    }
+
+  }
+}

@@ -1,2 +1,2 @@
-import Links from "../Links/Links";
-export default Links;
+import List from "../List/List";
+export default List;

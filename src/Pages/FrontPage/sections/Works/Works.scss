@@ -1,0 +1,27 @@
+@import '@/theme/index.scss';
+.works {
+  padding-top: 66px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include screen-tb {
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 111px;
+  }
+
+  &__list {
+    width: 100%;
+
+    @include screen-tb {
+      width: 45%;
+    }
+  }
+
+  &__video {
+    @include screen-tb {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+}

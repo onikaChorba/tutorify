@@ -2,7 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import FrontPage from "./Pages/FrontPage/FrontPage";
-//import Footer from "./components/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 function App() {
   return (
     <div className="wrapper">
@@ -15,8 +15,8 @@ function App() {
             <Route path="/find" element={<Find />} />
             <Route path="/about" element={<About />} />
           </Routes>
-          {/* <Footer /> */}
         </div>
+        <Footer />
       </Router>
     </div>
   );
