@@ -1,5 +1,5 @@
-// import "./FrontPage.scss";
 import { Hero } from "./sections/Hero/Hero";
+import { Learn } from "./sections/Learn/Learn";
 // import data from "./FrontPageData";
 // import Header from "../../components/Header/Header";
 // import SecondTitle from "./components/SecondTitle/SecondTitle";
@@ -20,16 +20,8 @@ function FrontPage() {
   return (
     <menu>
       <Hero />
+      <Learn />
       {/* <div className="main-container">
-        <Header />
-        <div className="hero">
-          <div className="hero__info">
-            <MainTitle />
-          </div>
-          <div className="hero__img">
-            <MainImg />
-          </div>
-        </div>
         <div className="learn">
           <div className="learn__info">
             <TitleIsland />
