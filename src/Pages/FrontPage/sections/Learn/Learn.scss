@@ -1,0 +1,27 @@
+@import '../../../../theme/index.scss';
+.learn {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 62px;
+
+  @include screen-tb {
+    padding-top: 95px;
+    flex-wrap: nowrap;
+    padding-bottom: 122px;
+  }
+  &__info {
+    width: 100%;
+
+    @include screen-tb {
+      width: 60%;
+      padding-right: 40px;
+    }
+  }
+
+  &__flet {
+    @include screen-tb {
+      padding-right: 60px;
+    }
+  }
+}
