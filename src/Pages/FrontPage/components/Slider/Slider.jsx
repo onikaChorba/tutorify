@@ -19,7 +19,7 @@ function Slider() {
           <div className="slider__star">
             {star.map((el, key) => <img src={el.src} className={el.className} alt={el.alt} key={key.toString()} />)}
           </div>
-          <div className="slider__info">“With Edu Smart, we can make it easier for you to master a foreign language, it is important for us to grow and engage with our students</div>
+          <p className="slider__info">“With Edu Smart, we can make it easier for you to master a foreign language, it is important for us to grow and engage with our students</p>
           <div className="slider__user">
             <div className="user-info">
               <div className="user-info__icon">

@@ -9,14 +9,14 @@ function Links(props) {
 
   return (
     <div className="links">
-      <div className="footer-title">
+      <article className="footer-title">
         <div className="footer-title__title">
           {props.title}
         </div>
         <button onClick={onClickArrowList} className="footer-title__arrow">
           <img src={arrow} alt='arrow'></img>
         </button>
-      </div>
+      </article>
       <ul className='footer-list' style={isAddList ? { display: 'block' } : { display: 'none' }}>
         {props.li}
       </ul>

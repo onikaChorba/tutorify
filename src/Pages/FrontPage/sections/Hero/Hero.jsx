@@ -1,6 +1,6 @@
 import "./Hero.scss";
-import MainTitle from "../../components/MainTitle/MainTitle";
-import MainImg from "../../components/MainImg/MainImg";
+import MainTitle from "@/Pages/FrontPage/components/MainTitle";
+import MainImg from "@/Pages/FrontPage/components/MainImg";
 export const Hero = () => {
   return (
     <section className="hero">

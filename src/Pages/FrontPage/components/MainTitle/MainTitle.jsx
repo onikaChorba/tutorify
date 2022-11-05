@@ -1,9 +1,9 @@
 import "./MainTitle.scss";
-import Button from "../../../../components/Button/Button";
+import Button from "@/components/Button";
 
 function MainTitle() {
   return (
-    <div className="main-title">
+    <article className="main-title">
       <div className="main-title__pre-title">
         <div className="main-pre-title">
           <div className="pre-title__text">We are The Best </div>
@@ -14,17 +14,16 @@ function MainTitle() {
         Learn Frome Home With <span> The Best </span>
         Online Languange Tutors
       </div>
-      <div className="main-title__text text">
+      <p className="main-title__text text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum dui
         mollis . Suspendisse nulla :
-      </div>
+      </p>
       <Button green big>
         <a className="button__text " href="#">
-          {" "}
           Try Free Lessons
         </a>
       </Button>
-    </div>
+    </article>
   );
 }
 

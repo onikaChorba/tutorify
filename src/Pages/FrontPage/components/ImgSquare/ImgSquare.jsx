@@ -1,4 +1,4 @@
-import willImg from "../../img/will-img.png";
+import willImg from "@/img/will-img.png";
 import "./ImgSquare.scss";
 function ImgSquare() {
   return (

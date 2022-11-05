@@ -21,11 +21,11 @@ function List(props) {
           <img src={props.src} alt='check' />
         </div>
         <div className="list__info">
-          <div className="list-title">
+          <p className="list-title">
             {props.title}
-          </div>
+          </p>
           <div className="list-text">
-            <div> {props.text} {props.span}</div>
+            <p> {props.text} {props.span}</p>
           </div>
         </div>
       </div>
