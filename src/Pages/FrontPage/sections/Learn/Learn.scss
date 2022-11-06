@@ -2,13 +2,13 @@
 .learn {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 62px;
+  padding-top: 66px;
+  padding-bottom: 66px;
 
   @include screen-tb {
-    padding-top: 95px;
+    padding-top: 66px;
     flex-wrap: nowrap;
-    padding-bottom: 122px;
+    padding-bottom: 66px;
   }
   &__info {
     width: 100%;

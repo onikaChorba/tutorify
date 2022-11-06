@@ -10,7 +10,7 @@
     border-radius: 49px;
     z-index: 0;
 
-    @include screen-md {
+    @include screen-lp {
       width: 430px;
       height: 430px;
     }
@@ -24,7 +24,7 @@
     left: 0;
     bottom: 0;
 
-    @include screen-md {
+    @include screen-lp {
       width: 570px;
     }
   }
