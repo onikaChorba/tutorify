@@ -1,6 +1,6 @@
 import "./Footer.scss";
-import data from "../../Pages/FrontPage/FrontPageData";
-import Links from "../../Pages/FrontPage/components/Links/Links";
+import data from "@/Pages/FrontPage/FrontPageData";
+import Links from "@/Pages/FrontPage/components/Links/Links";
 
 function Footer() {
   const icon = [

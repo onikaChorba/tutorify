@@ -9,11 +9,11 @@ function Links(props) {
 
   return (
     <div className="links">
-      <article className="footer-title">
+      <article className="footer-title" onClick={onClickArrowList}>
         <div className="footer-title__title">
           {props.title}
         </div>
-        <button onClick={onClickArrowList} className="footer-title__arrow">
+        <button className="footer-title__arrow">
           <img src={arrow} alt='arrow'></img>
         </button>
       </article>

@@ -18,7 +18,7 @@
   &__listSmall {
     width: 325px;
 
-    @include screen-md {
+    @include screen-lp {
       width: 500px;
     }
   }
@@ -26,9 +26,12 @@
   &__listMedium {
     width: 325px;
 
-    @include screen-md {
-      width: 600px;
+    @include screen-lp {
+      width: 500px;
     }
+        @include screen-md {
+          width: 600px;
+        }
   }
 }
 
@@ -45,7 +48,7 @@
   padding-left: 30px;
   width: 90%;
 
-  @include screen-md {
+  @include screen-lp {
     @include font-size (600, 16px, 27px);
   }
 }
@@ -57,7 +60,7 @@
   width: 90%;
   padding-bottom: 18px;
 
-  @include screen-md {
+  @include screen-lp {
     @include font-size (400, 14px, 23px);
   }
 }

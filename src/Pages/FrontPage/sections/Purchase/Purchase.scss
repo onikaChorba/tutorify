@@ -14,7 +14,7 @@
     @include position-center (flex, column, center, left);
 
     @include screen-tb {
-      width: 52%;
+      width: 45%;
     }
   }
 
@@ -22,7 +22,7 @@
     padding-top: 66px;
 
     @include screen-tb {
-      width: 40%;
+      width: 45%;
     }
   }
 }
