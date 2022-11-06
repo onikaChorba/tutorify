@@ -1,8 +1,10 @@
-import Button from "../Button";
-import menu from "@/assets/img/menu.png";
-import "./Header.scss";
 import React from "react";
 import { NavLink } from "react-router-dom";
+
+import "./Header.scss";
+
+import Button from "../Button";
+import menu from "@/assets/img/menu.png";
 
 function Header() {
   const [isAddMenu, setIsAddMenu] = React.useState();
@@ -42,13 +44,13 @@ function Header() {
             }
           >
             <li className="nav-bar__list">
-              <NavLink activeClassName="active" to="/" className="nav-link">
+              <NavLink activeclassname="active" to="/home" className="nav-link">
                 Home
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 to="/lessons"
                 className="nav-link"
               >
@@ -56,13 +58,13 @@ function Header() {
               </NavLink>
             </li>
             <li className="nav-bar__list">
-              <NavLink activeClassName="active" to="/find" className="nav-link">
+              <NavLink activeclassname="active" to="/find" className="nav-link">
                 Find Tutors
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
-                activeClassName="active"
+                activeclassname="active"
                 to="/about"
                 className="nav-link"
               >

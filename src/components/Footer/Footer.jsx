@@ -8,21 +8,25 @@ function Footer() {
       src: "../../img/icon-google.png",
       alt: "icon",
       className: "icon-subscribe",
+      href: "https://www.google.com.ua/?hl=ua"
     },
     {
       src: "../../img/icon-twiter.png",
       alt: "icon",
       className: "icon-subscribe",
+      href:'https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D'
     },
     {
       src: "../../img/icon-instagram.png",
       alt: "icon",
       className: "icon-subscribe",
+      href:"https://www.instagram.com"
     },
     {
       src: "../../img/icon-linkedin.png",
       alt: "icon",
       className: "icon-subscribe",
+      href:'https://www.linkedin.com/feed/'
     },
   ];
 
@@ -34,12 +38,12 @@ function Footer() {
           <p className="subscribe__info">Learn more than just a language</p>
           <div className="subscribe__icon">
             {icon.map((el, key) => (
-              <img
+              <a href={el.href} key={key.toString()}><img
                 src={el.src}
                 alt={el.alt}
                 className={el.className}
-                key={key.toString()}
-              />
+                
+              /></a>
             ))}
           </div>
         </div>

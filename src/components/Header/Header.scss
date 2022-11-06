@@ -62,8 +62,8 @@
     color: $orang-strong;
     border-bottom: 5px solid $orang-strong;
   }
-  &:active {
-      color: $orang-strong;
-      border-bottom: 5px solid $orang-strong;
-    }
 }
+.active {
+   color: $orang-strong;
+   border-bottom: 5px solid $orang-strong;
+ }

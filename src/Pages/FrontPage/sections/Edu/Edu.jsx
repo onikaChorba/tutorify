@@ -8,8 +8,8 @@ export const Edu = () =>{
       <section className="edu">
           <article className="edu__info">
             {data.dataEduSecondTitle.map((el, key) => (
-              <SecondTitle
-                title={el.title}
+             <SecondTitle
+                title={el.title} 
                 text={el.text}
                 key={key.toString()}
               />
