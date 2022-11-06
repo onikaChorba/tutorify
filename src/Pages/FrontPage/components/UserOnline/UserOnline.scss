@@ -1,7 +1,8 @@
 @import '@/theme/index.scss';
 
 .user-online {
-  width: 112px;
+  min-width: 112px;
+  width: max-content;
   height: 58x;
 
   background: $white;
@@ -11,7 +12,8 @@
   @include position-center(flex, column, center, center);
 
   @include screen-lp {
-    width: 238px;
+    min-width: 238px;
+    width: max-content;
     height: 122px;
   }
 

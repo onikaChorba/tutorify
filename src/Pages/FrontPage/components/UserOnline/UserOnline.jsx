@@ -1,38 +1,37 @@
+import React, { useState } from "react";
+
 import "./UserOnline.scss";
+
 import heroIcon from "@/assets/img/hero-icon.png";
-import React from "react";
+
 const user = [
-  { src: "./img/user1.png", className: "user", alt: "user1" },
-  { src: "./img/user2.png", className: "user", alt: "user2" },
-  { src: "./img/user3.png", className: "user", alt: "user3" },
-  { src: "./img/user4.png", className: "user", alt: "user4" },
+  { src: "./img/user1.png", alt: "user1" },
+  { src: "./img/user2.png", alt: "user2" },
+  { src: "./img/user3.png", alt: "user3" },
+  { src: "./img/user4.png", alt: "user4" },
+];
+const user1 = [
+  { src: "./img/user1.png", alt: "user1" },
+  { src: "./img/user2.png", alt: "user2" },
+  { src: "./img/user3.png", alt: "user3" },
+  { src: "./img/user4.png", alt: "user4" },
 ];
 
 function UserOnline() {
-  const [isAdded, setIsAdded] = React.useState();
-
+  const [currentUser, setCurrentUser] = useState(0);
   const onClickUser = () => {
-    console.log(user.length);
-    setIsAdded(!isAdded);
+    setCurrentUser(currentUser + 1);
+    if (currentUser < user1.length) user.push(user1[currentUser]);
   };
-
   return (
     <div className="user-online  user-online-hero">
       <p className="user-online__title">200+ Tutors Online</p>
       <div className="user-online__img">
         {user.map((index, key) => (
-          <img
-            key={key}
-            src={index.src}
-            alt={index.alt}
-            className={index.className}
-          />
+          <img key={key} src={index.src} alt={index.alt} className="user" />
         ))}
         <button onClick={onClickUser} className="userButton">
-          <img
-            src={isAdded ? "./img/user1.png" : "../../img/3+.png"}
-            alt="plus"
-          ></img>
+          <img src="./img/3+.png" alt="plus"></img>
         </button>
       </div>
       <div className="user-online__icon">

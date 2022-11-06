@@ -17,7 +17,6 @@
 
 .footer-autor {
   padding-bottom: 74px;
-  padding-top: 60px;
   @include font-size(700, 16px, 21px);
   color: $white;
   text-align: center;
@@ -45,6 +44,7 @@
   }
 
   &__icon {
+    cursor: pointer;
     padding-bottom: 32px;
   }
 }
@@ -53,6 +53,7 @@
   display: flex;
   justify-content: space-around;
   border-top: 1px solid $white;
+  cursor: pointer;
 
   @include screen-md {
     border-top: none;
@@ -62,12 +63,13 @@
     width: 90%;
     height: 45px;
     @include position-center (flex, column, center, left);
-    margin-left: 10%;
     color: $white;
     @include font-size (700, 18px, 24px);
+    margin-left: 10%;
 
     @include screen-md {
       padding-bottom: 33px;
+      margin-left: 0%;
     }
 
   }
@@ -88,6 +90,9 @@
   @include font-size (400, 16px, 21px);
   padding-bottom: 25px;
   margin-left: 10%;
+  @include screen-md {
+      margin-left: 0%;
+    }
 }
 
 .icon-subscribe {
