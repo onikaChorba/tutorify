@@ -1,20 +1,26 @@
-@import '../../theme/index.scss';
+@import "../../theme/index.scss";
 
 .header {
+  position: relative;
   height: 117px;
   &__nav-bar {
+    position: absolute;
+    transition: background-color 0.3s ease-in-out;
+    transform: translateX(0%);
+    right: 0%;
     background: $background;
 
     @include screen-lp {
+      position: static;
       display: flex !important;
       justify-content: space-between;
       align-items: center;
+      margin-right: 0px;
     }
   }
 
-
   &__logo {
-    @include font-size (700, 18px, 27px);
+    @include font-size(700, 18px, 27px);
     color: $black-light;
   }
 
@@ -27,20 +33,27 @@
   }
 }
 
-
 .nav-bar {
-  // @include screen-tb {
-  //   @include position-center (flex, space-between, center, center);
-  // }
-
   &__list {
-    @include font-size (600, 16px, 24px);
+    @include font-size(600, 16px, 24px);
     color: $black-light;
     margin-left: 50px;
-    transition-duration: 0.2s;
+    @include screen-lp {
+      margin-left: 0px;
+    }
+  }
+  &__button {
+    padding-top: 10px;
+    margin-left: 0px;
+    @include screen-lp {
+      padding-top: 0px;
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 50px;
+    }
   }
 }
-
 
 .header-container {
   display: flex;
@@ -57,13 +70,13 @@
 
 .nav-link {
   color: $black-light;
-
+  margin-right: 50px;
   &:hover {
     color: $orang-strong;
     border-bottom: 5px solid $orang-strong;
   }
 }
 .active {
-   color: $orang-strong;
-   border-bottom: 5px solid $orang-strong;
- }
+  color: $orang-strong;
+  border-bottom: 5px solid $orang-strong;
+}

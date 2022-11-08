@@ -36,9 +36,9 @@ function Header() {
                 ? {
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: "flex-end",
-                    float: "right",
+                    alignItems: "center",
                     paddingTop: "40px",
+                    float: "right",
                   }
                 : { display: "none" }
             }
@@ -71,19 +71,15 @@ function Header() {
                 About Us
               </NavLink>
             </li>
-            <li className="nav-bar__list">
-              <a href="#" className="nav-link">
-                <Button green small>
-                  <span className="button__text ">Login</span>
-                </Button>
-              </a>
+            <li className="nav-bar__list nav-bar__button">
+              <Button green small>
+                <span className="button__text ">Login</span>
+              </Button>
             </li>
-            <li className="nav-bar__list">
-              <a href="#" className="nav-link">
-                <Button orange small>
-                  <span className="button__text "> Sign Up</span>
-                </Button>
-              </a>
+            <li className="nav-bar__list nav-bar__button">
+              <Button orange small>
+                <span className="button__text "> Sign Up</span>
+              </Button>
             </li>
           </ul>
         </nav>
