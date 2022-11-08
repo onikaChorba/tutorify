@@ -44,7 +44,7 @@ function Header() {
             }
           >
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="/home" className="nav-link">
+              <NavLink activeclassname="active" to="/" className="nav-link">
                 Home
               </NavLink>
             </li>
