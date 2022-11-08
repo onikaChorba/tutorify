@@ -1,4 +1,4 @@
-@import '@/theme/index.scss';
+@import "@/theme/index.scss";
 
 .star {
   padding-right: 8px;
@@ -17,7 +17,7 @@
     width: 65%;
     margin: 0 auto;
     @include font-size(400, 12px, 24px);
-    color: #90A3B4;
+    color: #90a3b4;
 
     @include screen-md {
       width: 100%;
@@ -25,8 +25,6 @@
       padding-bottom: 20px;
     }
   }
-
-
 }
 
 .user-info {
@@ -54,7 +52,7 @@
 }
 
 .user-prof {
-  color: #90A3B4;
+  color: #90a3b4;
   @include font-size(400, 8px, 18px);
 
   @include screen-md {
@@ -79,7 +77,6 @@
 
 .splide__arrow {
   background: $orang-strong;
-
 }
 
 .splide__arrow svg {

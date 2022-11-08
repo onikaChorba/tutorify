@@ -1,4 +1,4 @@
-@import '../../theme/index.scss';
+@import "../../theme/index.scss";
 
 .footer {
   background: $orang-light;
@@ -27,7 +27,7 @@
 
   &__logo {
     color: $white;
-    @include font-size (600, 24px, 36px);
+    @include font-size(600, 24px, 36px);
     padding-bottom: 20px;
     padding-top: 48px;
 
@@ -38,7 +38,7 @@
 
   &__info {
     color: $white;
-    @include font-size (600, 16px, 28px);
+    @include font-size(600, 16px, 28px);
     width: 263px;
     padding-bottom: 32px;
   }
@@ -62,16 +62,15 @@
   &__title {
     width: 90%;
     height: 45px;
-    @include position-center (flex, column, center, left);
+    @include position-center(flex, column, center, left);
     color: $white;
-    @include font-size (700, 18px, 24px);
+    @include font-size(700, 18px, 24px);
     margin-left: 10%;
 
     @include screen-md {
       padding-bottom: 33px;
       margin-left: 0%;
     }
-
   }
 
   &__arrow {
@@ -87,12 +86,12 @@
 .footer-link {
   display: block;
   color: $white;
-  @include font-size (400, 16px, 21px);
+  @include font-size(400, 16px, 21px);
   padding-bottom: 25px;
   margin-left: 10%;
   @include screen-md {
-      margin-left: 0%;
-    }
+    margin-left: 0%;
+  }
 }
 
 .icon-subscribe {
@@ -104,7 +103,6 @@ li {
 }
 
 .footer-list {
-
   @include screen-md {
     display: initial !important;
   }
