@@ -38,7 +38,7 @@ function FletBox() {
         <img key={key} src={index.src} alt="flet" className="flet-icon" />
       ))}
       <button className="fletBox__button" onClick={handleMoreFlet}>
-        View All
+        <p>View All</p>
       </button>
       <img src={arrow} alt="arrow" />
     </div>

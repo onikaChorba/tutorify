@@ -17,7 +17,10 @@ const userGet = [
 function GetBox() {
   const userGetRow = 5;
   const [nextUser, setNextUser] = useState(userGetRow);
+  const [moreText, setMoreText] = useState(false);
   const handleMoreUser = () => {
+    setMoreText(!moreText);
+    setNextUser(!nextUser);
     if (nextUser < userGet.length) {
       setNextUser(nextUser + userGetRow);
     } else {
@@ -45,7 +48,7 @@ function GetBox() {
             />
           ))}
           <button onClick={handleMoreUser} className="get-span">
-            and others
+            <p>{!moreText ? "and others" : "less"}</p>
           </button>
         </div>
       </div>
