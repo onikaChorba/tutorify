@@ -22,6 +22,8 @@ function FletBox() {
   const handleMoreFlet = () => {
     if (next < fletIcon.length) {
       setNext(next + fletIconRow);
+    } else {
+      setNext(fletIconRow);
     }
   };
 
@@ -33,13 +35,7 @@ function FletBox() {
         ullamcorper et, ante venenatis.
       </p>
       {fletIcon.slice(0, next).map((index, key) => (
-        <img
-          key={key}
-          src={index.src}
-          alt="flet"
-          style={index.style}
-          className="flet-icon"
-        />
+        <img key={key} src={index.src} alt="flet" className="flet-icon" />
       ))}
       <button className="fletBox__button" onClick={handleMoreFlet}>
         View All

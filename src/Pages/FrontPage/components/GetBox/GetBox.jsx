@@ -1,17 +1,29 @@
+import { useState } from "react";
+
 import "./GetBox.scss";
+
 import data from "@/Pages/FrontPage/FrontPageData";
 import SecondTitle from "@/Pages/FrontPage/components/SecondTitle";
 const userGet = [
-  { src: "./img/user1.png", className: "user-box", alt: "user1" },
-  { src: "./img/user2.png", className: "user-box", alt: "user2" },
-  { src: "./img/user3.png", className: "user-box", alt: "user3" },
-  { src: "./img/user4.png", className: "user-box", alt: "user4" },
-  { src: "./img/user4.png", className: "user-box", alt: "user4" },
+  { src: "./img/user1.png" },
+  { src: "./img/user2.png" },
+  { src: "./img/user3.png" },
+  { src: "./img/user4.png" },
+  { src: "./img/user4.png" },
+  { src: "./img/user1.png" },
+  { src: "./img/user2.png" },
+  { src: "./img/user3.png" },
 ];
-function GetUsers() {
-  return <div></div>;
-}
 function GetBox() {
+  const userGetRow = 5;
+  const [nextUser, setNextUser] = useState(userGetRow);
+  const handleMoreUser = () => {
+    if (nextUser < userGet.length) {
+      setNextUser(nextUser + userGetRow);
+    } else {
+      setNextUser(userGetRow);
+    }
+  };
   return (
     <div className="getBox">
       <div className="getBox__info">
@@ -24,19 +36,21 @@ function GetBox() {
               key={key.toString()}
             />
           ))}
-          {userGet.map((e, key) => (
+          {userGet.slice(0, nextUser).map((e, key) => (
             <img
+              alt="user"
+              className="user-box"
               src={e.src}
-              alt={e.alt}
-              className={e.className}
               key={key.toString()}
             />
           ))}
-          <span className="get-span">and others</span>
+          <button onClick={handleMoreUser} className="get-span">
+            and others
+          </button>
         </div>
       </div>
       <div className="getBox__button">
-        <button className="getBox-button" onClick={GetUsers}>
+        <button className="getBox-button">
           <div className="getBox-button__text">Get your free lessons now</div>
         </button>
       </div>
