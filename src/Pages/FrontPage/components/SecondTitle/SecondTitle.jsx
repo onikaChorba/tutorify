@@ -1,4 +1,5 @@
 import "./SecondTitle.scss";
+
 function SecondTitle(props) {
   const { orang, white } = props;
   const createStyle = ({ xorange, ywhite }) => {

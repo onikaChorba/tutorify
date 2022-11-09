@@ -1,4 +1,5 @@
 import "./MainTitle.scss";
+
 import Button from "@/components/Button";
 
 function MainTitle() {
