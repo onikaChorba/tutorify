@@ -1,10 +1,9 @@
-@import '@/theme/index.scss';
+@import "@/theme/index.scss";
 
 .user-online {
   min-width: 112px;
   width: max-content;
-  height: 58x;
-
+  min-height: 58px;
   background: $white;
   border-radius: 21px;
   position: relative;
@@ -41,6 +40,16 @@
       height: 52px;
     }
   }
+  &__img {
+    padding-left: 10px;
+    min-width: 112px;
+    width: max-content;
+    height: 58x;
+    @include screen-lp {
+      width: max-content;
+      height: 122px;
+    }
+  }
 }
 
 .userButton {
@@ -69,12 +78,4 @@
     height: 49.27px;
     margin-left: -20px;
   }
-
 }
-
-// .user__animation {
-//   transform: translate(-90%);
-//   transition-property: transform;
-//   transition-duration: 9s;
-//   transition-timing-function: linear;
-// }
