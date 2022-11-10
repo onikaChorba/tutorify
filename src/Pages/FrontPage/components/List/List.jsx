@@ -1,4 +1,6 @@
 import "./List.scss";
+import React from "react";
+import ReactReadMoreReadLess from "react-read-more-read-less";
 
 function List(props) {
   const { small, medium, green, orang } = props;
@@ -14,6 +16,7 @@ function List(props) {
 
     return colorClassName + sizeClassName;
   };
+
   return (
     <div className={`list  ${createParamsClass(props)}`}>
       <div className="list-container">
@@ -23,10 +26,15 @@ function List(props) {
         <div className="list__info">
           <p className="list-title">{props.title}</p>
           <div className="list-text">
-            <p>
-              {" "}
-              {props.text} {props.span}
-            </p>
+            <ReactReadMoreReadLess
+              charLimit={70}
+              readMoreText={"Read more"}
+              readLessText={"Read less"}
+              readMoreClassName="read-more-less--more"
+              readLessClassName="read-more-less--less"
+            >
+              {props.text}
+            </ReactReadMoreReadLess>
           </div>
         </div>
       </div>
