@@ -2,6 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import FrontPage from "./Pages/FrontPage/FrontPage";
+import Find from "./Pages/Find/Find";
 import Footer from "@/components/Footer/Footer";
 function App() {
   return (
@@ -23,9 +24,6 @@ function App() {
 }
 function Lessons() {
   return <h2>Lessons</h2>;
-}
-function Find() {
-  return <h2>Find</h2>;
 }
 function About() {
   return <h2>About</h2>;

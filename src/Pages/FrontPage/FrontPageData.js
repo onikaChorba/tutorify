@@ -35,7 +35,6 @@ const data = {
     {
       title: "1-on-1 lessons in more than 150 languages",
       text: "Learn from certified teachers with proven experience certified teachers with proven",
-      linkText: "read more",
       className: "linkText",
       src: "../../img/check.png",
       alt: "check",
@@ -43,7 +42,6 @@ const data = {
     {
       title: "Practice for free with the italki community",
       text: "Develop your language skills by building connections with others certified teachers with proven",
-      linkText: "read more",
       className: "linkText",
       src: "../../img/check.png",
       alt: "check",
@@ -51,7 +49,6 @@ const data = {
     {
       title: "Take learning beyond the classroom",
       text: "Learn from certified teachers with proven experience certified teachers with proven",
-      linkText: "read more",
       className: "linkText",
       src: "../../img/check.png",
       alt: "check",

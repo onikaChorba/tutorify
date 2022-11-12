@@ -43,10 +43,12 @@
   &__img {
     padding-left: 10px;
     min-width: 112px;
-    width: max-content;
+    width: 80%;
     height: 58x;
+    height: fit-content;
+
     @include screen-lp {
-      width: max-content;
+      width: 80%;
       height: 122px;
     }
   }
