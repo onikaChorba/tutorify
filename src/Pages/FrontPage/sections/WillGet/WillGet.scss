@@ -1,4 +1,4 @@
-@import '@/theme/index.scss';
+@import "@/theme/index.scss";
 .willGet {
   padding-top: 66px;
   width: 100%;
@@ -26,6 +26,5 @@
     @include screen-tb {
       width: 45%;
     }
-
   }
 }
