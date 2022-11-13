@@ -1,3 +1,3 @@
-import BlockUser from "./Card";
+import Card from "./Card";
 
-export default BlockUser;
+export default Card;
