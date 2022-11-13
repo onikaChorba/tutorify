@@ -76,11 +76,11 @@ const data = {
   ],
 
   linkFind: [
-    { href: "#", className: "footer-link", text: "English Teachers" },
-    { href: "#", className: "footer-link", text: "Chinese Teachers" },
-    { href: "#", className: "footer-link", text: "French Teachers" },
-    { href: "#", className: "footer-link", text: "Spanish Teachers" },
-    { href: "#", className: "footer-link", text: "Other Teachers" },
+    { href: "/find", className: "footer-link", text: "English Teachers" },
+    { href: "/find", className: "footer-link", text: "Chinese Teachers" },
+    { href: "/find", className: "footer-link", text: "French Teachers" },
+    { href: "/find", className: "footer-link", text: "Spanish Teachers" },
+    { href: "/find", className: "footer-link", text: "Other Teachers" },
   ],
   linkLearn: [
     { href: "#", className: "footer-link", text: "Learn Chinese" },
