@@ -1,7 +1,6 @@
-// src/components/Search.js
-
 import React, { useState } from "react";
-import Button from "../../../../components/Button";
+
+import Button from "@/components/Button";
 import Scroll from "../Scroll/Scroll";
 import SearchList from "../SearchList/SearchList";
 import search from "@/assets/img/find/search.png";
