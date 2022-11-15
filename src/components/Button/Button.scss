@@ -1,4 +1,4 @@
-@import '../../theme/index.scss';
+@import "../../theme/index.scss";
 
 .button {
   cursor: pointer;
@@ -7,24 +7,20 @@
 
   &__green {
     background: $green;
-
   }
-
 
   &__orange {
     background: $orang;
   }
 
   &__white-orange {
-    background: #E5E5E5;
+    background: #e5e5e5;
     border: 3px solid $orang-strong;
-
   }
 
   &__white-green {
-    background: #E5E5E5;
+    background: #e5e5e5;
     border: 3px solid $green-light;
-
   }
 
   &__text {
@@ -58,5 +54,9 @@
     @include screen-lp {
       width: 290px;
     }
+  }
+  &__size_search {
+    height: 44px;
+    width: 246px;
   }
 }

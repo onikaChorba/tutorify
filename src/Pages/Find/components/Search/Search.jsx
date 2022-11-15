@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./Search.scss";
+
 import Button from "@/components/Button";
 import Scroll from "../Scroll/Scroll";
 import SearchList from "../SearchList/SearchList";
@@ -11,7 +13,7 @@ function Search({ details }) {
   const filteredPersons = details.filter((person) => {
     return (
       person.name.toLowerCase().includes(searchField.toLowerCase()) ||
-      person.prof.toLowerCase().includes(searchField.toLowerCase())
+      person.language.toLowerCase().includes(searchField.toLowerCase())
     );
   });
 
@@ -29,26 +31,28 @@ function Search({ details }) {
 
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
-      <div>
-        <div className="search-input" style={{ display: "flex" }}>
+      <div className="search-block">
+        <div className="search-input">
           <input
+            className="search-lang"
             type="search"
-            placeholder="Lessons Name"
+            placeholder="Language lessons"
             onChange={handleChange}
           />
           <input
+            className="search-name"
             type="search"
             placeholder="Tutor Name"
             onChange={handleChange}
           />
-          <Button orange big>
+          <Button orange search>
             <div style={{ display: "flex" }}>
               <img
                 src={search}
                 alt="search"
                 style={{ paddingRight: "10px" }}
               ></img>
-              <span className="button__text ">Search</span>
+              <span className="button__text">Search</span>
             </div>
           </Button>
         </div>
