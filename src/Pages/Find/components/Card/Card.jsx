@@ -1,7 +1,11 @@
 import React from "react";
+
+import "./Card.scss";
+
 import play from "@/assets/img/find/play.png";
 import userIcon from "@/assets/img/user-icon.png";
 import Button from "../../../../components/Button";
+
 const star = [
   { src: "../../img/star.png" },
   { src: "../../img/star.png" },
@@ -13,49 +17,63 @@ const star = [
 function Card({ person }) {
   return (
     <div className="card">
-      <img alt={person.name} src={process.env.PUBLIC_URL + person.imgPath} />
-      <img alt={person.icon} src={process.env.PUBLIC_URL + person.icon} />
-      <div className="numberLessons">
-        <img src={play} alt="play"></img>
-        <p> 20 Lessons</p>
+      <div style={{ position: "relative" }}>
+        <img
+          style={{ marginTop: "20px" }}
+          className="cardImg"
+          alt={person.name}
+          src={process.env.PUBLIC_URL + person.imgPath}
+        />
+        <img
+          style={{ position: "absolute", left: "35px", bottom: "20px" }}
+          className="cardIcon"
+          alt={person.icon}
+          src={process.env.PUBLIC_URL + person.icon}
+        />
       </div>
-      <div>
-        <div className="cardName">
-          <div className="cardName__info">
-            <h2>{person.name}</h2>
-            <p> {person.prof}</p>
-          </div>
-          <div className="cardName__star">
-            <p> 4.9 Rating</p>
-            {star.map((el, key) => (
-              <img
-                src={el.src}
-                className="star"
-                alt="star"
-                key={key.toString()}
-              />
-            ))}
-          </div>
-          <div className="cardName__speack">
-            <h2>Speack</h2>
-            <p>
-              {person.language} <span>native</span>
+      <div style={{ paddingLeft: "31px" }}>
+        <div className="numberLessons">
+          <img className="numberLessons__icon" src={play} alt="play"></img>
+          <p className="numberLessons__text"> 20 Lessons</p>
+        </div>
+        <div>
+          <article className="cardName">
+            <div className="cardName-info">
+              <h2 className="cardName-info__title">{person.name}</h2>
+              <p className="cardName-info__text"> {person.prof}</p>
+            </div>
+            <div className="cardName-star">
+              <p className="cardName-star__title"> 4.9 Rating</p>
+              {star.map((el, key) => (
+                <img
+                  src={el.src}
+                  className="star cardName-star__star"
+                  alt="star"
+                  key={key.toString()}
+                />
+              ))}
+            </div>
+          </article>
+          <div className="cardName-speak">
+            <h2 className="cardName-speak__title">Speack </h2>
+            <p className="cardName-speak__lang">
+              {person.language} - <span>native</span>
             </p>
           </div>
-          <div className="cardName__from">
+          <div className="cardName-from">
             <div className="price">
-              <p>30 Min Trial </p>
-              <p> {person.price}</p>
+              <p className="price__title">30 Min Trial </p>
+              <p className="price__price"> {person.price}</p>
             </div>
             <div className="from">
-              <p>Hourly Rate From </p>
-              <p> {person.from}</p>
+              <p className="price__title">Hourly Rate From </p>
+              <p className="price__price"> {person.from}</p>
             </div>
           </div>
-          <div className="cardName__students">
+          <div className="cardName-students">
             <div className="students">
-              <img src={userIcon} alt="user"></img>
-              <span> 120 Students</span>
+              <img className="students__user" src={userIcon} alt="user"></img>
+              <span className="students__number"> 120 Students</span>
             </div>
             <div className="cardButton">
               <Button green small>

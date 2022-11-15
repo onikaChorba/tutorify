@@ -1,0 +1,97 @@
+@import "@/theme/index.scss";
+
+.card {
+  width: 37%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 66px;
+  background: $white;
+  box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
+    0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
+    0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
+    0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
+    0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
+  border-radius: 10px;
+}
+.cardImg {
+  padding-left: 20px;
+}
+.numberLessons {
+  padding-top: 22px;
+  display: flex;
+  &__icon {
+    width: 19px;
+    height: 19px;
+  }
+  &__text {
+    padding-left: 20px;
+    @include font-size(500, 14px, 24px);
+    padding-bottom: 10px;
+  }
+}
+.cardName {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.cardName-info {
+  &__title {
+    @include font-size(600, 20px, 34px);
+  }
+  &__text {
+    @include font-size(400, 14px, 24px);
+    color: #979797;
+  }
+}
+.cardName-star {
+  &__title {
+    @include font-size(400, 14px, 24px);
+  }
+  &__star {
+    padding-top: 8px;
+  }
+}
+.cardName-speak {
+  padding-bottom: 10px;
+  &__title {
+    @include font-size(600, 16px, 28px);
+  }
+  &__lang {
+    @include font-size(400, 14px, 24px);
+    color: #979797;
+  }
+}
+.cardName-from {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #cccccc;
+}
+.price {
+  &__title {
+    @include font-size(600, 14px, 24px);
+  }
+  &__price {
+    @include font-size(400, 14px, 24px);
+    color: #979797;
+  }
+}
+.cardName-students {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+.students {
+  &__user {
+    height: 18px;
+    margin-right: 10px;
+  }
+  &__number {
+    @include font-size(600, 16px, 28px);
+  }
+}
+.cardButton {
+  padding-bottom: 27px;
+}
