@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import Scroll from "../Scroll/Scroll";
 import SearchList from "../SearchList/SearchList";
 import search from "@/assets/img/find/search.png";
+import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
 
 function Search({ details }) {
   const [searchField, setSearchField] = useState("");
@@ -57,6 +58,7 @@ function Search({ details }) {
           </Button>
         </div>
       </div>
+      <FilterButtonBlock />
       {searchList()}
     </section>
   );
