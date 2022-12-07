@@ -1,6 +1,7 @@
 @import "@/theme/index.scss";
 
 .card {
+  min-height: 575px;
   width: 37%;
   margin-left: 10%;
   margin-right: 5%;
@@ -96,6 +97,7 @@
   padding-bottom: 27px;
 }
 .cardInfo {
+  min-height: 575px;
   background: $white;
   box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
     0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
@@ -140,5 +142,6 @@
   }
 }
 .infoButton {
-  padding-bottom: 27px;
+  padding-top: 20px;
+  padding-left: 80%;
 }
