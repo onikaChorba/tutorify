@@ -1,10 +1,30 @@
 import React from "react";
+import { useState } from "react";
 
 import "./Card.scss";
 
 import play from "@/assets/img/find/play.png";
 import userIcon from "@/assets/img/user-icon.png";
 import Button from "../../../../components/Button";
+const ReadMore = ({ children }) => {
+  const text = children;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  return (
+    <p className="text">
+      {isReadMore ? text.slice(0, 150) : text}
+      <div className="infoButton">
+        <Button green small>
+          <span onClick={toggleReadMore} className="read-or-hide button__text">
+            {isReadMore ? "Read more" : "Show less"}
+          </span>
+        </Button>
+      </div>
+    </p>
+  );
+};
 
 const star = [
   { src: "../../img/star.png" },
@@ -102,11 +122,8 @@ function Card({ person }) {
           </div>
           <article className="cardInfo__info info">
             <div className="info__title">Description</div>
-            <p className="info__text">{person.text}</p>
-            <div className="infoButton">
-              <Button green small>
-                <span className="button__text ">Read more</span>
-              </Button>
+            <div className="info__text">
+              <ReadMore>{person.text}</ReadMore>
             </div>
           </article>
         </div>
