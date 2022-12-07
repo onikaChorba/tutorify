@@ -8,6 +8,7 @@ const initialDetails = [
     language: "English",
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const initialDetails = [
     language: "Spanish",
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const initialDetails = [
     language: "English",
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const initialDetails = [
     language: "Spanish",
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const initialDetails = [
     language: "English",
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
   },
 ];
 
