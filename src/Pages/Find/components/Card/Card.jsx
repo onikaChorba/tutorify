@@ -105,7 +105,7 @@ function Card({ person }) {
           </div>
         </div>
       </div>
-      <div style={{ width: "47%", marginTop: "66px" }}>
+      <div style={{ width: "43%", marginTop: "66px" }}>
         <div className="cardInfo">
           <nav className="cardInfo__nav">
             <ul style={{ display: "flex" }}>
