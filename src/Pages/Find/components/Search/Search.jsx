@@ -78,11 +78,6 @@ function Search({ details }) {
       </div>
       <FilterButtonBlock />
       {searchList()}
-      <div className="search__button">
-        <Button orange medium>
-          <span className="button__text">Show more</span>
-        </Button>
-      </div>
     </section>
   );
 }
