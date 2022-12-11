@@ -7,7 +7,7 @@ import Button from "@/components/Button";
 import SearchList from "../SearchList/SearchList";
 import search from "@/assets/img/find/search.png";
 import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
-import { FilterSelect } from "../FilterSelect/FilterSelect";
+import FilterSelect from "../../components/FilterSelect/FilterSelect";
 
 function Search({ details }) {
   const [searchField, setSearchField] = useState("");
@@ -26,7 +26,6 @@ function Search({ details }) {
   function searchList() {
     return <SearchList filteredPersons={filteredPersons} />;
   }
-
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
       <div

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Card from "../Card/Card";
 import Button from "../../../../components/Button";
 function SearchList({ filteredPersons }) {
-  const personRow = 2;
+  const personRow = 4;
   const [next, setNext] = useState(personRow);
   const handleMorePerson = () => {
     if (next < filteredPersons.length) {
@@ -12,9 +12,15 @@ function SearchList({ filteredPersons }) {
       setNext(personRow);
     }
   };
-  const filtered = filteredPersons
+
+  const filtered = [...filteredPersons]
     .slice(0, next)
-    .map((person) => <Card key={person.id} person={person} />);
+    .sort((a, b) => {
+      return a.stars - b.stars;
+    })
+    .map((person) => (
+      <Card key={person.id} person={person} stars={person.stars} />
+    ));
 
   return (
     <div>
