@@ -64,7 +64,10 @@ function Card({ person }) {
                 <p className="cardName-info__text"> {person.prof}</p>
               </div>
               <div className="cardName-star">
-                <p className="cardName-star__title"> 4.9 Rating</p>
+                <p className="cardName-star__title">
+                  <span className="cardName-star__title">{person.stars}</span>{" "}
+                  Rating
+                </p>
                 {star.map((el, key) => (
                   <img
                     src={el.src}

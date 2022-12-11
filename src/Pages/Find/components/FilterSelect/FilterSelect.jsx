@@ -1,14 +1,21 @@
 import "./FilterSelect.scss";
+import React from "react";
 
-export const FilterSelect = () => {
+export default function FilterSelect({}) {
   return (
-    <select>
-      <option value={1} className="selectOption">
-        Popular Lessons
-      </option>
-      <option value={2} className="selectOption">
-        Unpopular Lessons
-      </option>
-    </select>
+    <div className="filterSelect">
+      <select>
+        <option value="all" className="selectOption">
+          All Lessons
+        </option>
+
+        <option value="high" className="selectOption">
+          Popular Lessons
+        </option>
+        <option value="low" className="selectOption">
+          Unpopular Lessons
+        </option>
+      </select>
+    </div>
   );
-};
+}

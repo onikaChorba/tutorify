@@ -1,6 +1,7 @@
 const initialDetails = [
   {
     id: 1,
+    stars: 4.9,
     imgPath: "../../img/blockuser1.png",
     icon: "../../img/flet-icon1.png",
     name: "Jane Doe",
@@ -12,6 +13,7 @@ const initialDetails = [
   },
   {
     id: 2,
+    stars: 4.5,
     imgPath: "../../img/blockuser2.png",
     icon: "../../img/flet-icon2.png",
     name: "Mary Rosamund",
@@ -23,6 +25,7 @@ const initialDetails = [
   },
   {
     id: 3,
+    stars: 5,
     imgPath: "../../img/blockuser3.png",
     icon: "../../img/flet-icon3.png",
     name: "Sherlock Watson",
@@ -34,6 +37,7 @@ const initialDetails = [
   },
   {
     id: 4,
+    stars: 4,
     imgPath: "../../img/blockuser4.png",
     icon: "../../img/flet-icon4.png",
     name: "John Holmes",
@@ -45,6 +49,7 @@ const initialDetails = [
   },
   {
     id: 5,
+    stars: 4.1,
     imgPath: "../../img/blockuser4.png",
     icon: "../../img/flet-icon5.png",
     name: "Mycroft Lestrade",
