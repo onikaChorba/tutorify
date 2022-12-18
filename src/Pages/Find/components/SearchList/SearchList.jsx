@@ -1,7 +1,10 @@
 import React from "react";
+import { useMemo } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import Card from "../Card/Card";
 import Button from "../../../../components/Button";
+import initialDetails from "../../FindData";
 
 function SearchList({ filteredPersons }) {
   const personRow = 4;
@@ -15,39 +18,42 @@ function SearchList({ filteredPersons }) {
   };
 
   //useStateSelect
-  // const showAll = filterShowAll;
-  // const [showComponent, setShowComponeht] = useState(filterShowAll);
+  const cartDetails = [...initialDetails];
 
-  const filterShowAll = [...filteredPersons]
-    .slice(0, next)
-    .sort((a, b) => {
-      return a.id - b.id;
-      //return a.stars - b.stars;
-    })
-    .map((person) => (
-      <Card key={person.id} person={person} stars={person.stars} />
-    ));
+  const [searchList, setSearchList] = useState(cartDetails);
+  const [selectCategory, setSelectCategory] = useState();
+  useEffect(() => {
+    setSearchList(searchList);
+  }, []);
 
-  const filterShowHigh = [...filteredPersons]
-    .slice(0, next)
-    .sort((a, b) => {
-      return a.stars - b.stars;
-    })
-    .map((person) => (
-      <Card key={person.id} person={person} stars={person.stars} />
-    ));
-
-  function showSelect(value) {
-    if ((value = "all")) {
-      return <div> {filterShowAll}</div>;
-    } else if ((value = "high")) {
-      return <div> {filterShowHigh}</div>;
+  function getFilteredList() {
+    if (!selectCategory) {
+      return searchList.sort((a, b) => b.stars - a.stars);
     }
+    return searchList.sort((a, b) => a.stars - b.stars);
   }
-
+  let filteredList = useMemo(getFilteredList, [selectCategory, searchList]);
+  function handleCategoryChange(event) {
+    setSelectCategory(event.target.value);
+  }
   return (
-    <div filterShowAll={filterShowAll} filterShowHigh={filterShowHigh}>
-      {showSelect()}
+    <div className="filterSelect">
+      <select onChange={handleCategoryChange}>
+        {/* <option value="" className="selectOption">
+          All Lessons
+        </option> */}
+        <option value="high" className="selectOption">
+          Popular Lessons
+        </option>
+        <option value="low" className="selectOption">
+          Unpopular Lessons
+        </option>
+      </select>
+      <div>
+        {filteredList.map((person) => (
+          <Card key={person.id} person={person} stars={person.stars} />
+        ))}
+      </div>
       <div className="search__button" onClick={handleMorePerson}>
         <Button orange medium>
           <span className="button__text">Show more</span>
