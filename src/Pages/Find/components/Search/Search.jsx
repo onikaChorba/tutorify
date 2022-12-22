@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import { useMemo } from "react";
+import { useEffect } from "react";
+import Card from "../Card/Card";
 import "./Search.scss";
 
 import Button from "@/components/Button";
@@ -7,11 +9,10 @@ import Button from "@/components/Button";
 import SearchList from "../SearchList/SearchList";
 import search from "@/assets/img/find/search.png";
 import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
-import FilterSelect from "../../components/FilterSelect/FilterSelect";
+import initialDetails from "../../FindData";
 
 function Search({ details }) {
   const [searchField, setSearchField] = useState("");
-
   const filteredPersons = details.filter((person) => {
     return (
       person.name.toLowerCase().includes(searchField.toLowerCase()) ||
@@ -23,8 +24,23 @@ function Search({ details }) {
     setSearchField(e.target.value);
   };
 
-  function searchList() {
-    return <SearchList filteredPersons={filteredPersons} />;
+  const cartDetails = [...initialDetails];
+  const [searchList, setSearchList] = useState(cartDetails);
+  const [selectCategory, setSelectCategory] = useState("all");
+  useEffect(() => {
+    setSearchList(searchList);
+  }, [setSearchList]);
+
+  function getFilteredList() {
+    if (selectCategory === "all") {
+      return searchList;
+    } else if (selectCategory === "high") {
+      return searchList.sort((a, b) => b.stars - a.stars);
+    } else return searchList.sort((a, b) => a.stars - b.stars);
+  }
+  const filteredList = useMemo(getFilteredList, [selectCategory, searchList]);
+  function handleCategoryChange(event) {
+    setSelectCategory(event.target.value);
   }
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
@@ -73,10 +89,26 @@ function Search({ details }) {
             </Button>
           </div>
         </div>
-        <FilterSelect />
+        <div className="filterSelect">
+          <select onChange={handleCategoryChange}>
+            <option value="all" className="selectOption">
+              All Lessons
+            </option>
+            <option value="high" className="selectOption">
+              Popular Lessons
+            </option>
+            <option value="low" className="selectOption">
+              Unpopular Lessons
+            </option>
+          </select>
+        </div>
       </div>
       <FilterButtonBlock />
-      {searchList()}
+      <div>
+        {filteredList.map((person) => (
+          <Card key={person.id} person={person} stars={person.stars} />
+        ))}
+      </div>
     </section>
   );
 }
