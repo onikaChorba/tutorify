@@ -1,9 +1,29 @@
 import "./FilterButton.scss";
 
-export const FilterButton = (props) => {
+export const FilterButton = () => {
+  const buttons = [
+    {
+      name: "Also speaks",
+      value: "also",
+    },
+    {
+      name: "Native speaks",
+      value: "native",
+    },
+    {
+      name: "English",
+      value: "english",
+    },
+  ];
   return (
-    <button className="filterButton">
-      <p className="filterButton__text">{props.text}</p>
-    </button>
+    <div>
+      {buttons.map((type, index) => (
+        <>
+          <button key={index} value={type.value} className="filterButton">
+            <p className="filterButton__text">{type.name}</p>
+          </button>
+        </>
+      ))}
+    </div>
   );
 };
