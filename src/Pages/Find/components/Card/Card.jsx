@@ -81,7 +81,7 @@ function Card({ person }) {
             <div className="cardName-speak">
               <h2 className="cardName-speak__title">Speack </h2>
               <p className="cardName-speak__lang">
-                {person.language} - <span>native</span>
+                {person.language} - <span>{person.speaks}</span>
               </p>
             </div>
             <div className="cardName-from">

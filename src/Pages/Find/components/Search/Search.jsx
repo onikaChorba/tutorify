@@ -3,22 +3,13 @@ import { useMemo } from "react";
 import { useEffect } from "react";
 import Card from "../Card/Card";
 import "./Search.scss";
-
-import Button from "@/components/Button";
-
-import SearchList from "../SearchList/SearchList";
-import search from "@/assets/img/find/search.png";
 import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
+import Button from "@/components/Button";
+import search from "@/assets/img/find/search.png";
 import initialDetails from "../../FindData";
 
-function Search({ details }) {
+function Search() {
   const [searchField, setSearchField] = useState("");
-  const filteredPersons = details.filter((person) => {
-    return (
-      person.name.toLowerCase().includes(searchField.toLowerCase()) ||
-      person.language.toLowerCase().includes(searchField.toLowerCase())
-    );
-  });
 
   const handleChange = (e) => {
     setSearchField(e.target.value);
@@ -38,10 +29,22 @@ function Search({ details }) {
       return searchList.sort((a, b) => b.stars - a.stars);
     } else return searchList.sort((a, b) => a.stars - b.stars);
   }
+
   const filteredList = useMemo(getFilteredList, [selectCategory, searchList]);
   function handleCategoryChange(event) {
     setSelectCategory(event.target.value);
   }
+
+  //showMore
+  const personRow = 2;
+  const [next, setNext] = useState(personRow);
+  const handleMorePerson = () => {
+    if (next < filteredList.length) {
+      setNext(next + personRow);
+    } else {
+      setNext(personRow);
+    }
+  };
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
       <div
@@ -105,9 +108,27 @@ function Search({ details }) {
       </div>
       <FilterButtonBlock />
       <div>
-        {filteredList.map((person) => (
-          <Card key={person.id} person={person} stars={person.stars} />
-        ))}
+        {filteredList
+          .filter((person) => {
+            return (
+              person.name.toLowerCase().includes(searchField.toLowerCase()) ||
+              person.language.toLowerCase().includes(searchField.toLowerCase())
+            );
+          })
+          .map((person) => (
+            <Card
+              key={person.id}
+              person={person}
+              stars={person.stars}
+              speaks={person.speaks}
+            />
+          ))
+          .slice(0, next)}
+      </div>
+      <div className="search__button" onClick={handleMorePerson}>
+        <Button orange medium>
+          <span className="button__text">Show more</span>
+        </Button>
       </div>
     </section>
   );
