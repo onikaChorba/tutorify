@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMemo } from "react";
 import { useEffect } from "react";
-import Card from "../Card/Card";
+import Card from "../Card/CardMain/Card";
 import "./Search.scss";
 import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
 import Button from "@/components/Button";
@@ -45,6 +45,8 @@ function Search() {
       setNext(personRow);
     }
   };
+
+  //styles
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
       <div
@@ -92,8 +94,8 @@ function Search() {
             </Button>
           </div>
         </div>
-        <div className="filterSelect">
-          <select onChange={handleCategoryChange}>
+        <div className="filtersSelect">
+          <select onChange={handleCategoryChange} className="filterSelect">
             <option value="all" className="selectOption">
               All Lessons
             </option>
@@ -121,6 +123,7 @@ function Search() {
               person={person}
               stars={person.stars}
               speaks={person.speaks}
+              name={person.name}
             />
           ))
           .slice(0, next)}
