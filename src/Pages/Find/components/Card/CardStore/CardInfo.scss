@@ -1,0 +1,11 @@
+@import "@/theme/index.scss";
+.cardNav {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: $grey;
+  @include font-size(600, 16px, 27px);
+  &:hover {
+    color: $orang-strong;
+    border-bottom: 2px solid $orang-strong;
+  }
+}

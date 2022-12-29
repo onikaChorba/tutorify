@@ -11,6 +11,9 @@ const initialDetails = [
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
+    workingHours: "8:00-15:00",
+    holiday: "Monday",
+    holidayNacional: "Sunday",
   },
   {
     id: 2,
@@ -24,6 +27,9 @@ const initialDetails = [
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
+    workingHours: "8:00-14:00",
+    holiday: "Sunday",
+    holidayNacional: "Sunday",
   },
   {
     id: 3,
@@ -37,6 +43,8 @@ const initialDetails = [
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
+    workingHours: "8:00-18:00",
+    holiday: "Monday",
   },
   {
     id: 4,
@@ -50,6 +58,9 @@ const initialDetails = [
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
+    workingHours: "8:00-15:00",
+    holiday: "Sunday",
+    holidayNacional: "Sunday",
   },
   {
     id: 5,
@@ -63,6 +74,9 @@ const initialDetails = [
     price: "IDR - 85,730.10",
     from: "IDR - 485,730.10",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat aliquam integer sit mauris sit. Pellentesque urna, adipiscing at aliquam tempor non. Lectus bibendum sollicitudin aliquet id...",
+    workingHours: "12:00-15:00",
+    holiday: "Sunday",
+    holidayNacional: "Sunday",
   },
 ];
 

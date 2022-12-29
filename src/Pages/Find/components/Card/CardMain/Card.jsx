@@ -1,40 +1,20 @@
 import React from "react";
-import { useState } from "react";
 
 import "./Card.scss";
 
+import CardInfo from "../CardStore/CardInfo";
 import play from "@/assets/img/find/play.png";
 import userIcon from "@/assets/img/user-icon.png";
-import Button from "../../../../components/Button";
-const ReadMore = ({ children }) => {
-  const text = children;
-  const [isReadMore, setIsReadMore] = useState(true);
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
-  };
-  return (
-    <p className="text">
-      {isReadMore ? text.slice(0, 150) : text}
-      <div className="infoButton">
-        <Button green small>
-          <span onClick={toggleReadMore} className="read-or-hide button__text">
-            {isReadMore ? "Read more" : "Show less"}
-          </span>
-        </Button>
-      </div>
-    </p>
-  );
-};
-
-const star = [
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-];
+import Button from "../../../../../components/Button";
 
 function Card({ person }) {
+  const star = [
+    { src: "../../img/star.png" },
+    { src: "../../img/star.png" },
+    { src: "../../img/star.png" },
+    { src: "../../img/star.png" },
+    { src: "../../img/star.png" },
+  ];
   return (
     <div style={{ display: "flex" }}>
       <div className="card">
@@ -109,27 +89,7 @@ function Card({ person }) {
         </div>
       </div>
       <div style={{ width: "43%", marginTop: "66px" }}>
-        <div className="cardInfo">
-          <nav className="cardInfo__nav">
-            <ul style={{ display: "flex" }}>
-              <li className="cardNav">Profile</li>
-              <li className="cardNav">Schedule</li>
-            </ul>
-          </nav>
-          <div className="cardInfo__video cardVideo">
-            <img
-              className="cardInfoImg"
-              alt={person.name}
-              src={process.env.PUBLIC_URL + person.imgPath}
-            />
-          </div>
-          <article className="cardInfo__info info">
-            <div className="info__title">Description</div>
-            <div className="info__text">
-              <ReadMore>{person.text}</ReadMore>
-            </div>
-          </article>
-        </div>
+        <CardInfo person={person} />
       </div>
     </div>
   );
