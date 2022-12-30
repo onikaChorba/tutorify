@@ -60,9 +60,20 @@ function Search() {
     }),
     control: (provided) => ({
       ...provided,
-      marginTop: "5%",
+      width: "100%",
+      height: "66px",
+      border: "none",
+      borderRadius: "10px",
+      "&:hover": { borderColor: "#FB9C46" },
+      border: "1px solid #cccccc",
+      boxShadow: "none",
+    }),
+    singleValue: (defaultStyles) => ({
+      ...defaultStyles,
+      color: "#979797",
     }),
   };
+
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
       <div
