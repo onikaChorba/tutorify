@@ -8,18 +8,20 @@ import CardStoreVideo from "./CardStoreVideo/CardStoreVideo";
 
 function CardInfo({ person }) {
   const [isCardInfo, setCardInfo] = useState(true);
-  const handleClick = () => {
+  const handleClickProfile = () => {
     setCardInfo(!isCardInfo);
   };
-
+  const handleClickSchedule = () => {
+    setCardInfo(!isCardInfo);
+  };
   return (
     <div className="cardInfo">
       <nav className="cardInfo__nav">
         <ul style={{ display: "flex" }}>
-          <button onClick={handleClick}>
+          <button onClick={handleClickProfile}>
             <li className="cardNav">Profile </li>
           </button>
-          <button onClick={handleClick}>
+          <button onClick={handleClickSchedule}>
             <li className="cardNav">Schedule </li>
           </button>
         </ul>

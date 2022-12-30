@@ -27,6 +27,14 @@
 .search-name {
   border: 0px;
 }
-option {
-  width: 100%;
+.selectFilter {
+  width: 357px;
+  height: 66px;
+  background: $white;
+  border-radius: 10px;
+  @include font-size(600, 14px, 21px);
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

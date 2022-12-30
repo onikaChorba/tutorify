@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { useMemo } from "react";
-import { useEffect } from "react";
-import Card from "../Card/CardMain/Card";
+import React, { useState, useMemo, useEffect } from "react";
+import Select from "react-select";
 import "./Search.scss";
+
+import Card from "../Card/CardMain/Card";
 import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
 import Button from "@/components/Button";
 import search from "@/assets/img/find/search.png";
@@ -32,7 +32,7 @@ function Search() {
 
   const filteredList = useMemo(getFilteredList, [selectCategory, searchList]);
   function handleCategoryChange(event) {
-    setSelectCategory(event.target.value);
+    setSelectCategory(event.value);
   }
 
   //showMore
@@ -45,8 +45,24 @@ function Search() {
       setNext(personRow);
     }
   };
-
-  //styles
+  //options
+  const options = [
+    { value: "all", label: "All Lessons", className: "selectOption" },
+    { value: "high", label: "Popular Lessons", className: "selectOption" },
+    { value: "low", label: "Unpopular Lessons", className: "selectOption" },
+  ];
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      borderBottom: "1px dotted grey",
+      color: state.isSelected ? "white" : "#cccccc",
+      backgroundColor: state.isSelected ? " #FB9C46" : "white",
+    }),
+    control: (provided) => ({
+      ...provided,
+      marginTop: "5%",
+    }),
+  };
   return (
     <section className="search" style={{ paddingTop: "66px" }}>
       <div
@@ -95,17 +111,15 @@ function Search() {
           </div>
         </div>
         <div className="filtersSelect">
-          <select onChange={handleCategoryChange} className="filterSelect">
-            <option value="all" className="selectOption">
-              All Lessons
-            </option>
-            <option value="high" className="selectOption">
-              Popular Lessons
-            </option>
-            <option value="low" className="selectOption">
-              Unpopular Lessons
-            </option>
-          </select>
+          <Select
+            options={options}
+            onChange={handleCategoryChange}
+            className="selectFilter"
+            value={options.filter(function (option) {
+              return option.value === selectCategory;
+            })}
+            styles={customStyles}
+          />
         </div>
       </div>
       <FilterButtonBlock />
