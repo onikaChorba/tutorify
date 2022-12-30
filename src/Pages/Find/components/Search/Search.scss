@@ -6,7 +6,8 @@
     padding-bottom: 117px;
   }
 }
-.search-block {
+.search-block,
+.selectFilter {
   background: $white;
   border-radius: 10px;
   height: 66px;
@@ -27,6 +28,13 @@
 .search-name {
   border: 0px;
 }
-option {
-  width: 100%;
+.selectFilter {
+  width: 357px;
+  height: 66px;
+  background: $white;
+  @include font-size(400, 16px, 21px);
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
