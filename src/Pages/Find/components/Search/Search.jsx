@@ -1,41 +1,41 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import "./Search.scss";
 
-import Card from "../Card/CardMain/Card";
-import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
+import Card from "../Card/CardMain/CardMain";
+//import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
 import Button from "@/components/Button";
 import search from "@/assets/img/find/search.png";
-import initialDetails from "../../FindData";
+import data from "../../FindData";
 
 function Search() {
+  //useState find in input
   const [searchField, setSearchField] = useState("");
 
   const handleChange = (e) => {
     setSearchField(e.target.value);
   };
 
-  const cartDetails = [...initialDetails];
-  const [searchList, setSearchList] = useState(cartDetails);
+  //useState select
+  const cartDetails = [...data.initialDetails];
+
   const [selectCategory, setSelectCategory] = useState("all");
-  useEffect(() => {
-    setSearchList(searchList);
-  }, [setSearchList]);
 
   function getFilteredList() {
     if (selectCategory === "all") {
-      return searchList;
+      return cartDetails;
     } else if (selectCategory === "high") {
-      return searchList.sort((a, b) => b.stars - a.stars);
-    } else return searchList.sort((a, b) => a.stars - b.stars);
+      return cartDetails.sort((a, b) => b.stars - a.stars);
+    } else if (selectCategory === "low") {
+      return cartDetails.sort((a, b) => a.stars - b.stars);
+    }
   }
 
-  const filteredList = useMemo(getFilteredList, [selectCategory, searchList]);
   function handleCategoryChange(event) {
     setSelectCategory(event.value);
   }
 
-  //showMore
+  //useState showMore
   const personRow = 2;
   const [next, setNext] = useState(personRow);
   const handleMorePerson = () => {
@@ -45,16 +45,18 @@ function Search() {
       setNext(personRow);
     }
   };
-  //options
+
+  //options style
+
   const options = [
-    { value: "all", label: "All Lessons", className: "selectOption" },
-    { value: "high", label: "Popular Lessons", className: "selectOption" },
-    { value: "low", label: "Unpopular Lessons", className: "selectOption" },
+    { value: "all", label: "All Lessons" },
+    { value: "high", label: "Popular Lessons" },
+    { value: "low", label: "Unpopular Lessons" },
   ];
   const customStyles = {
     option: (provided, state) => ({
       ...provided,
-      borderBottom: "1px dotted grey",
+      borderBottom: "1px dotted #cccccc",
       color: state.isSelected ? "white" : "#cccccc",
       backgroundColor: state.isSelected ? " #FB9C46" : "white",
     }),
@@ -65,7 +67,6 @@ function Search() {
       border: "none",
       borderRadius: "10px",
       "&:hover": { borderColor: "#FB9C46" },
-      border: "1px solid #cccccc",
       boxShadow: "none",
     }),
     singleValue: (defaultStyles) => ({
@@ -74,47 +75,43 @@ function Search() {
     }),
   };
 
+  const filteredList = useMemo(getFilteredList, [selectCategory, cartDetails]);
+  //filtered Button
+  // const [filterButton, setFilterButton] = useState(cartDetails);
+  // const handleChangeFilter = (e) => {
+  //   let stButton = e.target.value;
+  //   let stCard = cartDetails.tipo;
+  //   alert(stButton);
+  //   alert();
+  //   if (filterButton === "All") {
+  //     return cartDetails.filter((e) => e.tipo === "All");
+  //   }
+  //   setFilterButton();
+  // };
+
   return (
-    <section className="search" style={{ paddingTop: "66px" }}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
-        <div
-          className="search-block"
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "70%",
-          }}
-        >
+    <section className="search">
+      <div className="search__block">
+        <div className="search-block">
           <div className="search-input">
             <input
               className="search-name search-lang"
               type="search"
               placeholder="Language lessons"
               onChange={handleChange}
-              style={{
-                width: "50%",
-              }}
             />
             <input
               className="search-name search-lang"
               type="search"
               placeholder="Tutor Name"
               onChange={handleChange}
-              style={{
-                width: "50%",
-              }}
             />
             <Button orange search>
-              <div style={{ display: "flex" }}>
+              <div className="search-button">
                 <img
                   src={search}
                   alt="search"
-                  style={{ paddingRight: "10px" }}
+                  className="search-button__img"
                 ></img>
                 <span className="button__text">Search</span>
               </div>
@@ -133,7 +130,20 @@ function Search() {
           />
         </div>
       </div>
-      <FilterButtonBlock />
+      <div>
+        {/* <FilterButtonBlock /> */}
+        <div style={{ paddingTop: "66px" }}>
+          {data.buttons.map((type, index) => (
+            <button
+              key={index.toString()}
+              value={type.value}
+              className="filterButton"
+            >
+              <p className="filterButton__text">{type.name}</p>
+            </button>
+          ))}
+        </div>
+      </div>
       <div>
         {filteredList
           .filter((person) => {
@@ -149,6 +159,7 @@ function Search() {
               stars={person.stars}
               speaks={person.speaks}
               name={person.name}
+              tipo={person.tipo}
             />
           ))
           .slice(0, next)}
