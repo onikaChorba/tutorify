@@ -1,10 +1,20 @@
 @import "@/theme/index.scss";
 .search {
+  padding-top: 66px;
   &__button {
     display: flex;
     justify-content: center;
     padding-bottom: 117px;
   }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.search-block {
+  display: flex;
+  justify-content: space-between;
+  width: "70%";
 }
 .search-block,
 .selectFilter {
@@ -21,12 +31,20 @@
   padding-top: 10px;
   margin-right: 18px;
 }
+.search-button {
+  display: flex;
+  &__img {
+    padding-right: 10px;
+  }
+}
 .search-lang {
   margin-left: 32px;
   border: 0px;
+  width: 50%;
 }
 .search-name {
   border: 0px;
+  width: 50%;
 }
 .selectFilter {
   width: 357px;

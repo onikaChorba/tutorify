@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Calendar from "moedim";
+import "../../CardMain/CardMain.scss";
+
 function CardStoreCalendar({ person }) {
   const [value, setValue] = useState(new Date());
   const star = [
