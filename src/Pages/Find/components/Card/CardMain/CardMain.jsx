@@ -3,7 +3,7 @@ import React from "react";
 import "./CardMain.scss";
 
 import CardInfo from "../CardStore/CardInfo";
-
+import Button from "../../../../../components/Button";
 import { CardImg } from "./CardImg/CardImg";
 import { CardNumberLessons } from "./CardNumberLessons/CardNumberLessons";
 import { CardSpeack } from "./CardSpeack /CardSpeack";
@@ -22,7 +22,14 @@ function Card({ person }) {
             <CardName person={person} />
             <CardSpeack person={person} />
             <CardFrom person={person} />
-            <CardStudent />
+            <div style={{ display: "flex", justifyContent: "spase-beetwean" }}>
+              <CardStudent />
+              <div className="cardButton">
+                <Button green small>
+                  <span className="button__text "> Book</span>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

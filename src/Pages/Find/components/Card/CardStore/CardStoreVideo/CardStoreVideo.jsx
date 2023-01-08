@@ -1,29 +1,7 @@
-import { useState } from "react";
 import Button from "@/components/Button";
+import { NavLink } from "react-router-dom";
 
 function CardStoreVideo({ person }) {
-  const ReadMore = ({ children }) => {
-    const text = children;
-    const [isReadMore, setIsReadMore] = useState(true);
-    const toggleReadMore = () => {
-      setIsReadMore(!isReadMore);
-    };
-    return (
-      <p className="text">
-        {isReadMore ? text.slice(0, 150) : text}
-        <div className="infoButton">
-          <Button green small>
-            <span
-              onClick={toggleReadMore}
-              className="read-or-hide button__text"
-            >
-              {isReadMore ? "Read more" : "Show less"}
-            </span>
-          </Button>
-        </div>
-      </p>
-    );
-  };
   return (
     <section className="cardInfoVideo">
       <div className="cardInfo__video cardVideo">
@@ -35,9 +13,12 @@ function CardStoreVideo({ person }) {
       </div>
       <article className="cardInfo__info info">
         <div className="info__title">Description</div>
-        <div className="info__text">
-          <ReadMore>{person.text}</ReadMore>
-        </div>
+        <div className="info__text">{person.text}</div>
+        <NavLink className="cardNav active" to="/find/Profile">
+          <Button green small>
+            <span className="button__text ">Read More</span>
+          </Button>
+        </NavLink>
       </article>
     </section>
   );
