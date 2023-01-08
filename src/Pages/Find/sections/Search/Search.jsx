@@ -2,8 +2,8 @@ import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import "./Search.scss";
 
-import Card from "../Card/CardMain/CardMain";
-//import { FilterButtonBlock } from "../../sections/FilterButtomBlock/FilterButtomBlock";
+import Card from "../../components/Card/CardMain/CardMain";
+import { FilterButtonBlock } from "../FilterButtomBlock/FilterButtomBlock";
 import Button from "@/components/Button";
 import search from "@/assets/img/find/search.png";
 import data from "../../FindData";
@@ -131,18 +131,7 @@ function Search() {
         </div>
       </div>
       <div>
-        {/* <FilterButtonBlock /> */}
-        <div style={{ paddingTop: "66px" }}>
-          {data.buttons.map((type, index) => (
-            <button
-              key={index.toString()}
-              value={type.value}
-              className="filterButton"
-            >
-              <p className="filterButton__text">{type.name}</p>
-            </button>
-          ))}
-        </div>
+        <FilterButtonBlock />
       </div>
       <div>
         {filteredList

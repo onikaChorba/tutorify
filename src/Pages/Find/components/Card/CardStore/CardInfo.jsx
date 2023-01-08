@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 import "../CardStore/CardInfo.scss";
 
@@ -9,10 +8,10 @@ import CardStoreVideo from "./CardStoreVideo/CardStoreVideo";
 
 function CardInfo({ person }) {
   const [isCardInfo, setCardInfo] = useState(true);
-  const handleClickProfile = () => {
+  const handleClickSchedule = () => {
     setCardInfo(!isCardInfo);
   };
-  const handleClickSchedule = () => {
+  const handleClickProfile = () => {
     setCardInfo(!isCardInfo);
   };
   return (
@@ -20,7 +19,7 @@ function CardInfo({ person }) {
       <nav className="cardInfo__nav">
         <ul style={{ display: "flex" }}>
           <button onClick={handleClickProfile}>
-            <li className="cardNav">Profile</li>
+            <li className="cardNav cardNavActive">Profile</li>
           </button>
           <button onClick={handleClickSchedule}>
             <li className="cardNav">Schedule </li>
