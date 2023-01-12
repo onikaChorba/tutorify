@@ -6,9 +6,10 @@ import { CardNumberLessons } from "../../../Find/components/Card/CardMain/CardNu
 import { CardSpeack } from "../../../Find/components/Card/CardMain/CardSpeack /CardSpeack";
 import { CardStudent } from "../../../Find/components/Card/CardMain/CardStudent/CardStudent";
 import { ProfileInfoAbout } from "../ProfileInfoAbout/ProfileInfoAbout";
-import { ProfileInfoNav } from "../ProfileInfoNav/ProfileInfoNav";
+import { ProfileInfoNavMain } from "../ProfileInfoNavMain/ProfileInfoNavMain";
 import { ProfileInfoSchedule } from "../ProfileInfoSchedule/ProfileInfoSchedule";
 import { ProfileInfoReview } from "../ProfileInfoReview/ProfileInfoReview";
+import { ProfileInfoResume } from "../ProfileInfoResume/ProfileInfoResume";
 export const ProfileInfoCard = ({ person }) => {
   const icon = [
     { src: "../../img/icon1.png" },
@@ -47,10 +48,11 @@ export const ProfileInfoCard = ({ person }) => {
           </div>
         </div>
       </div>
-      <ProfileInfoNav />
+      <ProfileInfoNavMain />
       <ProfileInfoAbout person={person} />
       <ProfileInfoSchedule />
       <ProfileInfoReview />
+      <ProfileInfoResume />
     </section>
   );
 };

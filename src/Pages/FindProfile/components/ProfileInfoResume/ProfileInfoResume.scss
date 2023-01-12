@@ -1,6 +1,6 @@
 @import "@/theme/index.scss";
 
-.profileInfoReviewArticle {
+.profileInfoResumeArticle {
   width: 65%;
   padding-top: 34px;
   padding-bottom: 34px;
@@ -17,7 +17,18 @@
     padding-bottom: 15px;
     border-bottom: 1px solid #cccccc;
   }
+  &__text {
+    margin-left: 34px;
+    margin-right: 34px;
+    color: #393939;
+    @include font-size(400, 14px, 24px);
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.profileInfoReview {
+.profileInfoResume {
   padding-top: 34px;
+}
+.resumeText {
+  width: 20%;
 }
