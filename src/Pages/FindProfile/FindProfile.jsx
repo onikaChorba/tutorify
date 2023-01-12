@@ -1,12 +1,11 @@
 import React from "react";
+import initialDetails from "../Find/FindData";
 
-import { ProfileInfoNav } from "./components/ProfileInfoNav/ProfileInfoNav";
 import { ProfileInfo } from "./section/ProfileInfo/ProfileInfo";
 function FindProfile() {
   return (
     <menu>
-      <ProfileInfo />
-      <ProfileInfoNav />
+      <ProfileInfo person={initialDetails} />
     </menu>
   );
 }
