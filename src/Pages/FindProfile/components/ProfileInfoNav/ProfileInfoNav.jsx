@@ -1,13 +1,17 @@
 import "./ProfileInfoNav.scss";
 export const ProfileInfoNav = () => {
+  const navInfo = [
+    { text: "Education" },
+    { text: "Work experience" },
+    { text: "Certifications" },
+  ];
   return (
     <section className="profileInfoNav">
       <nav>
         <ul className="infoNavLinks">
-          <li className="infoNavLink">About</li>
-          <li className="infoNavLink">Schedule</li>
-          <li className="infoNavLink">Reviews</li>
-          <li className="infoNavLink">Resume</li>
+          {navInfo.map((el) => (
+            <li className="infoNavLink">{el.text}</li>
+          ))}
         </ul>
       </nav>
     </section>

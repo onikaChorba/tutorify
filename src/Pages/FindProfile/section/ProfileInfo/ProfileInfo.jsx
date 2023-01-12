@@ -1,6 +1,7 @@
 import "./ProfileInfo.scss";
 import data from "../../../Find/FindData";
 import { ProfileInfoCard } from "../../components/ProfileInfoCard/ProfileInfoCard";
+import { ProfileInfoBadge } from "../../components/ProfileInfoBadge/ProfileInfoBadge";
 
 export const ProfileInfo = () => {
   return (
@@ -13,7 +14,7 @@ export const ProfileInfo = () => {
         </div>
       </div>
       <div className="profileInfo__badge">
-        <>Hi</>
+        <ProfileInfoBadge />
       </div>
     </section>
   );

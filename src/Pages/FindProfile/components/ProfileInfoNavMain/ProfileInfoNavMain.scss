@@ -1,14 +1,14 @@
 @import "@/theme/index.scss";
 
-.infoNavLinks {
+.infoNavMainLinks {
   display: flex;
   padding-top: 37px;
-  padding-bottom: 20px;
+  padding-bottom: 50pxs;
 }
-.infoNavLink {
+.infoNavMainLink {
   color: #393939;
-  @include font-size(600, 14px, 20px);
-  margin-right: 30px;
+  @include font-size(600, 16px, 24px);
+  margin-right: 50px;
   margin-left: 30px;
   &:hover {
     color: $orang-strong;
