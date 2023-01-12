@@ -1,12 +1,9 @@
 @import "@/theme/index.scss";
 
 .profileInfo {
-  // display: flex;
-  // justify-content: space-between;
-  // &__info {
-  //   width: 75%;
-  // }
-  // &__infoShot {
-  //   width: 35%;
-  // }
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    width: 100%;
+  }
 }

@@ -1,0 +1,17 @@
+@import "@/theme/index.scss";
+
+.infoNavLinks {
+  display: flex;
+  padding-top: 37px;
+  padding-bottom: 50pxs;
+}
+.infoNavLink {
+  color: #393939;
+  @include font-size(600, 16px, 24px);
+  margin-right: 50px;
+  margin-left: 30px;
+  &:hover {
+    color: $orang-strong;
+    border-bottom: 2px solid $orang-strong;
+  }
+}

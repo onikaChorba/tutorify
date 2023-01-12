@@ -1,0 +1,30 @@
+@import "@/theme/index.scss";
+
+.profileInfoAbout {
+  width: 65%;
+
+  background: $white;
+  box-shadow: 0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
+    0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
+    0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
+  border-radius: 25px;
+}
+.profileInfoAboutArticle {
+  margin: 34px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  &__title {
+    color: black;
+    @include font-size(600, 20px, 120%);
+    padding-bottom: 5px;
+  }
+  &__text {
+    color: $grey-light;
+    @include font-size(400, 14px, 170%);
+  }
+}
+.read-more-less--more--about,
+.read-more-less--less--about {
+  color: $orang-strong;
+}

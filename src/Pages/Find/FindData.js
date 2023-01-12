@@ -16,6 +16,8 @@ const data = {
       holiday: "Monday",
       holidayNacional: "Sunday",
       tipo: "Native speaks",
+      about:
+        "I am an actor and a writer as well as an English teacher. I have appeared on TV and in short films. I love reading and watching TV and movies. One of my favorite movies is The Truman Show. I am also studying for a Masters degree in screenwriting... Read more",
     },
     {
       id: 2,
@@ -33,6 +35,8 @@ const data = {
       holiday: "Sunday",
       holidayNacional: "Sunday",
       tipo: "Also speaks",
+      about:
+        "I am an actor and a writer as well as an English teacher. I have appeared on TV and in short films. I love reading and watching TV and movies. One of my favorite movies is The Truman Show. I am also studying for a Masters degree in screenwriting... Read more",
     },
     {
       id: 3,
@@ -49,6 +53,8 @@ const data = {
       workingHours: "8:00-18:00",
       holiday: "Monday",
       tipo: "Native speaks",
+      about:
+        "I am an actor and a writer as well as an English teacher. I have appeared on TV and in short films. I love reading and watching TV and movies. One of my favorite movies is The Truman Show. I am also studying for a Masters degree in screenwriting... Read more",
     },
     {
       id: 4,
@@ -66,6 +72,8 @@ const data = {
       holiday: "Sunday",
       holidayNacional: "Sunday",
       tipo: "English",
+      about:
+        "I am an actor and a writer as well as an English teacher. I have appeared on TV and in short films. I love reading and watching TV and movies. One of my favorite movies is The Truman Show. I am also studying for a Masters degree in screenwriting... Read more",
     },
     {
       id: 5,
@@ -83,6 +91,8 @@ const data = {
       holiday: "Sunday",
       holidayNacional: "Sunday",
       tipo: "Also speaks",
+      about:
+        "I am an actor and a writer as well as an English teacher. I have appeared on TV and in short films. I love reading and watching TV and movies. One of my favorite movies is The Truman Show. I am also studying for a Masters degree in screenwriting... Read more",
     },
   ],
   buttons: [

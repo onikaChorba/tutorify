@@ -5,7 +5,10 @@ import { CardName } from "../../../Find/components/Card/CardMain/CardName/CardNa
 import { CardNumberLessons } from "../../../Find/components/Card/CardMain/CardNumberLessons/CardNumberLessons";
 import { CardSpeack } from "../../../Find/components/Card/CardMain/CardSpeack /CardSpeack";
 import { CardStudent } from "../../../Find/components/Card/CardMain/CardStudent/CardStudent";
-
+import { ProfileInfoAbout } from "../ProfileInfoAbout/ProfileInfoAbout";
+import { ProfileInfoNav } from "../ProfileInfoNav/ProfileInfoNav";
+import { ProfileInfoSchedule } from "../ProfileInfoSchedule/ProfileInfoSchedule";
+import { ProfileInfoReview } from "../ProfileInfoReview/ProfileInfoReview";
 export const ProfileInfoCard = ({ person }) => {
   const icon = [
     { src: "../../img/icon1.png" },
@@ -13,35 +16,41 @@ export const ProfileInfoCard = ({ person }) => {
     { src: "../../img/icon3.png" },
   ];
   return (
-    <section className="profileInfoCard">
-      <div className="profileInfoCardBlock">
-        <div className="profileInfoCardBlock__img">
-          <img
-            className="profileImg"
-            alt={person.name}
-            src={process.env.PUBLIC_URL + person.imgPath}
-          />
-        </div>
-        <div className="profileInfoCardBlock__info">
-          <CardName person={person} />
-          <CardFrom person={person} />
-          <CardSpeack person={person} />
-        </div>
-      </div>
-      <div className="profileInfoCardNumber">
-        <CardNumberLessons />
-        <CardStudent />
-        <div className="iconBlock">
-          {icon.map((el, key) => (
+    <section>
+      <div className="profileInfoCard">
+        <div className="profileInfoCardBlock">
+          <div className="profileInfoCardBlock__img">
             <img
-              src={el.src}
-              className="iconBlock__icon"
-              alt="icon"
-              key={key.toString()}
+              className="profileImg"
+              alt={person.name}
+              src={process.env.PUBLIC_URL + person.imgPath}
             />
-          ))}
+          </div>
+          <div className="profileInfoCardBlock__info">
+            <CardName person={person} />
+            <CardFrom person={person} />
+            <CardSpeack person={person} />
+          </div>
+        </div>
+        <div className="profileInfoCardNumber">
+          <CardNumberLessons />
+          <CardStudent />
+          <div className="iconBlock">
+            {icon.map((el, key) => (
+              <img
+                src={el.src}
+                className="iconBlock__icon"
+                alt="icon"
+                key={key.toString()}
+              />
+            ))}
+          </div>
         </div>
       </div>
+      <ProfileInfoNav />
+      <ProfileInfoAbout person={person} />
+      <ProfileInfoSchedule />
+      <ProfileInfoReview />
     </section>
   );
 };

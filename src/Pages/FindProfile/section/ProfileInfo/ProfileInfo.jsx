@@ -1,14 +1,18 @@
-import { ProfileInfoCard } from "../../components/ProfileInfoCard/ProfileInfoCard";
+import "./ProfileInfo.scss";
 import data from "../../../Find/FindData";
+import { ProfileInfoCard } from "../../components/ProfileInfoCard/ProfileInfoCard";
+
 export const ProfileInfo = () => {
   return (
     <section className="profileInfo">
       <div className="profileInfo__info">
-        {data.initialDetails.map((person) => (
-          <ProfileInfoCard person={person} />
-        ))}
+        <div>
+          {data.initialDetails.map((person, key) => (
+            <ProfileInfoCard person={person} key={key.toString()} />
+          ))}
+        </div>
       </div>
-      <div className="profileInfo__infoShot">
+      <div className="profileInfo__badge">
         <>Hi</>
       </div>
     </section>
