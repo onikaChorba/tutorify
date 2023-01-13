@@ -1,9 +1,15 @@
 @import "@/theme/index.scss";
-
+.cardMain {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  @include screen-tb {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 .card {
-  min-height: 575px;
-  width: 37%;
-  margin: 66px 2% 66px 10%;
+  margin: 66px 2% 33px 10%;
   background: $white;
   box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
     0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
@@ -11,8 +17,18 @@
     0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
     0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
   border-radius: 10px;
+  @include screen-tb {
+    min-height: 575px;
+    width: 47%;
+  }
+  @include screen-lp {
+    margin: 66px 2% 33px 10%;
+    width: 37%;
+    min-height: 575px;
+  }
 }
 .cardImg {
+  width: 95%;
   padding-left: 20px;
 }
 
@@ -96,4 +112,5 @@
 .cardButton {
   padding-right: 20%;
   padding-top: 4%;
+  padding-bottom: 30px;
 }

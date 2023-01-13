@@ -15,10 +15,13 @@
   &__img {
     padding-top: 340px;
     width: 100%;
-
+    display: flex;
+    justify-content: center;
+    padding-bottom: 66px;
     @include screen-tb {
       width: 45%;
       margin-bottom: 20px;
+      padding-bottom: 0px;
     }
   }
 
