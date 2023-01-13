@@ -107,14 +107,14 @@ function Search() {
               onChange={handleChange}
             />
             <Button orange search>
-              <div className="search-button">
+              <button className="search-button">
                 <img
                   src={search}
                   alt="search"
                   className="search-button__img"
                 ></img>
                 <span className="button__text">Search</span>
-              </div>
+              </button>
             </Button>
           </div>
         </div>

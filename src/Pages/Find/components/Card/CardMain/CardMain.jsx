@@ -13,7 +13,7 @@ import { CardName } from "./CardName/CardName";
 
 function Card({ person }) {
   return (
-    <div style={{ display: "flex" }}>
+    <section className="cardMain">
       <div className="card">
         <CardImg person={person} />
         <div style={{ paddingLeft: "31px" }}>
@@ -33,10 +33,10 @@ function Card({ person }) {
           </div>
         </div>
       </div>
-      <div style={{ width: "43%", marginTop: "66px" }}>
+      <div className="cardMainInfo">
         <CardInfo person={person} />
       </div>
-    </div>
+    </section>
   );
 }
 

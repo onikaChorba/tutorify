@@ -8,14 +8,19 @@
   }
   &__block {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    @include screen-tb {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 }
 .search-block {
   display: flex;
   justify-content: space-between;
-  width: "70%";
+  width: 100%;
 }
+
 .search-block,
 .selectFilter {
   background: $white;
@@ -34,19 +39,28 @@
 .search-button {
   display: flex;
   &__img {
-    padding-right: 10px;
+    display: none;
+    @include screen-lp {
+      display: block;
+      padding-right: 10px;
+    }
   }
 }
 .search-lang {
-  margin-left: 32px;
+  margin-left: 10px;
   border: 0px;
   width: 50%;
+  @include screen-lg {
+    margin-left: 32px;
+  }
 }
 .search-name {
   border: 0px;
   width: 50%;
 }
 .selectFilter {
+  margin-top: 20px;
+  max-width: 88%;
   width: 357px;
   height: 66px;
   background: $white;
@@ -55,4 +69,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include screen-tb {
+    margin-top: 0px;
+    margin-left: 10px;
+    max-width: 100%;
+  }
 }
