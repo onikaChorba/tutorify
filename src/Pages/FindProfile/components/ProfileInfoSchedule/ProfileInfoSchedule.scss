@@ -2,17 +2,17 @@
 @import "react-big-calendar/lib/sass/styles";
 
 .profileInfoScheduleArticle {
-  width: 65%;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background: $white;
   box-shadow: 0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
     0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
     0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
   border-radius: 25px;
   &__title {
-    margin-left: 34px;
-    margin-right: 34px;
+    margin-left: 35px;
+    margin-right: 35px;
     color: black;
     @include font-size(600, 20px, 120%);
     padding-bottom: 15px;
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 34px;
+    padding-top: 35px;
     padding-bottom: 34px;
   }
   &__workHours {
@@ -37,8 +37,9 @@
 }
 .rbc-btn-group {
   font-family: "Poppins", sans-serif;
-  height: 39px;
+  height: 37px;
   width: auto;
+  border: none;
   box-shadow: 0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
     0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
     0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
@@ -58,6 +59,7 @@
     0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
     0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
   border-radius: 5px;
+  color: #979797;
 }
 .rbc-button-link {
   color: $black-light;
