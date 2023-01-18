@@ -50,7 +50,7 @@ export const ProfileInfoCard = ({ person }) => {
       </div>
       <ProfileInfoNavMain />
       <ProfileInfoAbout person={person} />
-      <ProfileInfoSchedule />
+      <ProfileInfoSchedule person={person} />
       <ProfileInfoReview person={person} />
       <ProfileInfoResume />
     </section>
