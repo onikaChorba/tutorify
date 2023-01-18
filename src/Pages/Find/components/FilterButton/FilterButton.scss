@@ -21,3 +21,10 @@
     @include font-size(400, 14px, 21px);
   }
 }
+.filterButtonBlock {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 33px;
+  padding-bottom: 16px;
+}

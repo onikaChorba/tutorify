@@ -21,3 +21,24 @@
 .profileInfoReview {
   padding-top: 34px;
 }
+.rewiewStarsBlock {
+  margin-left: 34px;
+  margin-right: 34px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #cccccc;
+  &__stars {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 30%;
+    border-right: 1px solid #cccccc;
+  }
+  &__starsInfo {
+    width: 50%;
+    padding-top: 31px;
+    padding-left: 10px;
+  }
+  &__review {
+    margin: 34px;
+  }
+}
