@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   &__info {
-    width: 100%;
+    width: 65%;
+  }
+  &__badge {
+    width: 33%;
   }
 }

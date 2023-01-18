@@ -1,11 +1,12 @@
 import "./ProfileInfoSchedule.scss";
 // import Calendar from "moedim";
-import React, { useState } from "react";
+import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 
 export const ProfileInfoSchedule = ({ person }) => {
   const localizer = momentLocalizer(moment);
+
   return (
     <section>
       <div className="profileInfoSchedule">
