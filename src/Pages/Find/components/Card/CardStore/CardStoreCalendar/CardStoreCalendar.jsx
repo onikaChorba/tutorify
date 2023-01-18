@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Calendar from "moedim";
 
 import "./CardStoreCalendar";
-//import "../../CardMain/CardMain.scss";
 
 import { CardName } from "../../CardMain/CardName/CardName";
 
