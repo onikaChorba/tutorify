@@ -1,0 +1,17 @@
+@import "@/theme/index.scss";
+.starsDetails {
+  @include position-sb(flex, space-between, center);
+  &__numberStars {
+    @include font-size(400, 14px, 35px);
+    color: $black-light;
+  }
+  &__border {
+    width: 259px;
+    height: 6px;
+    background: #c4c4c4;
+    border-radius: 3px;
+    &:hover {
+      background: $orang-strong;
+    }
+  }
+}

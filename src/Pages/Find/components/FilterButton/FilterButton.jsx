@@ -1,5 +1,4 @@
 import "./FilterButton.scss";
-
 import data from "../../FindData";
 
 export const FilterButton = () => {
