@@ -1,6 +1,5 @@
 import "./ProfileInfoCard.scss";
 
-import { CardFrom } from "../../../Find/components/Card/CardMain/CardFrom/CardFrom";
 import { CardName } from "../../../Find/components/Card/CardMain/CardName/CardName";
 import { CardNumberLessons } from "../../../Find/components/Card/CardMain/CardNumberLessons/CardNumberLessons";
 import { CardSpeack } from "../../../Find/components/Card/CardMain/CardSpeack /CardSpeack";
@@ -10,6 +9,7 @@ import { ProfileInfoNavMain } from "../ProfileInfoNavMain/ProfileInfoNavMain";
 import { ProfileInfoSchedule } from "../ProfileInfoSchedule/ProfileInfoSchedule";
 import { ProfileInfoReview } from "../ProfileInfoReview/ProfileInfoReview";
 import { ProfileInfoResume } from "../ProfileInfoResume/ProfileInfoResume";
+import CardFrom from "../../../Find/components/Card/CardMain/CardFrom/CardFrom.jsx";
 export const ProfileInfoCard = ({ person }) => {
   const icon = [
     { src: "../../img/icon1.png" },
