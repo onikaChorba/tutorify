@@ -1,4 +1,4 @@
-export const CardFrom = ({ person }) => {
+function CardFrom({ person }) {
   return (
     <div className="cardName-from">
       <div className="price">
@@ -11,4 +11,5 @@ export const CardFrom = ({ person }) => {
       </div>
     </div>
   );
-};
+}
+export default CardFrom;

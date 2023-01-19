@@ -7,7 +7,7 @@ import Button from "../../../../../components/Button";
 import { CardImg } from "./CardImg/CardImg";
 import { CardNumberLessons } from "./CardNumberLessons/CardNumberLessons";
 import { CardSpeack } from "./CardSpeack /CardSpeack";
-import { CardFrom } from "./CardFrom/CardFrom";
+import CardFrom from "../CardMain/CardFrom/CardFrom.jsx";
 import { CardStudent } from "./CardStudent/CardStudent";
 import { CardName } from "./CardName/CardName";
 
