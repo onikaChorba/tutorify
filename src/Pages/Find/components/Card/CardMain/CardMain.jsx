@@ -21,7 +21,9 @@ function Card({ person }) {
           <div>
             <CardName person={person} />
             <CardSpeack person={person} />
-            <CardFrom person={person} />
+            <div className="cardFrom">
+              <CardFrom person={person} />
+            </div>
             <div style={{ display: "flex", justifyContent: "spase-beetwean" }}>
               <CardStudent />
               <div className="cardButton">

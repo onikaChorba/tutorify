@@ -83,7 +83,10 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 22px;
+}
+.cardFrom {
   border-bottom: 1px solid #cccccc;
+  margin-right: 7%;
 }
 .price {
   &__title {

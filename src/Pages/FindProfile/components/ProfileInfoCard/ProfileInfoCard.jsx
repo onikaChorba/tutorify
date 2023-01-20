@@ -29,7 +29,9 @@ export const ProfileInfoCard = ({ person }) => {
           </div>
           <div className="profileInfoCardBlock__info">
             <CardName person={person} />
-            <CardFrom person={person} />
+            <div className="profileInfoFrom">
+              <CardFrom person={person} />
+            </div>
             <CardSpeack person={person} />
           </div>
         </div>
