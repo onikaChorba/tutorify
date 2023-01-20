@@ -51,10 +51,18 @@ export const ProfileInfoCard = ({ person }) => {
         </div>
       </div>
       <ProfileInfoNavMain />
-      <ProfileInfoAbout person={person} />
-      <ProfileInfoSchedule person={person} />
-      <ProfileInfoReview person={person} />
-      <ProfileInfoResume />
+      <div id="About">
+        <ProfileInfoAbout person={person} />
+      </div>
+      <div id="Schedule">
+        <ProfileInfoSchedule person={person} />
+      </div>
+      <div id="Review">
+        <ProfileInfoReview person={person} />
+      </div>
+      <div id="Resume">
+        <ProfileInfoResume />
+      </div>
     </section>
   );
 };

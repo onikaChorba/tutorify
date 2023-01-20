@@ -10,8 +10,13 @@
   @include font-size(600, 16px, 24px);
   margin-right: 50px;
   margin-left: 30px;
+  border-bottom: 2px solid $background;
   &:hover {
     color: $orang-strong;
     border-bottom: 2px solid $orang-strong;
   }
+}
+.cardNavActive {
+  color: $orang-strong;
+  border-bottom: 2px solid $orang-strong;
 }
