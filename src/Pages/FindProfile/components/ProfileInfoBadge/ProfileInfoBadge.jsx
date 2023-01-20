@@ -1,11 +1,8 @@
 import "./ProfileInfoBadge.scss";
-import arrowRight from "@/assets/img/arrowRight.png";
+
+import data from "../../FindProfileData";
 import CardFrom from "../../../Find/components/Card/CardMain/CardFrom/CardFrom";
 import Button from "../../../../components/Button";
-import iconEmail from "@/assets/img/findProfile/Message.png";
-import iconLight from "@/assets/img/findProfile/light.png";
-import iconBook from "@/assets/img/findProfile/book.png";
-import iconLike from "@/assets/img/findProfile/like.png";
 export const ProfileInfoBadge = ({ person }) => {
   return (
     <section>
@@ -16,39 +13,27 @@ export const ProfileInfoBadge = ({ person }) => {
             alt={person.name}
             src={process.env.PUBLIC_URL + person.imgPath}
           />
-          <div className="profileImgBg"></div>
-          <div className="playBadge">
-            <img src={arrowRight} alt="play" />
-          </div>
         </div>
-        <div style={{ paddingTop: "200px" }}>
+        <div classname="profileInfoBadge__from">
           <CardFrom person={person} />
-          <div>
-            <Button green medium>
-              <div>
-                <img src={iconEmail} alt="email" />
-                <span className="button__text ">Send Message</span>
-              </div>
-            </Button>
-            <Button green medium>
-              <div>
-                <img src={iconLight} alt="light" />
-                <span className="button__text ">Book Trial Lesson</span>
-              </div>
-            </Button>
-            <Button green medium>
-              <div>
-                <img src={iconBook} alt="book" />
-                <span className="button__text ">Book Private</span>
-              </div>
-            </Button>
-            <Button green medium>
-              <div>
-                <img src={iconLike} alt="like" />
-                <span className="button__text ">Book Private</span>
-              </div>
-            </Button>
-          </div>
+        </div>
+        <div className="buttonsBadge">
+          {data.buttonBadge.map((type, index) => (
+            <div className="buttonBadge">
+              <Button green big key={index.toString()}>
+                <div className="buttonBadgeBlock">
+                  <div className="badgeIconBlock">
+                    <img
+                      src={type.src}
+                      alt="email"
+                      className="badgeIconBlock__icon"
+                    />
+                  </div>
+                  <p className="button__text ">{type.text}</p>
+                </div>
+              </Button>
+            </div>
+          ))}
         </div>
       </div>
     </section>
