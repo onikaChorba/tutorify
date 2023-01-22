@@ -1,8 +1,7 @@
 import { ReviewStars } from "../ReviewStars/ReviewStars";
 import { ReviewStarsInfo } from "../ReviewStarsInfo/ReviewStarsInfo";
-import Slider from "../../../FrontPage/components/Slider/Slider.jsx";
 import "./ProfileInfoReview.scss";
-
+import Review from "../Review/Review";
 export const ProfileInfoReview = ({ person }) => {
   return (
     <section>
@@ -18,7 +17,7 @@ export const ProfileInfoReview = ({ person }) => {
             </div>
           </div>
           <div className="rewiewStarsBlock__review">
-            <Slider />
+            <Review />
           </div>
         </article>
       </div>
