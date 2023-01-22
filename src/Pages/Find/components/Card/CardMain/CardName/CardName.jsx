@@ -6,7 +6,6 @@ export const CardName = ({ person }) => {
     { src: "../../img/star.png" },
     { src: "../../img/star.png" },
   ];
-
   return (
     <article className="cardName">
       <div className="cardName-info">

@@ -20,9 +20,7 @@ function MainTitle() {
         mollis . Suspendisse nulla :
       </p>
       <Button green big>
-        <a className="button__text " href="#">
-          Try Free Lessons
-        </a>
+        <button className="button__text ">Try Free Lessons</button>
       </Button>
     </article>
   );
