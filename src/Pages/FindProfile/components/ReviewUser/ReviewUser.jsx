@@ -1,10 +1,9 @@
 import React from "react";
-
+import "./ReviewUser.scss";
 import user from "@/assets/img/user1.png";
-import Button from "../../../../components/Button";
-// import { Button } from "react-scroll";
+import Button from "@/components/Button";
 
-class Review extends React.Component {
+class ReviewUser extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,8 +11,8 @@ class Review extends React.Component {
       submit: "",
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleChangeInfo = this.handleChangeInfo.bind(this);
     this.handleChangeName = this.handleChangeName.bind(this);
+    this.handleChangeProf = this.handleChangeProf.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(event) {
@@ -21,20 +20,21 @@ class Review extends React.Component {
       textarea: event.target.value,
     });
   }
-  handleChangeInfo(event) {
-    this.setState({
-      info: event.target.value,
-    });
-  }
+
   handleChangeName(event) {
     this.setState({
       name: event.target.value,
     });
   }
+  handleChangeProf(event) {
+    this.setState({
+      prof: event.target.value,
+    });
+  }
   handleSubmit(event) {
     event.preventDefault();
     this.setState({
-      submit: [this.state.textarea, this.state.info, this.state.name],
+      submit: [this.state.textarea, this.state.name, this.state.prof],
     });
   }
   render() {
@@ -46,9 +46,9 @@ class Review extends React.Component {
       { src: "../../img/star.png" },
     ];
     return (
-      <div>
-        <div className="slider">
-          <div className="slider__star">
+      <div className="reviewUser">
+        <div className="reviewUserBlock">
+          <div className="reviewUserBlock__star">
             {star.map((el, key) => (
               <img
                 src={el.src}
@@ -58,12 +58,12 @@ class Review extends React.Component {
               />
             ))}
           </div>
-          <p className="slider__info">
+          <p className="reviewUserBlock__info">
             “With Edu Smart, we can make it easier for you to master a foreign
             language, it is important for us to grow and engage with our
             students
           </p>
-          <div className="slider__user">
+          <div className="reviewUserBlock__user">
             <div className="user-info">
               <div className="user-info__icon">
                 <img src={user} alt="user"></img>
@@ -77,32 +77,42 @@ class Review extends React.Component {
             </div>
           </div>
         </div>
-        <h1>{this.state.submit}</h1>
-        <form onSubmit={this.handleSubmit}>
+        <p className="reviewUserBlock__info">{this.state.submit}</p>
+        <form onSubmit={this.handleSubmit} className="formReview">
           <label>
-            <p>Review:</p>
+            <p className="formReview__title">Review:</p>
             <textarea
               value={this.state.textarea}
               onChange={this.handleChange}
-              className="slider__info"
+              className="formReview__textarea"
             />
           </label>
           <label>
-            <p> Name:</p>
-            <input value={this.state.name} onChange={this.handleChangeName} />
+            <p className="formReview__title"> Name:</p>
+            <input
+              value={this.state.name}
+              onChange={this.handleChangeName}
+              className="formReview__input"
+            />
           </label>
           <label>
-            <p> Profession:</p>
-            <input value={this.state.info} onChange={this.handleChangeInfo} />
+            <p className="formReview__title"> Profession:</p>
+            <input
+              value={this.state.prof}
+              onChange={this.handleChangeProf}
+              className="formReview__input"
+            />
           </label>
-          <Button green small>
-            <button type="submit">
-              <span className="button__text ">Submit!</span>
-            </button>
-          </Button>
+          <div className="formReview__button">
+            <Button green small>
+              <button type="submit">
+                <span className="button__text ">Submit!</span>
+              </button>
+            </Button>
+          </div>
         </form>
       </div>
     );
   }
 }
-export default Review;
+export default ReviewUser;

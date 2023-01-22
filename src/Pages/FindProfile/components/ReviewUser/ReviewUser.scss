@@ -1,0 +1,34 @@
+@import "@/theme/index.scss";
+.reviewUserBlock {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  &__star {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  &__info {
+    width: 65%;
+    margin: 0 auto;
+    @include font-size(400, 12px, 24px);
+    color: #90a3b4;
+  }
+}
+.formReview {
+  &__title {
+    padding-top: 20px;
+    @include font-size(600, 16px, 28px);
+    color: $black-light;
+  }
+  &__textarea {
+    width: 80%;
+    min-height: 100px;
+    height: auto;
+    border: 1px solid #cccc;
+  }
+  &__input {
+    border: 1px solid #cccc;
+  }
+  &__button {
+    padding-top: 20px;
+  }
+}
