@@ -4,15 +4,20 @@ import "./Header.scss";
 import { NavLink } from "react-router-dom";
 import Button from "../Button";
 import menu from "@/assets/img/menu.png";
-
+import { useState } from "react";
+import { FormSingUp } from "../FormSingUp/FormSingUp";
 function Header() {
-  //useState snow Menu
+  //useState show Menu
   const [isAddMenu, setIsAddMenu] = React.useState();
 
   const onClickMenu = () => {
     setIsAddMenu(!isAddMenu);
   };
-
+  //useState show Sing Up
+  const [isShowSingUp, setIsShowSingUp] = useState(false);
+  const handleClickShowSingUp = (event) => {
+    setIsShowSingUp((current) => !current);
+  };
   return (
     <header className="header">
       <div className="header-container">
@@ -72,17 +77,33 @@ function Header() {
               </NavLink>
             </li>
             <li className="nav-bar__list nav-bar__button">
-              <Button green small>
-                <span className="button__text ">Login</span>
-              </Button>
+              <button>
+                <Button green small>
+                  <span className="button__text ">Login</span>
+                </Button>
+              </button>
             </li>
             <li className="nav-bar__list nav-bar__button">
-              <Button orange small>
-                <span className="button__text "> Sign Up</span>
-              </Button>
+              <button onClick={handleClickShowSingUp}>
+                <Button orange small>
+                  <span className="button__text "> Sign Up</span>
+                </Button>
+              </button>
             </li>
           </ul>
         </nav>
+      </div>
+      <div
+        style={
+          isShowSingUp
+            ? {
+                display: "flex",
+                justifyContent: "center",
+              }
+            : { background: "red" }
+        }
+      >
+        {isShowSingUp && <FormSingUp />}
       </div>
     </header>
   );

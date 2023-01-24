@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  min-height: 575px;
   @include screen-tb {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -114,6 +115,6 @@
 }
 .cardButton {
   padding-right: 20%;
-  padding-top: 4%;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }

@@ -7,15 +7,17 @@
     position: absolute;
     transition: background-color 0.3s ease-in-out;
     transform: translateX(0%);
-    right: 0%;
+    right: -40px;
+    width: 50%;
+    z-index: 5000;
     background: $background;
-
     @include screen-lp {
       position: static;
       display: flex !important;
       justify-content: space-between;
       align-items: center;
-      margin-right: 0px;
+      width: 100%;
+      right: 0px;
     }
   }
 
@@ -38,8 +40,9 @@
     @include font-size(600, 16px, 24px);
     color: $black-light;
     margin-left: 50px;
+    margin: 10px;
     @include screen-lp {
-      margin-left: 0px;
+      margin-left: 50px;
     }
   }
   &__button {
@@ -70,7 +73,8 @@
 
 .nav-link {
   color: $black-light;
-  margin-right: 50px;
+  margin: 0 auto;
+  // margin-right: 50px;
   &:hover {
     color: $orang-strong;
     border-bottom: 5px solid $orang-strong;
