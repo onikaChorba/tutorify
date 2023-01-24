@@ -1,0 +1,23 @@
+.form {
+  background-color: white;
+  border-radius: 5px;
+  width: 550px;
+  margin: 20px auto;
+  padding: 40px;
+  position: absolute;
+  z-index: 5000;
+  box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
+    0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
+    0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
+    0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
+    0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
+  border-radius: 10px;
+}
+
+.form-body {
+  text-align: left;
+  padding: 20px 10px;
+}
+.buttomForm {
+  margin: 0 auto;
+}
