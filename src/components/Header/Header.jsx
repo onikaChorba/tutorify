@@ -5,7 +5,8 @@ import { NavLink } from "react-router-dom";
 import Button from "../Button";
 import menu from "@/assets/img/menu.png";
 import { useState } from "react";
-import { FormSingUp } from "../FormSingUp/FormSingUp";
+import { FormSingUp } from "../Form/FormSingUp/FormSingUp";
+import { FormLoginIn } from "../Form/FormLoginIn/FormLoginIn";
 function Header() {
   //useState show Menu
   const [isAddMenu, setIsAddMenu] = React.useState();
@@ -15,8 +16,13 @@ function Header() {
   };
   //useState show Sing Up
   const [isShowSingUp, setIsShowSingUp] = useState(false);
-  const handleClickShowSingUp = (event) => {
+  const handleClickShowSingUp = () => {
     setIsShowSingUp((current) => !current);
+  };
+  //useState show Login In
+  const [isShowLoginIn, setIsShowLoginIn] = useState(false);
+  const handleClickShowLoginIn = () => {
+    setIsShowLoginIn((current) => !current);
   };
   return (
     <header className="header">
@@ -77,7 +83,7 @@ function Header() {
               </NavLink>
             </li>
             <li className="nav-bar__list nav-bar__button">
-              <button>
+              <button onClick={handleClickShowLoginIn}>
                 <Button green small>
                   <span className="button__text ">Login</span>
                 </Button>
@@ -104,6 +110,18 @@ function Header() {
         }
       >
         {isShowSingUp && <FormSingUp />}
+      </div>
+      <div
+        style={
+          isShowLoginIn
+            ? {
+                display: "flex",
+                justifyContent: "center",
+              }
+            : { background: "red" }
+        }
+      >
+        {isShowLoginIn && <FormLoginIn />}
       </div>
     </header>
   );

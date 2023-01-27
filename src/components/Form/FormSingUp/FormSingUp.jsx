@@ -1,5 +1,5 @@
-import Button from "../Button";
-import "./FormSingUp.scss";
+import Button from "../../Button";
+import "../Form.scss";
 
 export const FormSingUp = () => {
   return (
