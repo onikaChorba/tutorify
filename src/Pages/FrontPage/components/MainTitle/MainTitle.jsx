@@ -1,10 +1,28 @@
 import "./MainTitle.scss";
-
+import { useState } from "react";
 import Button from "@/components/Button";
+import { FormFreeLessons } from "../../../../components/Form/FormFreeLessons/FormFreeLessons";
 
 function MainTitle() {
+  //useState Free Lessons
+  const [isShowFreeLessons, setIsShowFreeLessons] = useState(false);
+  const handleClickShowFreeLessons = () => {
+    setIsShowFreeLessons((current) => !current);
+  };
   return (
     <article className="main-title">
+      <div
+        style={
+          isShowFreeLessons
+            ? {
+                display: "flex",
+                justifyContent: "center",
+              }
+            : { background: "red" }
+        }
+      >
+        {isShowFreeLessons && <FormFreeLessons />}
+      </div>
       <div className="main-title__pre-title">
         <div className="main-pre-title">
           <div className="pre-title__text">We are The Best </div>
@@ -19,9 +37,11 @@ function MainTitle() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum dui
         mollis . Suspendisse nulla :
       </p>
-      <Button green big>
-        <button className="button__text ">Try Free Lessons</button>
-      </Button>
+      <button onClick={handleClickShowFreeLessons}>
+        <Button green big>
+          <button className="button__text ">Try Free Lessons</button>
+        </Button>
+      </button>
     </article>
   );
 }

@@ -1,13 +1,14 @@
-import Button from "../Button";
-import "./FormSingUp.scss";
+import Button from "../../Button";
+import "../Form.scss";
 
 export const FormSingUp = () => {
   return (
     <div className="form">
-      <div className="form-body">
-        <div className="username">
-          <label className="form__label" for="firstName">
-            First Name{" "}
+      <p className="form__title">Register Form</p>
+      <div className="formBody">
+        <div className="userName">
+          <label for="firstName">
+            <p className="form__label"> First Name</p>
           </label>
           <input
             className="form__input"
@@ -18,7 +19,7 @@ export const FormSingUp = () => {
         </div>
         <div className="lastname">
           <label className="form__label" for="lastName">
-            Last Name{" "}
+            <p>Last Name</p>
           </label>
           <input
             type="text"
@@ -30,7 +31,7 @@ export const FormSingUp = () => {
         </div>
         <div className="email">
           <label className="form__label" for="email">
-            Email{" "}
+            <p>Email</p>
           </label>
           <input
             type="email"
@@ -41,7 +42,7 @@ export const FormSingUp = () => {
         </div>
         <div className="password">
           <label className="form__label" for="password">
-            Password{" "}
+            <p> Password</p>
           </label>
           <input
             className="form__input"
@@ -52,7 +53,7 @@ export const FormSingUp = () => {
         </div>
         <div className="confirm-password">
           <label className="form__label" for="confirmPassword">
-            Confirm Password{" "}
+            <p>Confirm Password</p>
           </label>
           <input
             className="form__input"
