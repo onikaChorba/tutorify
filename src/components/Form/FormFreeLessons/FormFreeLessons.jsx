@@ -4,9 +4,9 @@ export const FormFreeLessons = () => {
   return (
     <div className="form">
       <p className="form__title">Try free lessons</p>
-      <div className="form-body">
+      <div className="formBody">
         <div style={{ display: "flex" }}>
-          <div className="username">
+          <div className="userName">
             <label for="firstName">
               <p className="form__label"> First Name</p>
             </label>

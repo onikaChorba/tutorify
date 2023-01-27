@@ -5,8 +5,8 @@ export const FormSingUp = () => {
   return (
     <div className="form">
       <p className="form__title">Register Form</p>
-      <div className="form-body">
-        <div className="username">
+      <div className="formBody">
+        <div className="userName">
           <label for="firstName">
             <p className="form__label"> First Name</p>
           </label>

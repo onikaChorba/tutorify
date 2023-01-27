@@ -5,7 +5,7 @@ export const FormLoginIn = () => {
   return (
     <div className="form">
       <p className="form__title">Form Login In</p>
-      <div className="form-body">
+      <div className="formBody">
         <div className="email">
           <label className="form__label" for="email">
             <p>Email</p>
