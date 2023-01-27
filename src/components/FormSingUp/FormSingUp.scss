@@ -1,4 +1,7 @@
+@import "../../theme/index.scss";
+
 .form {
+  @include position-center(flex, column, center, left);
   background-color: white;
   border-radius: 5px;
   width: 550px;
@@ -12,11 +15,30 @@
     0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
     0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
   border-radius: 10px;
+  &__title {
+    color: $orang-strong;
+    margin: 0 auto;
+    @include font-size(600, 20px, 24px);
+  }
+  &__label {
+    color: $black-light;
+    @include font-size(600, 16px, 20px);
+  }
+  &__input {
+    border: 1px solid #cccc;
+    border-radius: 5px;
+    height: 46px;
+    width: 70%;
+    padding-left: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .form-body {
-  text-align: left;
-  padding: 20px 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include position-center(flex, column, center, left);
 }
 .buttomForm {
   margin: 0 auto;
