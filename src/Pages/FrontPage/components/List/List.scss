@@ -35,9 +35,13 @@
     }
   }
 }
-
+.listIcon {
+  width: 50px;
+  height: auto;
+}
 .list-container {
   display: flex;
+  height: auto;
   padding-top: 20px;
   padding-left: 20px;
 }

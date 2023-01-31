@@ -28,7 +28,7 @@
     border: 1px solid #cccc;
     border-radius: 5px;
     height: 46px;
-    width: 70%;
+    width: 97%;
     padding-left: 2%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -42,4 +42,10 @@
 }
 .buttomForm {
   margin: 0 auto;
+}
+.userNameBlock,
+.userPaswordBlock,
+.contact {
+  display: flex;
+  justify-content: space-between;
 }

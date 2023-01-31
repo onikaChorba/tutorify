@@ -21,7 +21,7 @@ function List(props) {
     <div className={`list  ${createParamsClass(props)}`}>
       <div className="list-container">
         <div className="list__icon">
-          <img src={props.src} alt="check" />
+          <img src={props.src} alt="check" className="listIcon" />
         </div>
         <div className="list__info">
           <p className="list-title">{props.title}</p>

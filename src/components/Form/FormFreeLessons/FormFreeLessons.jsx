@@ -30,27 +30,29 @@ export const FormFreeLessons = () => {
             />
           </div>
         </div>
-        <div className="email">
-          <label className="form__label" for="email">
-            <p>Email</p>
-          </label>
-          <input
-            type="email"
-            id="email"
-            className="form__input"
-            placeholder="Email"
-          />
-        </div>
-        <div className="password">
-          <label className="form__label" for="number">
-            <p> Number Phone</p>
-          </label>
-          <input
-            className="form__input"
-            type="phone"
-            id="password"
-            placeholder="Number"
-          />
+        <div className="contact">
+          <div className="email">
+            <label className="form__label" for="email">
+              <p>Email</p>
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="form__input"
+              placeholder="Email"
+            />
+          </div>
+          <div className="password">
+            <label className="form__label" for="number">
+              <p> Number Phone</p>
+            </label>
+            <input
+              className="form__input"
+              type="phone"
+              id="password"
+              placeholder="Number"
+            />
+          </div>
         </div>
       </div>
       <div class="buttomForm">

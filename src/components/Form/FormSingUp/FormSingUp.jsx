@@ -6,29 +6,32 @@ export const FormSingUp = () => {
     <div className="form">
       <p className="form__title">Register Form</p>
       <div className="formBody">
-        <div className="userName">
-          <label for="firstName">
-            <p className="form__label"> First Name</p>
-          </label>
-          <input
-            className="form__input"
-            type="text"
-            id="firstName"
-            placeholder="First Name"
-          />
+        <div className="userNameBlock">
+          <div className="userName">
+            <label for="firstName">
+              <p className="form__label"> First Name</p>
+            </label>
+            <input
+              className="form__input"
+              type="text"
+              id="firstName"
+              placeholder="First Name"
+            />
+          </div>
+          <div className="lastName">
+            <label className="form__label" for="lastName">
+              <p>Last Name</p>
+            </label>
+            <input
+              type="text"
+              name=""
+              id="lastName"
+              className="form__input"
+              placeholder="LastName"
+            />
+          </div>
         </div>
-        <div className="lastname">
-          <label className="form__label" for="lastName">
-            <p>Last Name</p>
-          </label>
-          <input
-            type="text"
-            name=""
-            id="lastName"
-            className="form__input"
-            placeholder="LastName"
-          />
-        </div>
+
         <div className="email">
           <label className="form__label" for="email">
             <p>Email</p>
@@ -40,27 +43,29 @@ export const FormSingUp = () => {
             placeholder="Email"
           />
         </div>
-        <div className="password">
-          <label className="form__label" for="password">
-            <p> Password</p>
-          </label>
-          <input
-            className="form__input"
-            type="password"
-            id="password"
-            placeholder="Password"
-          />
-        </div>
-        <div className="confirm-password">
-          <label className="form__label" for="confirmPassword">
-            <p>Confirm Password</p>
-          </label>
-          <input
-            className="form__input"
-            type="password"
-            id="confirmPassword"
-            placeholder="Confirm Password"
-          />
+        <div className="userPaswordBlock">
+          <div className="password">
+            <label className="form__label" for="password">
+              <p> Password</p>
+            </label>
+            <input
+              className="form__input"
+              type="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div className="confirm-password">
+            <label className="form__label" for="confirmPassword">
+              <p>Confirm Password</p>
+            </label>
+            <input
+              className="form__input"
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+            />
+          </div>
         </div>
       </div>
       <div class="buttomForm">
