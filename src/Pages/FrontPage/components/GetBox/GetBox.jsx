@@ -4,6 +4,7 @@ import "./GetBox.scss";
 
 import data from "@/Pages/FrontPage/FrontPageData";
 import SecondTitle from "@/Pages/FrontPage/components/SecondTitle";
+import { FormFreeLessons } from "@/components/Form/FormFreeLessons/FormFreeLessons";
 const userGet = [
   { src: "./img/user1.png" },
   { src: "./img/user2.png" },
@@ -26,6 +27,11 @@ function GetBox() {
     } else {
       setNextUser(userGetRow);
     }
+  };
+  //useState Free Lessons
+  const [isShowFreeLessons, setIsShowFreeLessons] = useState(false);
+  const handleClickShowFreeLessons = () => {
+    setIsShowFreeLessons((current) => !current);
   };
   return (
     <div className="getBox">
@@ -52,8 +58,20 @@ function GetBox() {
           </button>
         </div>
       </div>
+      <div
+        style={
+          isShowFreeLessons
+            ? {
+                display: "flex",
+                justifyContent: "center",
+              }
+            : { background: "red" }
+        }
+      >
+        {isShowFreeLessons && <FormFreeLessons />}
+      </div>
       <div className="getBox__button">
-        <button className="getBox-button">
+        <button className="getBox-button" onClick={handleClickShowFreeLessons}>
           <div className="getBox-button__text">Get your free lessons now</div>
         </button>
       </div>
