@@ -7,7 +7,9 @@ class ReviewUser extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: "",
+      textarea: "",
+      name: "",
+      prof: "",
       submit: "",
     };
     this.handleChange = this.handleChange.bind(this);
@@ -34,7 +36,7 @@ class ReviewUser extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.setState({
-      submit: [this.state.textarea, this.state.name, this.state.prof],
+      submit: [this.setState.textarea, this.setState.name, this.setState.prof],
     });
   }
   render() {
@@ -77,6 +79,30 @@ class ReviewUser extends React.Component {
             </div>
           </div>
         </div>
+        <div className="reviewUserBlock">
+          <div className="reviewUserBlock__star">
+            {star.map((el, key) => (
+              <img
+                src={el.src}
+                className="star"
+                alt="star"
+                key={key.toString()}
+              />
+            ))}
+          </div>
+          <p className="reviewUserBlock__info">{this.state.textarea}</p>
+          <div className="reviewUserBlock__user">
+            <div className="user-info">
+              <div className="user-info__icon">
+                <img src={user} alt="user"></img>
+              </div>
+              <div className="user-info__info">
+                <p className="user-name">{this.state.name}</p>
+                <p className="user-prof">{this.state.prof}</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <p className="reviewUserBlock__info">{this.state.submit}</p>
         <form onSubmit={this.handleSubmit} className="formReview">
           <label>
@@ -87,22 +113,24 @@ class ReviewUser extends React.Component {
               className="formReview__textarea"
             />
           </label>
-          <label>
-            <p className="formReview__title"> Name:</p>
-            <input
-              value={this.state.name}
-              onChange={this.handleChangeName}
-              className="formReview__input"
-            />
-          </label>
-          <label>
-            <p className="formReview__title"> Profession:</p>
-            <input
-              value={this.state.prof}
-              onChange={this.handleChangeProf}
-              className="formReview__input"
-            />
-          </label>
+          <div className="userInfo">
+            <label>
+              <p className="formReview__title"> Name:</p>
+              <input
+                value={this.state.name}
+                onChange={this.handleChangeName}
+                className="formReview__input"
+              />
+            </label>
+            <label>
+              <p className="formReview__title"> Profession:</p>
+              <input
+                value={this.state.prof}
+                onChange={this.handleChangeProf}
+                className="formReview__input"
+              />
+            </label>
+          </div>
           <div className="formReview__button">
             <Button green small>
               <button type="submit">

@@ -1,7 +1,35 @@
+import { useState } from "react";
 import Button from "../../Button";
 import "../Form.scss";
 
 export const FormSingUp = () => {
+  const [firstName, setFirstName] = useState(null);
+  const [lastName, setLastName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [confirmPassword, setConfirmPassword] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    if (id === "firstName") {
+      setFirstName(value);
+    }
+    if (id === "lastName") {
+      setLastName(value);
+    }
+    if (id === "email") {
+      setEmail(value);
+    }
+    if (id === "password") {
+      setPassword(value);
+    }
+    if (id === "confirmPassword") {
+      setConfirmPassword(value);
+    }
+  };
+  const handleSubmit = () => {
+    alert([firstName, lastName, email, password, confirmPassword]);
+  };
   return (
     <div className="form">
       <p className="form__title">Register Form</p>
@@ -16,6 +44,8 @@ export const FormSingUp = () => {
               type="text"
               id="firstName"
               placeholder="First Name"
+              value={firstName}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
           <div className="lastName">
@@ -28,6 +58,8 @@ export const FormSingUp = () => {
               id="lastName"
               className="form__input"
               placeholder="LastName"
+              value={lastName}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
         </div>
@@ -41,6 +73,8 @@ export const FormSingUp = () => {
             id="email"
             className="form__input"
             placeholder="Email"
+            value={email}
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
         <div className="userPaswordBlock">
@@ -53,6 +87,8 @@ export const FormSingUp = () => {
               type="password"
               id="password"
               placeholder="Password"
+              value={password}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
           <div className="confirm-password">
@@ -64,13 +100,15 @@ export const FormSingUp = () => {
               type="password"
               id="confirmPassword"
               placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
         </div>
       </div>
       <div class="buttomForm">
         <Button orange small>
-          <button type="submit">
+          <button type="submit" onClick={() => handleSubmit()}>
             <span className="button__text ">Register</span>
           </button>
         </Button>

@@ -20,15 +20,21 @@
     color: $black-light;
   }
   &__textarea {
-    width: 80%;
+    width: 93%;
     min-height: 100px;
     height: auto;
     border: 1px solid #cccc;
+    border-radius: 10px;
   }
   &__input {
     border: 1px solid #cccc;
+    border-radius: 5px;
+    width: 97%;
   }
   &__button {
     padding-top: 20px;
   }
+}
+.userInfo {
+  display: flex;
 }
