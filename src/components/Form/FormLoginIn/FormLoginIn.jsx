@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Button from "../../Button";
+
 import "../Form.scss";
+
+import Button from "../../Button";
 
 export const FormLoginIn = () => {
   const [email, setEmail] = useState(null);
