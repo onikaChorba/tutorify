@@ -1,7 +1,6 @@
 import Button from "@/components/Button";
 import { NavLink } from "react-router-dom";
-import data from "../../../../FindData";
-import { ProfileInfo } from "../../../../../FindProfile/section/ProfileInfo/ProfileInfo";
+
 function CardStoreVideo({ person }) {
   const id = [person.id];
   return (

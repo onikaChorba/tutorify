@@ -20,11 +20,13 @@
   border-radius: 10px;
   @include screen-tb {
     min-height: 575px;
+    height: 100%;
     width: 47%;
   }
   @include screen-lp {
     margin: 66px 2% 33px 10%;
     width: 37%;
+    height: 100%;
     min-height: 575px;
   }
 }
