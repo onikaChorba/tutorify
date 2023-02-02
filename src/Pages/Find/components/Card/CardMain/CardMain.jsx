@@ -36,7 +36,7 @@ function Card({ person }) {
         </div>
       </div>
       <div className="cardMainInfo">
-        <CardInfo person={person} />
+        <CardInfo person={person} id={person.id} />
       </div>
     </section>
   );

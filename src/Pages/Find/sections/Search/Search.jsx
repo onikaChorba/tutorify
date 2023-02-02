@@ -2,7 +2,6 @@ import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import "./Search.scss";
 import "../../components/FilterButton/FilterButton.scss";
-
 import Card from "../../components/Card/CardMain/CardMain";
 import Button from "@/components/Button";
 import search from "@/assets/img/find/search.png";
@@ -76,18 +75,6 @@ function Search() {
   };
 
   const filteredList = useMemo(getFilteredList, [selectCategory, cartDetails]);
-  //filtered Button
-  // const [filterButton, setFilterButton] = useState(cartDetails);
-  // const handleChangeFilter = (e) => {
-  //   let stButton = e.target.value;
-  //   let stCard = cartDetails.tipo;
-  //   alert(stButton);
-  //   alert();
-  //   if (filterButton === "All") {
-  //     return cartDetails.filter((e) => e.tipo === "All");
-  //   }
-  //   setFilterButton();
-  // };
 
   return (
     <section className="search">
