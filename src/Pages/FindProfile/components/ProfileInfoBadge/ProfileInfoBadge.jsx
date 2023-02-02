@@ -1,18 +1,37 @@
 import "./ProfileInfoBadge.scss";
 import { useState } from "react";
-import data from "../../FindProfileData";
 import CardFrom from "../../../Find/components/Card/CardMain/CardFrom/CardFrom";
-import Button from "../../../../components/Button";
 import SendMessage from "../SendMessage/SendMessage";
+import { BadgeButton } from "../BadgeButton/BadgeButton";
+import { FormFreeLessons } from "@/components/Form/FormFreeLessons/FormFreeLessons";
 export const ProfileInfoBadge = ({ person }) => {
   //useState show Message
   const [isMessage, setIsMessage] = useState();
-
   const onClickMessage = () => {
     setIsMessage(!isMessage);
   };
+  //useState Free Lessons
+  const [isShowFreeLessons, setIsShowFreeLessons] = useState(false);
+  const handleClickShowFreeLessons = () => {
+    setIsShowFreeLessons((current) => !current);
+  };
+  const displayCenter = {
+    display: "flex",
+    justifyContent: "center",
+  };
   return (
     <section>
+      <div
+        style={
+          isShowFreeLessons
+            ? {
+                displayCenter,
+              }
+            : { background: "red" }
+        }
+      >
+        {isShowFreeLessons && <FormFreeLessons />}
+      </div>
       <div className="profileInfoBadge">
         <div classname="profileInfoBadge__img">
           <img
@@ -29,32 +48,24 @@ export const ProfileInfoBadge = ({ person }) => {
             style={
               isMessage
                 ? {
-                    display: "flex",
-                    justifyContent: "center",
+                    displayCenter,
                   }
-                : { background: "red" }
+                : null
             }
           >
             {isMessage && <SendMessage />}
           </div>
-          {data.buttonBadge.map((type, index) => (
-            <div className="buttonBadge">
-              <button onClick={onClickMessage}>
-                <Button green big key={index.toString()}>
-                  <div className="buttonBadgeBlock">
-                    <div className="badgeIconBlock">
-                      <img
-                        src={type.src}
-                        alt="email"
-                        className="badgeIconBlock__icon"
-                      />
-                    </div>
-                    <p className="button__text ">{type.text}</p>
-                  </div>
-                </Button>
-              </button>
-            </div>
-          ))}
+          <button onClick={onClickMessage}>
+            <BadgeButton
+              src="../../img/check.png"
+              text="Show Chat with Tutors"
+            />
+          </button>
+          <button onClick={handleClickShowFreeLessons}>
+            <BadgeButton src="../../img/light.png" text="Book Trial Lesson" />
+          </button>
+          <BadgeButton src="../../img/book.png" text="Book Private" />
+          <BadgeButton src="../../img/like.png" text="Book Private" />
         </div>
       </div>
     </section>

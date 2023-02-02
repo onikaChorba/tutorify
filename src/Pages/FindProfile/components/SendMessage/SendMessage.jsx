@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Button from "@/components/Button";
 
 export default function SendMessage() {
   const [input, setInput] = useState("");
@@ -23,8 +24,12 @@ export default function SendMessage() {
 
   return (
     <div className="">
-      <h1 className="">Community Chat</h1>
-
+      <h1 className="">Tutors Chat</h1>
+      <div id="messages" className="messages">
+        {messages.map((message, idx) => {
+          return <div key={idx}>{message}</div>;
+        })}
+      </div>
       <div className="">
         <form onSubmit={sendMessage}>
           <input
@@ -33,13 +38,10 @@ export default function SendMessage() {
             className=""
             type="text"
           />
-          <button className="">SEND</button>
+          <Button green small>
+            <span className="button__text "> SEND </span>
+          </Button>
         </form>
-      </div>
-      <div id="messages" className="messages">
-        {messages.map((message, idx) => {
-          return <div key={idx}>{message}</div>;
-        })}
       </div>
     </div>
   );
