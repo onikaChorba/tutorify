@@ -1,7 +1,25 @@
-import Button from "../../Button";
+import { useState } from "react";
+
 import "../Form.scss";
 
+import Button from "../../Button";
+
 export const FormLoginIn = () => {
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    if (id === "email") {
+      setEmail(value);
+    }
+    if (id === "password") {
+      setPassword(value);
+    }
+  };
+  const handleSubmit = () => {
+    alert([email, password]);
+  };
   return (
     <div className="form">
       <p className="form__title">Form Login In</p>
@@ -15,6 +33,8 @@ export const FormLoginIn = () => {
             id="email"
             className="form__input"
             placeholder="Email"
+            value={email}
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
         <div className="password">
@@ -26,12 +46,14 @@ export const FormLoginIn = () => {
             type="password"
             id="password"
             placeholder="Password"
+            value={password}
+            onChange={(e) => handleInputChange(e)}
           />
         </div>
       </div>
       <div class="buttomForm">
         <Button orange small>
-          <button type="submit">
+          <button type="submit" onClick={() => handleSubmit()}>
             <span className="button__text ">Login In</span>
           </button>
         </Button>

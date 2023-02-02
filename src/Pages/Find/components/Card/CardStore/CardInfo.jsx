@@ -28,9 +28,9 @@ function CardInfo({ person }) {
       </nav>
       <div>
         {isCardInfo ? (
-          <CardStoreVideo person={person} />
+          <CardStoreVideo person={person} id={person.id} />
         ) : (
-          <CardStoreCalendar person={person} />
+          <CardStoreCalendar person={person} id={person.id} />
         )}
       </div>
     </div>

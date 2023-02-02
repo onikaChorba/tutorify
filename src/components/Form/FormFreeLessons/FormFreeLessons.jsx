@@ -1,6 +1,33 @@
-import Button from "../../Button";
+import { useState } from "react";
+
 import "../Form.scss";
+
+import Button from "../../Button";
+
 export const FormFreeLessons = () => {
+  const [firstName, setFirstName] = useState(null);
+  const [lastName, setLastName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [phone, setPhone] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    if (id === "firstName") {
+      setFirstName(value);
+    }
+    if (id === "lastName") {
+      setLastName(value);
+    }
+    if (id === "email") {
+      setEmail(value);
+    }
+    if (id === "phone") {
+      setPhone(value);
+    }
+  };
+  const handleSubmit = () => {
+    alert([firstName, lastName, email, phone]);
+  };
   return (
     <div className="form">
       <p className="form__title">Try free lessons</p>
@@ -15,6 +42,8 @@ export const FormFreeLessons = () => {
               type="text"
               id="firstName"
               placeholder="First Name"
+              value={firstName}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
           <div className="lastname">
@@ -27,6 +56,8 @@ export const FormFreeLessons = () => {
               id="lastName"
               className="form__input"
               placeholder="LastName"
+              value={lastName}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
         </div>
@@ -40,6 +71,8 @@ export const FormFreeLessons = () => {
               id="email"
               className="form__input"
               placeholder="Email"
+              value={email}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
           <div className="password">
@@ -49,15 +82,17 @@ export const FormFreeLessons = () => {
             <input
               className="form__input"
               type="phone"
-              id="password"
+              id="phone"
               placeholder="Number"
+              value={phone}
+              onChange={(e) => handleInputChange(e)}
             />
           </div>
         </div>
       </div>
       <div class="buttomForm">
         <Button orange small>
-          <button type="submit">
+          <button type="submit" onClick={() => handleSubmit()}>
             <span className="button__text ">Submit!</span>
           </button>
         </Button>

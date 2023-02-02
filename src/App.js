@@ -15,11 +15,13 @@ function App() {
           <Routes>
             <Route path="/" element={<FrontPage />} />
             <Route path="/lessons" element={<Lessons />} />
-            <Route path="/find" element={<Find />} />
+            <Route exact path="/find" element={<Find />} />
             <Route
               exact
-              path="/find/Profile"
-              element={<FindProfile person={initialDetails} />}
+              path="/find/Profile/:id"
+              element={
+                <FindProfile person={initialDetails} id={initialDetails.id} />
+              }
             />
             <Route path="/about" element={<About />} />
           </Routes>

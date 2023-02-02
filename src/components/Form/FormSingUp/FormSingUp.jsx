@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Button from "../../Button";
+
 import "../Form.scss";
+
+import Button from "../../Button";
 
 export const FormSingUp = () => {
   const [firstName, setFirstName] = useState(null);
