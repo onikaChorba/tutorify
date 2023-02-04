@@ -20,16 +20,22 @@
     color: $black-light;
   }
   &__textarea {
-    width: 93%;
+    width: 90%;
     min-height: 100px;
     height: auto;
     border: 1px solid #cccc;
     border-radius: 10px;
+    @include screen-tb {
+      width: 93%;
+    }
   }
   &__input {
     border: 1px solid #cccc;
     border-radius: 5px;
-    width: 97%;
+    width: 80%;
+    @include screen-tb {
+      width: 97%;
+    }
   }
   &__button {
     padding-top: 20px;

@@ -15,7 +15,6 @@ export const ProfileInfoSchedule = ({ person }) => {
           <div className="profileInfoScheduleArticle__calendar">
             <Calendar
               localizer={localizer}
-              // events={myEventsList}
               startAccessor="start"
               endAccessor="end"
               style={{ height: 500 }}

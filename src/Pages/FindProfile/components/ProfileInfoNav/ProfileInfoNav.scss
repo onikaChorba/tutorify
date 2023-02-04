@@ -2,15 +2,19 @@
 
 .infoNavLinks {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 37px;
   padding-bottom: 20px;
 }
 .infoNavLink {
   color: #393939;
   @include font-size(600, 14px, 20px);
-  margin-right: 30px;
+  margin-right: 10px;
   margin-left: 30px;
   border-bottom: 2px solid $white;
+  @include screen-tb {
+    margin-right: 30px;
+  }
   &:hover {
     color: $orang-strong;
     border-bottom: 2px solid $orang-strong;
