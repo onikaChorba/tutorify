@@ -1,5 +1,9 @@
 @import "@/theme/index.scss";
-
+.buttonsBadge {
+  &__sendMessage {
+    width: 80%;
+  }
+}
 .profileInfoBadge {
   width: 100%;
   height: auto;
@@ -17,28 +21,4 @@
   left: 20px;
   top: 20px;
   padding-bottom: 20px;
-}
-.buttonsBadge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.buttonBadge {
-  padding-top: 20px;
-}
-.buttonBadgeBlock {
-  display: flex;
-}
-.badgeIconBlock {
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 5px;
-  @include position-center(flex, column, center, center);
-  margin-right: 10px;
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
 }
