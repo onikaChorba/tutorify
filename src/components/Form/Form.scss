@@ -5,6 +5,7 @@
   background-color: white;
   border-radius: 5px;
   width: 550px;
+  max-width: 100%;
   margin: 20px auto;
   padding: 40px;
   position: absolute;
@@ -15,6 +16,12 @@
     0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
     0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
   border-radius: 10px;
+  @include screen-tb {
+    width: 50%;
+  }
+  @include screen-lp {
+    width: 35%;
+  }
   &__title {
     color: $orang-strong;
     margin: 0 auto;
@@ -48,4 +55,5 @@
 .contact {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
