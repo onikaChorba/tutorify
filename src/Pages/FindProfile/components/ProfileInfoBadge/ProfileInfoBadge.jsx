@@ -21,15 +21,7 @@ export const ProfileInfoBadge = ({ person }) => {
   };
   return (
     <section>
-      <div
-        style={
-          isShowFreeLessons
-            ? {
-                displayCenter,
-              }
-            : { background: "red" }
-        }
-      >
+      <div style={isShowFreeLessons ? displayCenter : { background: "red" }}>
         {isShowFreeLessons && <FormFreeLessons />}
       </div>
       <div className="profileInfoBadge">
@@ -45,15 +37,10 @@ export const ProfileInfoBadge = ({ person }) => {
         </div>
         <div className="buttonsBadge">
           <div
-            style={
-              isMessage
-                ? {
-                    displayCenter,
-                  }
-                : null
-            }
+            style={isMessage ? displayCenter : null}
+            className="buttonsBadge__sendMessage"
           >
-            {isMessage && <SendMessage />}
+            {isMessage && <SendMessage person={person} />}
           </div>
           <button onClick={onClickMessage}>
             <BadgeButton

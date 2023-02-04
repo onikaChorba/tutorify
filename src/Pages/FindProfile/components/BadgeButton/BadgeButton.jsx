@@ -1,3 +1,5 @@
+import "./BadgeButton.scss";
+
 import Button from "@/components/Button";
 export const BadgeButton = (props) => {
   return (

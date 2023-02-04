@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import "./SendMessage.scss";
 import Button from "@/components/Button";
 
-export default function SendMessage() {
+export default function SendMessage({ person }) {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
 
@@ -23,24 +24,32 @@ export default function SendMessage() {
   }, [messages]);
 
   return (
-    <div className="">
-      <h1 className="">Tutors Chat</h1>
+    <div className="sendMessage">
+      <h1 className="sendMessage__title">
+        Tutors Chat with: <span>{person.name}</span>
+      </h1>
       <div id="messages" className="messages">
         {messages.map((message, idx) => {
-          return <div key={idx}>{message}</div>;
+          return (
+            <div className="message" key={idx}>
+              {message}
+            </div>
+          );
         })}
       </div>
-      <div className="">
+      <div>
         <form onSubmit={sendMessage}>
           <input
             value={input}
             onChange={(event) => setInput(event.target.value)}
-            className=""
+            className="sendMessage__input"
             type="text"
           />
-          <Button green small>
-            <span className="button__text "> SEND </span>
-          </Button>
+          <div className="sendMessage__button">
+            <Button orange small>
+              <span className="button__text "> SEND </span>
+            </Button>
+          </div>
         </form>
       </div>
     </div>
