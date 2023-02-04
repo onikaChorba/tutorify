@@ -1,4 +1,4 @@
-## 🛠️ Sites Built With ReactJS "Tytorify"
+## 🛠️ Sites Built With ReactJS "Tutorify"
 ✔️ creative simple functional component and class component</br>
 ✔️ using props to  pass data from from a parent component to a child components</br>
 ✔️ using useState, useEffect and useMemo </br>
