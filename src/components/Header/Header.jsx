@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.scss";
-
 import { NavLink } from "react-router-dom";
 import Button from "../Button";
 import menu from "@/assets/img/menu.png";
@@ -24,6 +23,7 @@ function Header() {
   const handleClickShowLoginIn = () => {
     setIsShowLoginIn((current) => !current);
   };
+
   return (
     <header className="header">
       <div className="header-container">

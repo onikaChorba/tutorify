@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import "../Form.scss";
 
 import Button from "../../Button";
@@ -7,7 +6,6 @@ import Button from "../../Button";
 export const FormLoginIn = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
-
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     if (id === "email") {
@@ -20,6 +18,7 @@ export const FormLoginIn = () => {
   const handleSubmit = () => {
     alert([email, password]);
   };
+
   return (
     <div className="form">
       <p className="form__title">Form Login In</p>
