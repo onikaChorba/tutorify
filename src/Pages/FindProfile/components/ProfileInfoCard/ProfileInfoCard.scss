@@ -11,15 +11,25 @@
 }
 .profileInfoCardBlock {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  @include screen-lp {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
   margin: 20px;
   &__img {
     margin-top: 40px;
-    width: 50%;
+    width: 100%;
+    @include screen-lp {
+      width: 50%;
+    }
   }
   &__info {
-    width: 45%;
+    width: 100%;
     margin-top: 40px;
+    @include screen-lp {
+      width: 45%;
+    }
   }
 }
 

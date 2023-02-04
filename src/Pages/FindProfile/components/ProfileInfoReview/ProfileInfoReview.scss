@@ -22,26 +22,37 @@
   padding-top: 34px;
 }
 .rewiewStarsBlock {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 34px;
   margin-right: 34px;
-  display: flex;
-  justify-content: space-around;
+
   border-bottom: 1px solid #cccccc;
+  @include screen-tb {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
   &__stars {
     margin-top: 16px;
     margin-bottom: 16px;
-    width: 30%;
+    width: 100%;
     border-right: 1px solid #cccccc;
+    @include screen-tb {
+      width: 30%;
+    }
   }
   &__starsInfo {
-    width: 50%;
+    width: 100%;
     padding-top: 31px;
     padding-left: 10px;
+    @include screen-tb {
+      width: 50%;
+    }
   }
   &__review {
-    width: 100%;
+    width: 95%;
     margin: 34px;
-    padding-left: 34px;
-    padding-right: 34px;
+    // padding-left: 34px;
+    // padding-right: 34px;
   }
 }
