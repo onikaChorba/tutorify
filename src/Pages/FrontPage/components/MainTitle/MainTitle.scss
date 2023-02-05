@@ -1,5 +1,5 @@
-@import '@/theme/index.scss';
-.main-title {
+@import "@/theme/index.scss";
+.mainTitle {
   text-align: left;
 
   &__pre-title {
@@ -7,7 +7,7 @@
   }
 
   &__title {
-    @include font-size (700, 32px, 51px);
+    @include font-size(700, 32px, 51px);
 
     letter-spacing: 3.5%;
     width: 100%;
@@ -15,7 +15,7 @@
     padding-bottom: 15px;
 
     @include screen-lp {
-      @include font-size (700, 48px, 76px);
+      @include font-size(700, 48px, 76px);
       width: 100%;
       padding-bottom: 44px;
     }
@@ -27,11 +27,11 @@
 
   &__text {
     color: $grey;
-    @include font-size (400, 14px, 28px);
+    @include font-size(400, 14px, 28px);
     padding-bottom: 15px;
 
     @include screen-lp {
-      @include font-size (400, 18px, 29px);
+      @include font-size(400, 18px, 29px);
       width: 80%;
       padding-bottom: 28px;
     }

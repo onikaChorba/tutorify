@@ -10,7 +10,7 @@ export const ProfileInfoSchedule = ({ person }) => {
   return (
     <section>
       <div className="profileInfoSchedule">
-        <article className="profileInfoScheduleArticle">
+        <div className="profileInfoScheduleArticle">
           <h5 className="profileInfoScheduleArticle__title">Shedule</h5>
           <div className="profileInfoScheduleArticle__calendar">
             <Calendar
@@ -36,7 +36,7 @@ export const ProfileInfoSchedule = ({ person }) => {
               </span>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ function MainTitle() {
     setIsShowFreeLessons((current) => !current);
   };
   return (
-    <article className="main-title">
+    <section className="mainTitle">
       <div
         style={
           isShowFreeLessons
@@ -23,26 +23,26 @@ function MainTitle() {
       >
         {isShowFreeLessons && <FormFreeLessons />}
       </div>
-      <div className="main-title__pre-title">
+      <div className="mainTitle__pre-title">
         <div className="main-pre-title">
           <div className="pre-title__text">We are The Best </div>
           <div className="pre-title__line"></div>
         </div>
       </div>
-      <div className="main-title__title">
+      <div className="mainTitle__title">
         Learn Frome Home With <span> The Best </span>
         Online Languange Tutors
       </div>
-      <p className="main-title__text text">
+      <p className="mainTitle__text text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum dui
         mollis . Suspendisse nulla :
       </p>
       <button onClick={handleClickShowFreeLessons}>
         <Button green big>
-          <button className="button__text ">Try Free Lessons</button>
+          <span className="button__text ">Try Free Lessons</span>
         </Button>
       </button>
-    </article>
+    </section>
   );
 }
 
