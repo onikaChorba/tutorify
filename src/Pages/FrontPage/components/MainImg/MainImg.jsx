@@ -1,5 +1,4 @@
 import "./MainImg.scss";
-import heroImg from "@/assets/img/hero-img.png";
 import UserOnline from "../UserOnline/";
 
 const flet = [
@@ -12,7 +11,7 @@ function MainImg() {
   return (
     <div className="mainImg">
       <div className="bg-img">
-        <img className="main-img" src="./img/hero-img.png" alt="men" />
+        <img className="main-img" src="@/assets/img/hero-img.png" alt="men" />
         {flet.map((index, key) => (
           <img
             key={key}
