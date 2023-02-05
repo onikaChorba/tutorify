@@ -13,7 +13,7 @@ function Button(props) {
     search,
   } = props;
 
-  const createParamsClass = ({ green, orange, small }) => {
+  const createParamsClass = () => {
     let colorClassName = "button__";
     if (green) colorClassName += "green";
     if (orange) colorClassName += "orange";
@@ -29,9 +29,7 @@ function Button(props) {
     return colorClassName + sizeClassName;
   };
 
-  return (
-    <button className={`button ${createParamsClass(props)}`}>{children}</button>
-  );
+  return <div className={`button ${createParamsClass(props)}`}>{children}</div>;
 }
 
 export default Button;

@@ -51,11 +51,11 @@ export const FormLoginIn = () => {
         </div>
       </div>
       <div class="buttomForm">
-        <Button orange small>
-          <button type="submit" onClick={() => handleSubmit()}>
+        <button type="submit" onClick={() => handleSubmit()}>
+          <Button orange small>
             <span className="button__text ">Login In</span>
-          </button>
-        </Button>
+          </Button>
+        </button>
       </div>
     </div>
   );
