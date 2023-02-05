@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 
 import "../CardStore/CardInfo.scss";
@@ -14,6 +13,7 @@ function CardInfo({ person }) {
   const handleClickProfile = () => {
     setCardInfo(!isCardInfo);
   };
+
   return (
     <div className="cardInfo">
       <nav className="cardInfo__nav">
@@ -28,9 +28,9 @@ function CardInfo({ person }) {
       </nav>
       <div>
         {isCardInfo ? (
-          <CardStoreVideo person={person} id={person.id} />
+          <CardStoreVideo person={person} />
         ) : (
-          <CardStoreCalendar person={person} id={person.id} />
+          <CardStoreCalendar person={person} />
         )}
       </div>
     </div>

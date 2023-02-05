@@ -11,7 +11,7 @@ export const ProfileInfoNavMain = () => {
     <section className="profileInfoNavMain">
       <nav>
         <ul className="infoNavMainLinks">
-          {navInfoMain.map((el) => (
+          {navInfoMain.map((el, index) => (
             <Link
               className="infoNavMainLink"
               activeClass="cardNavActive"
@@ -20,6 +20,7 @@ export const ProfileInfoNavMain = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              key={index}
             >
               {el.text}
             </Link>

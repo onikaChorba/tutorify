@@ -9,8 +9,10 @@ export const ProfileInfoNav = () => {
     <section className="profileInfoNav">
       <nav>
         <ul className="infoNavLinks">
-          {navInfo.map((el) => (
-            <li className="infoNavLink">{el.text}</li>
+          {navInfo.map((el, index) => (
+            <li className="infoNavLink" key={index}>
+              {el.text}
+            </li>
           ))}
         </ul>
       </nav>

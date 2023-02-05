@@ -28,7 +28,7 @@ export default function SendMessage({ person }) {
       <h1 className="sendMessage__title">
         Tutors Chat with: <span>{person.name}</span>
       </h1>
-      <div id="messages" className="messages">
+      <div className="messages">
         {messages.map((message, idx) => {
           return (
             <div className="message" key={idx}>

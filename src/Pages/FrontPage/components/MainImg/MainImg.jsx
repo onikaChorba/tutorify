@@ -12,13 +12,13 @@ function MainImg() {
     <div className="mainImg">
       <div className="bg-img">
         <img className="main-img" src={mainImg} alt="men" />
-        {flet.map((index, key) => (
+        {flet.map((el, index) => (
           <img
-            key={key}
-            src={index.src}
-            title={index.title}
+            key={index}
+            src={el.src}
+            title={el.title}
             alt="flet"
-            className={index.className}
+            className={el.className}
           />
         ))}
       </div>
