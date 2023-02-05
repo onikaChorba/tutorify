@@ -26,9 +26,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject", 
-    "deploy": "serve -s build",
-    "predeploy":"npm run build"
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [
