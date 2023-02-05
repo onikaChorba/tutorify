@@ -1,4 +1,5 @@
 {
+  "homepage": "https://onikachorba.github.io/tutorify/build",
   "name": "tutorify",
   "version": "0.1.0",
   "private": true,
@@ -25,7 +26,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject", 
+    "deploy": "serve -s build",
+    "predeploy":"npm run build"
   },
   "eslintConfig": {
     "extends": [
