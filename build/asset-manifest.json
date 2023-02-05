@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/tutorify/build/static/css/main.ccc3ded5.css",
-    "main.js": "/tutorify/build/static/js/main.73dbda72.js",
-    "static/media/background.png": "/tutorify/build/static/media/background.ab410eea550a5b630408.png",
-    "static/media/video.png": "/tutorify/build/static/media/video.4d1ad9345d42c5d73ff7.png",
-    "static/media/hero-img.png": "/tutorify/build/static/media/hero-img.a58481bc0c5a9c25e4ec.png",
-    "static/media/will-img.png": "/tutorify/build/static/media/will-img.198ba0e939fa8542ad3f.png",
-    "static/media/Circle-img.png": "/tutorify/build/static/media/Circle-img.71b32e537d7a4e30aea8.png",
-    "static/media/circleIcon2.png": "/tutorify/build/static/media/circleIcon2.37b34ed868ddfe1a93bc.png",
-    "static/media/circleIcon1.png": "/tutorify/build/static/media/circleIcon1.f7c01ceee9a4c75d4371.png",
-    "static/media/circleIcon4.png": "/tutorify/build/static/media/circleIcon4.7d08be010f14c56a6309.png",
-    "index.html": "/tutorify/build/index.html",
-    "main.ccc3ded5.css.map": "/tutorify/build/static/css/main.ccc3ded5.css.map",
-    "main.73dbda72.js.map": "/tutorify/build/static/js/main.73dbda72.js.map"
+    "main.css": "/static/css/main.d5ed8fe4.css",
+    "main.js": "/static/js/main.357b3897.js",
+    "static/media/background.png": "/static/media/background.ab410eea550a5b630408.png",
+    "static/media/video.png": "/static/media/video.4d1ad9345d42c5d73ff7.png",
+    "static/media/hero-img.png": "/static/media/hero-img.a58481bc0c5a9c25e4ec.png",
+    "static/media/will-img.png": "/static/media/will-img.198ba0e939fa8542ad3f.png",
+    "static/media/Circle-img.png": "/static/media/Circle-img.71b32e537d7a4e30aea8.png",
+    "static/media/circleIcon2.png": "/static/media/circleIcon2.37b34ed868ddfe1a93bc.png",
+    "static/media/circleIcon1.png": "/static/media/circleIcon1.f7c01ceee9a4c75d4371.png",
+    "static/media/circleIcon4.png": "/static/media/circleIcon4.7d08be010f14c56a6309.png",
+    "index.html": "/index.html",
+    "main.d5ed8fe4.css.map": "/static/css/main.d5ed8fe4.css.map",
+    "main.357b3897.js.map": "/static/js/main.357b3897.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc3ded5.css",
-    "static/js/main.73dbda72.js"
+    "static/css/main.d5ed8fe4.css",
+    "static/js/main.357b3897.js"
   ]
 }
