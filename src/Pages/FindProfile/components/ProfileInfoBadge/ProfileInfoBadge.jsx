@@ -25,14 +25,14 @@ export const ProfileInfoBadge = ({ person }) => {
         {isShowFreeLessons && <FormFreeLessons />}
       </div>
       <div className="profileInfoBadge">
-        <div classname="profileInfoBadge__img">
+        <div className="profileInfoBadge__img">
           <img
             className="profileImgBadge"
             alt={person.name}
             src={process.env.PUBLIC_URL + person.imgPath}
           />
         </div>
-        <div classname="profileInfoBadge__from">
+        <div className="profileInfoBadge__from">
           <CardFrom person={person} />
         </div>
         <div className="buttonsBadge">

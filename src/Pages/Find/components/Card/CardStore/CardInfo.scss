@@ -68,3 +68,24 @@
     @include font-size(600, 16px, 27px);
   }
 }
+
+.profileInfo {
+  display: flex;
+  flex-wrap: wrap;
+  @include screen-lp {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 100%;
+    @include screen-lp {
+      width: 63%;
+    }
+  }
+  &__badge {
+    width: 100%;
+    @include screen-lp {
+      width: 35%;
+    }
+  }
+}

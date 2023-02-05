@@ -1,9 +1,9 @@
-import React from "react";
+import { useState } from "react";
 
 import arrow from "@/assets/img/errowDown.png";
 
 function Links(props) {
-  const [isAddList, setIsAddList] = React.useState();
+  const [isAddList, setIsAddList] = useState("");
 
   const onClickArrowList = () => {
     setIsAddList(!isAddList);
