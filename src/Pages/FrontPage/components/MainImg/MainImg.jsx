@@ -12,7 +12,7 @@ function MainImg() {
   return (
     <div className="mainImg">
       <div className="bg-img">
-        <img className="main-img" src="img/hero-img.png" alt="men" />
+        <img className="main-img" src="./img/hero-img.png" alt="men" />
         {flet.map((index, key) => (
           <img
             key={key}
