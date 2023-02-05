@@ -16,7 +16,6 @@ function CircleImg() {
       </div>
       <img className="icon__4" src={icon4} alt="icon" />
       <div className="circleIcon icon__5">
-        {" "}
         <img src={icon5} alt="icon" />
       </div>
       <div className="circle-img">

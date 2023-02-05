@@ -2,9 +2,9 @@ import "./MainImg.scss";
 import UserOnline from "../UserOnline/";
 import mainImg from "@/assets/img/hero-img.png";
 const flet = [
-  { src: ".@/assets/img/flet1.png", className: "main-flet__1 main-flet" },
-  { src: ".@/assets/img/flet2.png", className: "main-flet__2 main-flet" },
-  { src: ".@/assets/img/flet3.png", className: "main-flet__3 main-flet" },
+  { src: "@/assets/img/flet1.png", className: "main-flet__1 main-flet" },
+  { src: "@/assets/img/flet2.png", className: "main-flet__2 main-flet" },
+  { src: "@/assets/img/flet3.png", className: "main-flet__3 main-flet" },
 ];
 
 function MainImg() {
