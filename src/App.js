@@ -12,10 +12,10 @@ function App() {
         <div className="main-container">
           <Header />
           <Routes>
-            <Route path="/tutorify/" element={<FrontPage />} />
-            <Route path="/tutorify/lessons" element={<Lessons />} />
-            <Route exact path="/tutorify/find" element={<Find />} />
-            <Route path="/tutorify/about" element={<About />} />
+            <Route path="/" element={<FrontPage />} />
+            <Route path="/lessons" element={<Lessons />} />
+            <Route exact path="/find" element={<Find />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <Footer />

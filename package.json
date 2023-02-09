@@ -1,5 +1,5 @@
 {
-  "homepage": "https://onikachorba.github.io/tutorify",
+  "homepage": "./",
   "name": "tutorify",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,7 @@
     "test": "craco test",
     "eject": "craco eject",
     "predeploy": "npm run build",
-"deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
