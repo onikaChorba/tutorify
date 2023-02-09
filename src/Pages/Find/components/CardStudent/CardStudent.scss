@@ -1,0 +1,17 @@
+@import "@/theme/index.scss";
+
+.cardName-students {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+}
+.students {
+  &__user {
+    height: 18px;
+    margin-right: 10px;
+  }
+  &__number {
+    @include font-size(600, 16px, 28px);
+  }
+}

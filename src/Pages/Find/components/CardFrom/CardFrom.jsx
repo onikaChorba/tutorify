@@ -1,3 +1,5 @@
+import "./CardFrom.scss";
+
 function CardFrom({ person }) {
   return (
     <div className="cardName-from">

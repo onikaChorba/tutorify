@@ -28,8 +28,8 @@ function CardMain({ person }) {
     <section>
       <div className="cardMain">
         <div className="card">
-          <CardImg person={person} />
-          <div style={{ paddingLeft: "31px" }}>
+          <div style={{ paddingLeft: "31px", paddingRight: "31px" }}>
+            <CardImg person={person} />
             <CardNumberLessons />
             <div>
               <CardName person={person} />
@@ -67,7 +67,10 @@ function CardMain({ person }) {
         </div>
         <div className="cardMainInfo">
           <CardMainInfo person={person} id={person.id} />
-          <button onClick={handleClickShowProfile}>
+          <button
+            onClick={handleClickShowProfile}
+            className="cardMainInfo__button"
+          >
             <Button green small>
               <span className="button__text ">Read More</span>
             </Button>

@@ -1,3 +1,5 @@
+import "./CardName.scss";
+
 export const CardName = ({ person }) => {
   const star = [
     { src: "../../img/star.png" },

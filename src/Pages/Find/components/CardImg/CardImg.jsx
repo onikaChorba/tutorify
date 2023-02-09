@@ -1,3 +1,5 @@
+import "./CardImg";
+
 export const CardImg = ({ person }) => {
   return (
     <div style={{ position: "relative" }}>

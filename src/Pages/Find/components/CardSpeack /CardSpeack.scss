@@ -1,0 +1,11 @@
+@import "@/theme/index.scss";
+.cardName-speak {
+  padding-bottom: 10px;
+  &__title {
+    @include font-size(600, 16px, 28px);
+  }
+  &__lang {
+    @include font-size(400, 14px, 24px);
+    color: #979797;
+  }
+}
