@@ -2,10 +2,10 @@ import React, { useState, useMemo } from "react";
 import Select from "react-select";
 import "./Search.scss";
 import "../../components/FilterButton/FilterButton.scss";
-import Card from "../../components/Card/CardMain/CardMain";
 import Button from "@/components/Button";
 import search from "@/assets/img/find/search.png";
 import data from "../../FindData";
+import { CardBlock } from "../СardBlock/CardBlock";
 
 function Search() {
   //useState find in input
@@ -139,7 +139,7 @@ function Search() {
             );
           })
           .map((person) => (
-            <Card
+            <CardBlock
               key={person.id}
               person={person}
               stars={person.stars}
@@ -147,6 +147,14 @@ function Search() {
               name={person.name}
               tipo={person.tipo}
             />
+            // <Card
+            //   key={person.id}
+            //   person={person}
+            //   stars={person.stars}
+            //   speaks={person.speaks}
+            //   name={person.name}
+            //   tipo={person.tipo}
+            // />
           ))
           .slice(0, next)}
       </div>

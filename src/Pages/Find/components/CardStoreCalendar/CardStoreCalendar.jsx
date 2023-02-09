@@ -3,7 +3,7 @@ import Calendar from "moedim";
 
 import "./CardStoreCalendar";
 
-import { CardName } from "../../CardMain/CardName/CardName";
+import { CardName } from "../CardName/CardName";
 
 function CardStoreCalendar({ person }) {
   const [value, setValue] = useState(new Date());
