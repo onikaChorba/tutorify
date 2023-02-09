@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tutorify/static/css/main.091cd485.css",
-    "main.js": "/tutorify/static/js/main.1a628cee.js",
+    "main.js": "/tutorify/static/js/main.39b89854.js",
     "static/media/background.png": "/tutorify/static/media/background.ab410eea550a5b630408.png",
     "static/media/video.png": "/tutorify/static/media/video.4d1ad9345d42c5d73ff7.png",
     "static/media/hero-img.png": "/tutorify/static/media/hero-img.a58481bc0c5a9c25e4ec.png",
@@ -14,10 +14,10 @@
     "static/media/flet2.png": "/tutorify/static/media/flet2.9577af61a707b5d7e94e.png",
     "index.html": "/tutorify/index.html",
     "main.091cd485.css.map": "/tutorify/static/css/main.091cd485.css.map",
-    "main.1a628cee.js.map": "/tutorify/static/js/main.1a628cee.js.map"
+    "main.39b89854.js.map": "/tutorify/static/js/main.39b89854.js.map"
   },
   "entrypoints": [
     "static/css/main.091cd485.css",
-    "static/js/main.1a628cee.js"
+    "static/js/main.39b89854.js"
   ]
 }
