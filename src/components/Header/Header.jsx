@@ -56,28 +56,32 @@ function Header() {
             }
           >
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="/" className="nav-link">
+              <NavLink activeclassname="active" to="./" className="nav-link">
                 Home
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="/lessons"
+                to="./lessons"
                 className="nav-link"
               >
                 Lessons
               </NavLink>
             </li>
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="/find" className="nav-link">
+              <NavLink
+                activeclassname="active"
+                to="./find"
+                className="nav-link"
+              >
                 Find Tutors
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="/about"
+                to="./about"
                 className="nav-link"
               >
                 About Us
