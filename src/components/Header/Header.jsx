@@ -115,7 +115,7 @@ function Header() {
                 display: "flex",
                 justifyContent: "center",
               }
-            : { background: "red" }
+            : null
         }
       >
         {isShowSingUp && <FormSingUp />}
@@ -127,7 +127,7 @@ function Header() {
                 display: "flex",
                 justifyContent: "center",
               }
-            : { background: "red" }
+            : null
         }
       >
         {isShowLoginIn && <FormLoginIn />}
