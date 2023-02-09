@@ -6,6 +6,7 @@ import menu from "@/assets/img/menu.png";
 import { useState } from "react";
 import { FormSingUp } from "../Form/FormSingUp/FormSingUp";
 import { FormLoginIn } from "../Form/FormLoginIn/FormLoginIn";
+import routes from "../../routes";
 
 function Header() {
   //useState show Menu
@@ -56,28 +57,36 @@ function Header() {
             }
           >
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="/" className="nav-link">
+              <NavLink
+                activeclassname="active"
+                to={routes.HOME}
+                className="nav-link"
+              >
                 Home
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="/lessons"
+                to={routes.LESSONS}
                 className="nav-link"
               >
                 Lessons
               </NavLink>
             </li>
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="/find" className="nav-link">
+              <NavLink
+                activeclassname="active"
+                to={routes.FIND}
+                className="nav-link"
+              >
                 Find Tutors
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="/about"
+                to={routes.ABOUT}
                 className="nav-link"
               >
                 About Us
