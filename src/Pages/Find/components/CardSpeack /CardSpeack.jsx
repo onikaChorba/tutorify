@@ -1,3 +1,5 @@
+import "./CardSpeack.scss";
+
 export const CardSpeack = ({ person }) => {
   return (
     <div className="cardName-speak">

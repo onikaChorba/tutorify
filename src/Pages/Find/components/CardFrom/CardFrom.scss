@@ -1,0 +1,20 @@
+@import "@/theme/index.scss";
+.cardName-from {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+.cardFrom {
+  border-bottom: 1px solid #cccccc;
+  margin-right: 7%;
+}
+.price {
+  &__title {
+    @include font-size(600, 14px, 24px);
+  }
+  &__price {
+    @include font-size(400, 14px, 24px);
+    color: #979797;
+  }
+}

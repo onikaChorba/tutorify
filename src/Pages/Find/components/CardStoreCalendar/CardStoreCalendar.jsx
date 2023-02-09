@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Calendar from "moedim";
 
-import "./CardStoreCalendar";
+import "./CardStoreCalendar.scss";
 
 import { CardName } from "../CardName/CardName";
 
@@ -21,19 +21,17 @@ function CardStoreCalendar({ person }) {
       >
         <CardName person={person} />
         <div>
-          <div className="working" style={{ display: "flex" }}>
+          <div className="storeBlock">
             <p> Working Hours:</p>
-            <span style={{ paddingLeft: "10px" }}>{person.workingHours}</span>
+            <span className="storeBlock__text">{person.workingHours}</span>
           </div>
-          <div className="holiday" style={{ display: "flex" }}>
+          <div className="storeBlock">
             <p> Holiday:</p>
-            <span style={{ paddingLeft: "10px" }}>{person.holiday}</span>
+            <span className="storeBlock__text">{person.holiday}</span>
           </div>
-          <div className="nationalHoliday" style={{ display: "flex" }}>
+          <div className="storeBlock">
             <p> National Day Holiday:</p>
-            <span style={{ paddingLeft: "10px" }}>
-              {person.holidayNacional}
-            </span>
+            <span className="storeBlock__text">{person.holidayNacional}</span>
           </div>
         </div>
       </div>

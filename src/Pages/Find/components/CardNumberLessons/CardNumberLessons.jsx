@@ -1,5 +1,5 @@
 import play from "@/assets/img/find/play.png";
-
+import "./CardNumberLessons.scss";
 export const CardNumberLessons = () => {
   return (
     <div className="numberLessons">

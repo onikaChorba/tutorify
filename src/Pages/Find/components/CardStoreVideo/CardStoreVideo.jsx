@@ -1,3 +1,5 @@
+import "./CardStoreVideo.scss";
+
 function CardStoreVideo({ person }) {
   return (
     <section className="cardInfoVideo">

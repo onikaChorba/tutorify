@@ -1,0 +1,26 @@
+@import "@/theme/index.scss";
+
+.cardInfo {
+  &__nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    color: #979797;
+    @include font-size(600, 16px, 27px);
+  }
+}
+.info {
+  padding-left: 35px;
+  width: 95%;
+  &__title {
+    color: black;
+    @include font-size(600, 16px, 27px);
+    padding-bottom: 4px;
+  }
+  &__text {
+    color: #979797;
+    @include font-size(400, 14px, 24px);
+    padding-bottom: 20px;
+  }
+}

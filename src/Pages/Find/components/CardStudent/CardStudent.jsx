@@ -1,3 +1,4 @@
+import "./CardStudent.scss";
 import userIcon from "@/assets/img/user-icon.png";
 
 export const CardStudent = () => {
