@@ -1,15 +1,15 @@
 import "./ProfileInfoCard.scss";
 
-import { CardName } from "../../../Find/components/Card/CardMain/CardName/CardName";
-import { CardNumberLessons } from "../../../Find/components/Card/CardMain/CardNumberLessons/CardNumberLessons";
-import { CardSpeack } from "../../../Find/components/Card/CardMain/CardSpeack /CardSpeack";
-import { CardStudent } from "../../../Find/components/Card/CardMain/CardStudent/CardStudent";
-import { ProfileInfoAbout } from "../ProfileInfoAbout/ProfileInfoAbout";
-import { ProfileInfoNavMain } from "../ProfileInfoNavMain/ProfileInfoNavMain";
-import { ProfileInfoSchedule } from "../ProfileInfoSchedule/ProfileInfoSchedule";
-import { ProfileInfoReview } from "../ProfileInfoReview/ProfileInfoReview";
-import { ProfileInfoResume } from "../ProfileInfoResume/ProfileInfoResume";
-import CardFrom from "../../../Find/components/Card/CardMain/CardFrom/CardFrom.jsx";
+import { CardName } from "../../components/CardName/CardName";
+import { CardNumberLessons } from "../../components/CardNumberLessons/CardNumberLessons";
+import { CardSpeack } from "../../components/CardSpeack /CardSpeack";
+import { CardStudent } from "../../components/CardStudent/CardStudent";
+import { ProfileInfoAbout } from "../../components/ProfileInfoAbout/ProfileInfoAbout";
+import { ProfileInfoNavMain } from "../../components/ProfileInfoNavMain/ProfileInfoNavMain";
+import { ProfileInfoSchedule } from "../../components/ProfileInfoSchedule/ProfileInfoSchedule";
+import { ProfileInfoReview } from "../../../Find/components/ProfileInfoReview/ProfileInfoReview";
+import { ProfileInfoResume } from "../../components/ProfileInfoResume/ProfileInfoResume";
+import CardFrom from "../../components/CardFrom/CardFrom.jsx";
 export const ProfileInfoCard = ({ person }) => {
   const icon = [
     { src: "../../img/icon1.png" },

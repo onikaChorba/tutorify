@@ -1,18 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import "./CardMain.scss";
-import CardInfo from "../CardStore/CardInfo";
-import Button from "../../../../../components/Button";
-import { CardImg } from "./CardImg/CardImg";
-import { CardNumberLessons } from "./CardNumberLessons/CardNumberLessons";
-import { CardSpeack } from "./CardSpeack /CardSpeack";
-import CardFrom from "../CardMain/CardFrom/CardFrom.jsx";
-import { CardStudent } from "./CardStudent/CardStudent";
-import { CardName } from "./CardName/CardName";
+import CardMainInfo from "../CardMainInfo/CardMainInfo";
+import Button from "../../../../components/Button/Button";
+import { CardImg } from "../../components/CardImg/CardImg";
+import { CardNumberLessons } from "../../components/CardNumberLessons/CardNumberLessons";
+import { CardSpeack } from "../../../Find/components/CardSpeack /CardSpeack";
+import CardFrom from "../../components/CardFrom/CardFrom.jsx";
+import { CardStudent } from "../../components/CardStudent/CardStudent";
+import { CardName } from "../../components/CardName/CardName";
 import { FormFreeLessons } from "@/components/Form/FormFreeLessons/FormFreeLessons";
-import { ProfileInfoCard } from "../../../../FindProfile/components/ProfileInfoCard/ProfileInfoCard";
-import { ProfileInfoBadge } from "../../../../FindProfile/components/ProfileInfoBadge/ProfileInfoBadge";
-function Card({ person }) {
+import { ProfileInfoCard } from "../ProfileInfoCard/ProfileInfoCard";
+import { ProfileInfoBadge } from "../../../Find/components/ProfileInfoBadge/ProfileInfoBadge";
+function CardMain({ person }) {
   //useState Free Lessons
   const [isShowFreeLessons, setIsShowFreeLessons] = useState(false);
   const handleClickShowFreeLessons = () => {
@@ -66,7 +66,7 @@ function Card({ person }) {
           {isShowFreeLessons && <FormFreeLessons />}
         </div>
         <div className="cardMainInfo">
-          <CardInfo person={person} id={person.id} />
+          <CardMainInfo person={person} id={person.id} />
           <button onClick={handleClickShowProfile}>
             <Button green small>
               <span className="button__text ">Read More</span>
@@ -89,4 +89,4 @@ function Card({ person }) {
   );
 }
 
-export default Card;
+export default CardMain;

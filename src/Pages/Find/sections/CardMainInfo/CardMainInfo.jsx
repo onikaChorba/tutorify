@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import "../CardStore/CardInfo.scss";
+import "./CardMainInfo.scss";
 
-import CardStoreCalendar from "./CardStoreCalendar/CardStoreCalendar";
-import CardStoreVideo from "./CardStoreVideo/CardStoreVideo";
+import CardStoreCalendar from "../../components/CardStoreCalendar/CardStoreCalendar";
+import CardStoreVideo from "../../components/CardStoreVideo/CardStoreVideo";
 
-function CardInfo({ person }) {
+function CardMainInfo({ person }) {
   const [isCardInfo, setCardInfo] = useState(true);
   const handleClickSchedule = () => {
     setCardInfo(!isCardInfo);
@@ -37,4 +37,4 @@ function CardInfo({ person }) {
   );
 }
 
-export default CardInfo;
+export default CardMainInfo;
