@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/tutorify/static/css/main.091cd485.css",
-    "main.js": "/tutorify/static/js/main.d627caf8.js",
-    "static/media/background.png": "/tutorify/static/media/background.ab410eea550a5b630408.png",
-    "static/media/video.png": "/tutorify/static/media/video.4d1ad9345d42c5d73ff7.png",
-    "static/media/hero-img.png": "/tutorify/static/media/hero-img.a58481bc0c5a9c25e4ec.png",
-    "static/media/will-img.png": "/tutorify/static/media/will-img.198ba0e939fa8542ad3f.png",
-    "static/media/Circle-img.png": "/tutorify/static/media/Circle-img.71b32e537d7a4e30aea8.png",
-    "static/media/circleIcon2.png": "/tutorify/static/media/circleIcon2.37b34ed868ddfe1a93bc.png",
-    "static/media/circleIcon1.png": "/tutorify/static/media/circleIcon1.f7c01ceee9a4c75d4371.png",
-    "static/media/circleIcon4.png": "/tutorify/static/media/circleIcon4.7d08be010f14c56a6309.png",
-    "static/media/flet1.png": "/tutorify/static/media/flet1.4b2e43701b6f4c90153d.png",
-    "static/media/flet2.png": "/tutorify/static/media/flet2.9577af61a707b5d7e94e.png",
-    "index.html": "/tutorify/index.html",
-    "main.091cd485.css.map": "/tutorify/static/css/main.091cd485.css.map",
-    "main.d627caf8.js.map": "/tutorify/static/js/main.d627caf8.js.map"
+    "main.css": "/static/css/main.bbd54e7c.css",
+    "main.js": "/static/js/main.5de293d4.js",
+    "static/media/background.png": "/static/media/background.ab410eea550a5b630408.png",
+    "static/media/video.png": "/static/media/video.4d1ad9345d42c5d73ff7.png",
+    "static/media/hero-img.png": "/static/media/hero-img.a58481bc0c5a9c25e4ec.png",
+    "static/media/will-img.png": "/static/media/will-img.198ba0e939fa8542ad3f.png",
+    "static/media/Circle-img.png": "/static/media/Circle-img.71b32e537d7a4e30aea8.png",
+    "static/media/circleIcon2.png": "/static/media/circleIcon2.37b34ed868ddfe1a93bc.png",
+    "static/media/circleIcon1.png": "/static/media/circleIcon1.f7c01ceee9a4c75d4371.png",
+    "static/media/circleIcon4.png": "/static/media/circleIcon4.7d08be010f14c56a6309.png",
+    "static/media/flet1.png": "/static/media/flet1.4b2e43701b6f4c90153d.png",
+    "static/media/flet2.png": "/static/media/flet2.9577af61a707b5d7e94e.png",
+    "index.html": "/index.html",
+    "main.bbd54e7c.css.map": "/static/css/main.bbd54e7c.css.map",
+    "main.5de293d4.js.map": "/static/js/main.5de293d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.091cd485.css",
-    "static/js/main.d627caf8.js"
+    "static/css/main.bbd54e7c.css",
+    "static/js/main.5de293d4.js"
   ]
 }
