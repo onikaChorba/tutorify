@@ -1,15 +1,15 @@
 @import "@/theme/index.scss";
 .cardMainInfo {
-  margin: 66px 2% 33px 10%;
+  //margin: 66px 2% 33px 10%;
   width: 100%;
   min-height: 575px;
   height: 100%;
   @include screen-tb {
-    margin: 66px 2% 0px 0%;
-    width: 47%;
+    margin: 33px 2% 0px 0%;
+    width: 57%;
   }
   @include screen-lp {
-    width: 47%;
+    width: 57%;
   }
 }
 .cardNav {

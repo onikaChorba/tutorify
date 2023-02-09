@@ -12,7 +12,8 @@
 .card,
 .cardMainInfo {
   min-height: 575px;
-  margin: 66px 2% 33px 10%;
+  margin: 33px 2% 0% 0%;
+  //  margin: 66px 2% 33px 10%;
   background: $white;
   box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
     0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
@@ -23,11 +24,11 @@
   @include screen-tb {
     min-height: 575px;
     height: 100%;
-    width: 47%;
+    // width: 47%;
   }
   @include screen-lp {
-    margin: 66px 2% 33px 10%;
-    width: 37%;
+    // margin: 66px 2% 33px 10%;
+    // width: 37%;
     height: 100%;
     min-height: 575px;
   }

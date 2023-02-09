@@ -56,28 +56,36 @@ function Header() {
             }
           >
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="." className="nav-link">
+              <NavLink
+                activeclassname="active"
+                to="/tutorify/"
+                className="nav-link"
+              >
                 Home
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="/lessons"
+                to="/tutorify/lessons"
                 className="nav-link"
               >
                 Lessons
               </NavLink>
             </li>
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="/find" className="nav-link">
+              <NavLink
+                activeclassname="active"
+                to="/tutorify/find"
+                className="nav-link"
+              >
                 Find Tutors
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="/about"
+                to="/tutorify/about"
                 className="nav-link"
               >
                 About Us
@@ -107,7 +115,7 @@ function Header() {
                 display: "flex",
                 justifyContent: "center",
               }
-            : { background: "red" }
+            : null
         }
       >
         {isShowSingUp && <FormSingUp />}
@@ -119,7 +127,7 @@ function Header() {
                 display: "flex",
                 justifyContent: "center",
               }
-            : { background: "red" }
+            : null
         }
       >
         {isShowLoginIn && <FormLoginIn />}
