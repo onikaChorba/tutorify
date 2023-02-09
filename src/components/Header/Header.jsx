@@ -56,14 +56,18 @@ function Header() {
             }
           >
             <li className="nav-bar__list">
-              <NavLink activeclassname="active" to="./" className="nav-link">
+              <NavLink
+                activeclassname="active"
+                to="/tutorify/"
+                className="nav-link"
+              >
                 Home
               </NavLink>
             </li>
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="./lessons"
+                to="/tutorify/lessons"
                 className="nav-link"
               >
                 Lessons
@@ -72,7 +76,7 @@ function Header() {
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="./find"
+                to="/tutorify/find"
                 className="nav-link"
               >
                 Find Tutors
@@ -81,7 +85,7 @@ function Header() {
             <li className="nav-bar__list">
               <NavLink
                 activeclassname="active"
-                to="./about"
+                to="/tutorify/about"
                 className="nav-link"
               >
                 About Us
