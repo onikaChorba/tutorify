@@ -41,11 +41,11 @@ class ReviewUser extends React.Component {
   }
   render() {
     const star = [
-      { src: "../../img/star.png" },
-      { src: "../../img/star.png" },
-      { src: "../../img/star.png" },
-      { src: "../../img/star.png" },
-      { src: "../../img/star.png" },
+      { src: "./img/star.png" },
+      { src: "./img/star.png" },
+      { src: "./img/star.png" },
+      { src: "./img/star.png" },
+      { src: "./img/star.png" },
     ];
     return (
       <div className="reviewUser">

@@ -7,11 +7,11 @@ import user from "@/assets/img/user1.png";
 import paws from "@/assets/img/paws.png";
 
 const star = [
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
-  { src: "../../img/star.png" },
+  { src: "./img/star.png" },
+  { src: "./img/star.png" },
+  { src: "./img/star.png" },
+  { src: "./img/star.png" },
+  { src: "./img/star.png" },
 ];
 function Slider() {
   return (

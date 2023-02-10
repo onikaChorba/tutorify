@@ -2,11 +2,11 @@ import "./ReviewStars.scss";
 
 export const ReviewStars = ({ person }) => {
   const star = [
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
   ];
   return (
     <div className="ReviewStarsBox">
