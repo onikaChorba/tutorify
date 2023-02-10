@@ -65,7 +65,7 @@ function GetBox() {
                 display: "flex",
                 justifyContent: "center",
               }
-            : { background: "red" }
+            : null
         }
       >
         {isShowFreeLessons && <FormFreeLessons />}
