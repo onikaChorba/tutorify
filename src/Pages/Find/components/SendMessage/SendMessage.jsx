@@ -28,7 +28,7 @@ export default function SendMessage({ person }) {
       <h1 className="sendMessage__title">
         Tutors Chat with: <span>{person.name}</span>
       </h1>
-      <div className="messages">
+      <div className="messages" id="messages">
         {messages.map((message, idx) => {
           return (
             <div className="message" key={idx}>
@@ -45,11 +45,11 @@ export default function SendMessage({ person }) {
             className="sendMessage__input"
             type="text"
           />
-          <div className="sendMessage__button">
+          <button className="sendMessage__button">
             <Button orange small>
               <span className="button__text "> SEND </span>
             </Button>
-          </div>
+          </button>
         </form>
       </div>
     </div>

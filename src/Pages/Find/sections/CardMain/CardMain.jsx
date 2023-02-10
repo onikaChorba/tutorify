@@ -41,13 +41,14 @@ function CardMain({ person }) {
                 style={{ display: "flex", justifyContent: "spase-beetwean" }}
               >
                 <CardStudent />
-                <div className="cardButton">
-                  <button onClick={handleClickShowFreeLessons}>
-                    <Button green small>
-                      <span className="button__text "> Book</span>
-                    </Button>
-                  </button>
-                </div>
+                <button
+                  onClick={handleClickShowFreeLessons}
+                  className="cardButton"
+                >
+                  <Button green small>
+                    <span className="button__text "> Book</span>
+                  </Button>
+                </button>
               </div>
             </div>
           </div>

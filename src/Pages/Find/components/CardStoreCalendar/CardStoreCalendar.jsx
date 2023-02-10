@@ -17,7 +17,11 @@ function CardStoreCalendar({ person }) {
         <Calendar value={value} onChange={(d) => setValue(d)} />
       </div>
       <div
-        style={{ paddingLeft: "10%", paddingBottom: "10%", paddingTop: "10%" }}
+        style={{
+          paddingLeft: "10%",
+          paddingBottom: "50px",
+          paddingTop: "50px",
+        }}
       >
         <CardName person={person} />
         <div>
