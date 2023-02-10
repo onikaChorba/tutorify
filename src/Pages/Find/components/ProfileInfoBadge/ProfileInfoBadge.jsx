@@ -43,16 +43,13 @@ export const ProfileInfoBadge = ({ person }) => {
             {isMessage && <SendMessage person={person} />}
           </div>
           <button onClick={onClickMessage}>
-            <BadgeButton
-              src="../../img/check.png"
-              text="Show Chat with Tutors"
-            />
+            <BadgeButton src="./img/check.png" text="Show Chat with Tutors" />
           </button>
           <button onClick={handleClickShowFreeLessons}>
-            <BadgeButton src="../../img/light.png" text="Book Trial Lesson" />
+            <BadgeButton src="./img/light.png" text="Book Trial Lesson" />
           </button>
-          <BadgeButton src="../../img/book.png" text="Book Private" />
-          <BadgeButton src="../../img/like.png" text="Book Private" />
+          <BadgeButton src="./img/book.png" text="Book Private" />
+          <BadgeButton src="./img/like.png" text="Book Private" />
         </div>
       </div>
     </section>

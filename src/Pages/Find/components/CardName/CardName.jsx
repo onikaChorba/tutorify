@@ -2,11 +2,11 @@ import "./CardName.scss";
 
 export const CardName = ({ person }) => {
   const star = [
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
-    { src: "../../img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
+    { src: "./img/star.png" },
   ];
   return (
     <article className="cardName">

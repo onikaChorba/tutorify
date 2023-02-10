@@ -5,19 +5,19 @@ import Links from "@/components/Links/Links";
 function Footer() {
   const icon = [
     {
-      src: "../../img/icon-google.png",
+      src: "./img/icon-google.png",
       href: "https://www.google.com.ua/?hl=ua",
     },
     {
-      src: "../../img/icon-twiter.png",
+      src: "./img/icon-twiter.png",
       href: "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidWsifQ%3D%3D%22%7D",
     },
     {
-      src: "../../img/icon-instagram.png",
+      src: "./img/icon-instagram.png",
       href: "https://www.instagram.com",
     },
     {
-      src: "../../img/icon-linkedin.png",
+      src: "./img/icon-linkedin.png",
       href: "https://www.linkedin.com/feed/",
     },
   ];
