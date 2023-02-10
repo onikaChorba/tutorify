@@ -1,14 +1,11 @@
 import "./MainImg.scss";
 import UserOnline from "../UserOnline/UserOnline";
 import mainImg from "@/assets/img/hero-img.png";
-import flet1 from "@/assets/img/flet1.png";
-import flet2 from "@/assets/img/flet2.png";
-import flet3 from "@/assets/img/flet3.png";
 
 const flet = [
-  { src: { flet1 }, className: "main-flet__1 main-flet" },
-  { src: { flet2 }, className: "main-flet__2 main-flet" },
-  { src: { flet3 }, className: "main-flet__3 main-flet" },
+  { src: "./img/flet1.png", className: "main-flet__1 main-flet" },
+  { src: "./img/flet2.png", className: "main-flet__2 main-flet" },
+  { src: "./img/flet3.png", className: "main-flet__3 main-flet" },
 ];
 
 function MainImg() {
