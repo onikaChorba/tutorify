@@ -5,3 +5,4 @@
 ✔️ using  common data filtering techniques (filter(), map(), splise()...)</br>
 ✔️ creation of simple forms for interaction with the user </br>
 ✔️ adaptation to different screen sizes</br>
+✔️ site deployed to the github-pages environment by the pages build and deployment workflow
