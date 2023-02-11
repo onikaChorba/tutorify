@@ -1,20 +1,20 @@
 import "./ProfileInfoCard.scss";
 
-import { CardName } from "../../components/CardName/CardName";
-import { CardNumberLessons } from "../../components/CardNumberLessons/CardNumberLessons";
-import { CardSpeack } from "../../components/CardSpeack /CardSpeack";
-import { CardStudent } from "../../components/CardStudent/CardStudent";
-import { ProfileInfoAbout } from "../../components/ProfileInfoAbout/ProfileInfoAbout";
-import { ProfileInfoNavMain } from "../../components/ProfileInfoNavMain/ProfileInfoNavMain";
-import { ProfileInfoSchedule } from "../../components/ProfileInfoSchedule/ProfileInfoSchedule";
-import { ProfileInfoReview } from "../../../Find/components/ProfileInfoReview/ProfileInfoReview";
-import { ProfileInfoResume } from "../../components/ProfileInfoResume/ProfileInfoResume";
-import CardFrom from "../../components/CardFrom/CardFrom.jsx";
+import { CardName } from "@/Pages/Find/components/CardName/CardName";
+import { CardNumberLessons } from "@/Pages/Find/components/CardNumberLessons/CardNumberLessons";
+import { CardSpeack } from "@/Pages/Find/components/CardSpeack /CardSpeack";
+import { CardStudent } from "@/Pages/Find/components/CardStudent/CardStudent";
+import { ProfileInfoAbout } from "@/Pages/Find/components/ProfileInfoAbout/ProfileInfoAbout";
+import { ProfileInfoNavMain } from "@/Pages/Find/components/ProfileInfoNavMain/ProfileInfoNavMain";
+import { ProfileInfoSchedule } from "@/Pages/Find/components/ProfileInfoSchedule/ProfileInfoSchedule";
+import { ProfileInfoReview } from "@/Pages/Find/components/ProfileInfoReview/ProfileInfoReview";
+import { ProfileInfoResume } from "@/Pages/Find/components/ProfileInfoResume/ProfileInfoResume";
+import CardFrom from "@/Pages/Find/components/CardFrom/CardFrom.jsx";
 export const ProfileInfoCard = ({ person }) => {
   const icon = [
-    { src: "../../img/icon1.png" },
-    { src: "../../img/icon2.png" },
-    { src: "../../img/icon3.png" },
+    { src: "./img/icon1.png" },
+    { src: "./img/icon2.png" },
+    { src: "./img/icon3.png" },
   ];
   return (
     <section>

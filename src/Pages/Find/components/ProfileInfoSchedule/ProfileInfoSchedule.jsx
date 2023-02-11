@@ -1,5 +1,4 @@
 import "./ProfileInfoSchedule.scss";
-// import Calendar from "moedim";
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";

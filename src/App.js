@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import FrontPage from "./Pages/FrontPage/FrontPage";
 import Find from "./Pages/Find/Find";
+import About from "./Pages/About/About";
 import Footer from "@/components/Footer/Footer";
 import routes from "./routes";
 
@@ -27,7 +28,5 @@ function App() {
 function Lessons() {
   return <h2>Lessons</h2>;
 }
-function About() {
-  return <h2>About</h2>;
-}
+
 export default App;

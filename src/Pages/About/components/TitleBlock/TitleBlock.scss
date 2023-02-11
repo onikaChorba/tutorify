@@ -1,0 +1,16 @@
+@import "@/theme/index.scss";
+.titleBlock {
+  text-align: center;
+  &__title {
+    @include font-size(700, 32px, 51px);
+    letter-spacing: 3.5%;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  &__text {
+    @include font-size(500, 24px, 32px);
+    letter-spacing: 3.5%;
+    width: 100%;
+    padding-bottom: 35px;
+  }
+}

@@ -1,5 +1,3 @@
-import React from "react";
-
 import Search from "./sections/Search/Search";
 import initialDetails from "./FindData";
 

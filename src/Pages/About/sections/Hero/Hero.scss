@@ -1,0 +1,18 @@
+@import "@/theme/index.scss";
+.heroAbout {
+  padding-top: 126px;
+  padding-bottom: 66px;
+  &__img {
+    position: relative;
+    filter: brightness(40%);
+  }
+  &__title {
+    color: $white;
+    width: 65%;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+    top: 20%;
+    left: 20%;
+  }
+}
