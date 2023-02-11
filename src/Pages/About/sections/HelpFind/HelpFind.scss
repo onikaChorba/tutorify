@@ -1,0 +1,30 @@
+@import "@/theme/index.scss";
+.helpFindBlock {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+.helpFindInfo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.helpFind {
+  width: 50%;
+  &__title {
+    width: 95%;
+    @include font-size(600, 36px, 48px);
+    color: black;
+    letter-spacing: 3.5%;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  &__text {
+    width: 95%;
+    @include font-size(400, 18px, 29px);
+    color: #6c6c6c;
+    padding-bottom: 33px;
+  }
+  &__img {
+    width: 50%;
+    filter: brightness(40%);
+  }
+}
