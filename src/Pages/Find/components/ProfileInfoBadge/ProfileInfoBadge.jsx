@@ -1,6 +1,6 @@
 import "./ProfileInfoBadge.scss";
 import { useState } from "react";
-import CardFrom from "../../../Find/components/CardFrom/CardFrom";
+import CardFrom from "@/Pages/Find/components/CardFrom/CardFrom";
 import SendMessage from "../SendMessage/SendMessage";
 import { BadgeButton } from "../BadgeButton/BadgeButton";
 import { FormFreeLessons } from "@/components/Form/FormFreeLessons/FormFreeLessons";

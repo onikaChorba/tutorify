@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "../Form.scss";
 
-import Button from "../../Button";
+import Button from "@/components/Button";
 
 export const FormFreeLessons = () => {
   const [firstName, setFirstName] = useState(null);
@@ -94,7 +94,7 @@ export const FormFreeLessons = () => {
         <button type="submit" onClick={() => handleSubmit()}>
           <Button orange small>
             <span className="button__text ">Submit!</span>
-          </Button>{" "}
+          </Button>
         </button>
       </div>
     </div>

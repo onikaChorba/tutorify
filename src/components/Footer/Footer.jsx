@@ -17,7 +17,7 @@ function Footer() {
       href: "https://www.instagram.com",
     },
     {
-      src: "./img/Icon-linkedin.png",
+      src: "../img/Icon-linkedin.png",
       href: "https://www.linkedin.com/feed/",
     },
   ];
