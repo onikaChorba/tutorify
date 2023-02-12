@@ -6,22 +6,22 @@ export const LessonsBlock = () => {
     {
       src: "./img/online-lesson.png",
       title: "Grammar courses",
-      text: "Learn how to apply the rules and structure of lenguage",
+      text: "Learn how to apply the rules and structure of language",
     },
     {
       src: "./img/lesson.png",
       title: "Grammar courses",
-      text: "Learn how to apply the rules and structure of lenguage",
+      text: "Learn how to apply the rules and structure of language",
     },
     {
       src: "./img/teacher.png",
       title: "Grammar courses",
-      text: "Learn how to apply the rules and structure of lenguage",
+      text: "Learn how to apply the rules and structure of language",
     },
     {
       src: "./img/online-lesson.png",
       title: "Grammar courses",
-      text: "Learn how to apply the rules and structure of lenguage",
+      text: "Learn how to apply the rules and structure of language",
     },
   ];
   return (

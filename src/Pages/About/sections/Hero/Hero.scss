@@ -1,18 +1,33 @@
 @import "@/theme/index.scss";
 .heroAbout {
-  padding-top: 126px;
-  padding-bottom: 66px;
+  padding-top: 33px;
+  @include screen-tb {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+
   &__img {
-    position: relative;
     filter: brightness(40%);
+    @include screen-tb {
+      position: relative;
+    }
   }
   &__title {
+    padding-top: 33px;
     color: $white;
-    width: 65%;
+    width: 80%;
     height: auto;
-    position: absolute;
     margin: 0 auto;
-    top: 20%;
-    left: 20%;
+
+    @include screen-tb {
+      padding-top: 0;
+      width: 65%;
+      position: absolute;
+      top: 12%;
+      left: 20%;
+    }
+    @include screen-lp {
+      top: 20%;
+    }
   }
 }

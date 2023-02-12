@@ -1,14 +1,23 @@
 @import "@/theme/index.scss";
 .helpFindBlock {
-  padding-top: 66px;
+  padding-top: 33px;
   padding-bottom: 66px;
+  @include screen-tb {
+    padding-top: 66px;
+  }
 }
 .helpFindInfo {
   display: flex;
   flex-wrap: wrap;
 }
 .helpFind {
-  width: 50%;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 20px;
+  @include screen-lp {
+    width: 50%;
+  }
+
   &__title {
     width: 95%;
     @include font-size(600, 36px, 48px);
@@ -24,7 +33,11 @@
     padding-bottom: 33px;
   }
   &__img {
-    width: 50%;
+    margin: 0 auto;
+    width: 90%;
     filter: brightness(40%);
+    @include screen-lp {
+      width: 50%;
+    }
   }
 }
