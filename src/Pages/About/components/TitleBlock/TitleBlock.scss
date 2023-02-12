@@ -6,11 +6,19 @@
     letter-spacing: 3.5%;
     width: 100%;
     padding-bottom: 25px;
+    color: $black-light;
+    @include screen-tb {
+      color: $white;
+    }
   }
   &__text {
+    color: $grey;
     @include font-size(500, 24px, 32px);
     letter-spacing: 3.5%;
     width: 100%;
     padding-bottom: 35px;
+    @include screen-tb {
+      color: $white;
+    }
   }
 }

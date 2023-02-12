@@ -1,7 +1,8 @@
 @import "@/theme/index.scss";
 .lessonsBlocks {
-  padding-top: 66px;
+  padding-top: 33px;
   padding-bottom: 66px;
+
   &__img {
     margin-bottom: 20px;
     display: flex;
@@ -9,7 +10,7 @@
 }
 .lessonsImg {
   width: 50px;
-  height: auto;
+  height: 50px;
 }
 .lessonsTitle {
   margin-left: 20px;

@@ -1,7 +1,6 @@
 @import "@/theme/index.scss";
 
 .freeLessons {
-  margin-top: 126px;
   width: 100%;
   background: $white;
   box-shadow: 0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
@@ -13,6 +12,9 @@
   margin: 34px;
   padding-top: 34px;
   padding-bottom: 34px;
+  @include screen-lp {
+    margin-top: 126px;
+  }
 
   &__title {
     color: black;

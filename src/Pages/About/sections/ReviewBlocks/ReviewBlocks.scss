@@ -2,7 +2,9 @@
 .reviewBlocks {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 33px;
+  @include screen-lp {
+    padding-top: 33px;
+  }
 }
 .reviewBlock {
   box-shadow: 0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
