@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import FrontPage from "./Pages/FrontPage/FrontPage";
 import Find from "./Pages/Find/Find";
 import About from "./Pages/About/About";
+import Lessons from "./Pages/Lessons/Lessons";
 import Footer from "@/components/Footer/Footer";
 import routes from "./routes";
 
@@ -25,8 +26,4 @@ function App() {
     </div>
   );
 }
-function Lessons() {
-  return <h2>Lessons</h2>;
-}
-
 export default App;

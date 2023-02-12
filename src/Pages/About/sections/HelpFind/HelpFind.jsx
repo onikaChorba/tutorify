@@ -41,7 +41,6 @@ export const HelpFind = () => {
                   <div className="button__text "> Book Your Lessons</div>
                 </Button>
               </button>
-
               <Button medium whiteOrange>
                 <NavLink to="/find/">
                   <div className="button__text" style={{ color: "#FB9C46" }}>
