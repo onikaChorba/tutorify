@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === "production";
 const PRODUCTION_BASE = "/tutorify";
 
 const ROUTES = {
-  HOME: "/",
+  HOME: "/home",
   LESSONS: "/lessons",
   FIND: "/find",
   ABOUT: "/about",
