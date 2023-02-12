@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.eaa7a003.css",
-    "main.js": "./static/js/main.65fcab5c.js",
+    "main.css": "./static/css/main.eebea777.css",
+    "main.js": "./static/js/main.41504780.js",
     "static/media/background.png": "./static/media/background.ab410eea550a5b630408.png",
     "static/media/video.png": "./static/media/video.4d1ad9345d42c5d73ff7.png",
     "static/media/hero-img.png": "./static/media/hero-img.a58481bc0c5a9c25e4ec.png",
@@ -12,12 +12,13 @@
     "static/media/circleIcon2.png": "./static/media/circleIcon2.37b34ed868ddfe1a93bc.png",
     "static/media/circleIcon1.png": "./static/media/circleIcon1.f7c01ceee9a4c75d4371.png",
     "static/media/circleIcon4.png": "./static/media/circleIcon4.7d08be010f14c56a6309.png",
+    "static/media/online-lesson.png": "./static/media/online-lesson.51f8d182bf430c3a9808.png",
     "index.html": "./index.html",
-    "main.eaa7a003.css.map": "./static/css/main.eaa7a003.css.map",
-    "main.65fcab5c.js.map": "./static/js/main.65fcab5c.js.map"
+    "main.eebea777.css.map": "./static/css/main.eebea777.css.map",
+    "main.41504780.js.map": "./static/js/main.41504780.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaa7a003.css",
-    "static/js/main.65fcab5c.js"
+    "static/css/main.eebea777.css",
+    "static/js/main.41504780.js"
   ]
 }
