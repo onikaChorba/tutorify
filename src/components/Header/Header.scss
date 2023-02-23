@@ -74,12 +74,25 @@
 .nav-link {
   color: $black-light;
   margin: 0 auto;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: $orang-strong;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+  &.active,
   &:hover {
     color: $orang-strong;
-    border-bottom: 5px solid $orang-strong;
+    &::before {
+      bottom: -5px;
+      opacity: 1;
+    }
   }
-}
-.active {
-  color: $orang-strong;
-  border-bottom: 5px solid $orang-strong;
 }

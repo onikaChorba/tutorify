@@ -5,10 +5,10 @@ import "../Form.scss";
 import Button from "@/components/Button";
 
 export const FormFreeLessons = () => {
-  const [firstName, setFirstName] = useState(null);
-  const [lastName, setLastName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [phone, setPhone] = useState(null);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -34,7 +34,7 @@ export const FormFreeLessons = () => {
       <div className="formBody">
         <div style={{ display: "flex" }}>
           <div className="userName">
-            <label for="firstName">
+            <label>
               <p className="form__label"> First Name</p>
             </label>
             <input
@@ -47,7 +47,7 @@ export const FormFreeLessons = () => {
             />
           </div>
           <div className="lastname">
-            <label className="form__label" for="lastName">
+            <label className="form__label">
               <p>Last Name</p>
             </label>
             <input
@@ -63,7 +63,7 @@ export const FormFreeLessons = () => {
         </div>
         <div className="contact">
           <div className="email">
-            <label className="form__label" for="email">
+            <label className="form__label">
               <p>Email</p>
             </label>
             <input
@@ -76,7 +76,7 @@ export const FormFreeLessons = () => {
             />
           </div>
           <div className="password">
-            <label className="form__label" for="number">
+            <label className="form__label">
               <p> Number Phone</p>
             </label>
             <input
@@ -90,7 +90,7 @@ export const FormFreeLessons = () => {
           </div>
         </div>
       </div>
-      <div class="buttomForm">
+      <div className="buttomForm">
         <button type="submit" onClick={() => handleSubmit()}>
           <Button orange small>
             <span className="button__text ">Submit!</span>

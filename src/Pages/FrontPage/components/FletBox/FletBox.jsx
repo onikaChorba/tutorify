@@ -1,19 +1,25 @@
 import "./FletBox.scss";
-
 import arrow from "@/assets/img/arrow.png";
+import flet1 from "@/assets/img/flet-icon1.png";
+import flet2 from "@/assets/img/flet-icon2.png";
+import flet3 from "@/assets/img/flet-icon3.png";
+import flet4 from "@/assets/img/flet-icon4.png";
+import flet5 from "@/assets/img/flet-icon5.png";
+import flet6 from "@/assets/img/flet-icon6.png";
+import flet7 from "@/assets/img/flet-icon7.png";
 import { useState } from "react";
 
 const fletIcon = [
-  { src: "./img/flet-icon1.png" },
-  { src: "./img/flet-icon2.png" },
-  { src: "./img/flet-icon3.png" },
-  { src: "./img/flet-icon4.png" },
-  { src: "./img/flet-icon5.png" },
-  { src: "./img/flet-icon6.png" },
-  { src: "./img/flet-icon7.png" },
-  { src: "./img/flet-icon1.png" },
-  { src: "./img/flet-icon2.png" },
-  { src: "./img/flet-icon3.png" },
+  { src: flet1 },
+  { src: flet2 },
+  { src: flet3 },
+  { src: flet4 },
+  { src: flet5 },
+  { src: flet6 },
+  { src: flet7 },
+  { src: flet1 },
+  { src: flet2 },
+  { src: flet3 },
 ];
 
 function FletBox() {
@@ -34,8 +40,8 @@ function FletBox() {
         faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet
         ullamcorper et, ante venenatis.
       </p>
-      {fletIcon.slice(0, next).map((index, key) => (
-        <img key={key} src={index.src} alt="flet" className="flet-icon" />
+      {fletIcon.slice(0, next).map((el, index) => (
+        <img key={index} src={el.src} alt="flet" className="flet-icon" />
       ))}
       <button className="fletBox__button" onClick={handleMoreFlet}>
         <p>View All</p>

@@ -4,8 +4,8 @@ import "../Form.scss";
 import Button from "@/components/Button";
 
 export const FormLoginIn = () => {
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     if (id === "email") {
@@ -20,11 +20,11 @@ export const FormLoginIn = () => {
   };
 
   return (
-    <div className="form">
+    <form className="form">
       <p className="form__title">Form Login In</p>
       <div className="formBody">
         <div className="email">
-          <label className="form__label" for="email">
+          <label className="form__label">
             <p>Email</p>
           </label>
           <input
@@ -37,7 +37,7 @@ export const FormLoginIn = () => {
           />
         </div>
         <div className="password">
-          <label className="form__label" for="password">
+          <label className="form__label">
             <p> Password</p>
           </label>
           <input
@@ -50,13 +50,13 @@ export const FormLoginIn = () => {
           />
         </div>
       </div>
-      <div class="buttomForm">
+      <div className="buttomForm">
         <button type="submit" onClick={() => handleSubmit()}>
           <Button orange small>
             <span className="button__text ">Login In</span>
           </Button>
         </button>
       </div>
-    </div>
+    </form>
   );
 };

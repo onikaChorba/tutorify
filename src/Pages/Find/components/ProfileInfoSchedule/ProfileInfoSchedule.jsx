@@ -5,7 +5,12 @@ import moment from "moment";
 
 export const ProfileInfoSchedule = ({ person }) => {
   const localizer = momentLocalizer(moment);
-
+  const displayFlex = {
+    display: "flex",
+  };
+  const paddingLeft = {
+    paddingLeft: "10px",
+  };
   return (
     <section>
       <div className="profileInfoSchedule">
@@ -20,19 +25,17 @@ export const ProfileInfoSchedule = ({ person }) => {
             />
           </div>
           <div className="profileInfoScheduleArticle__workHours">
-            <div className="working" style={{ display: "flex" }}>
+            <div className="working" style={displayFlex}>
               <p> Working Hours:</p>
-              <span style={{ paddingLeft: "10px" }}>{person.workingHours}</span>
+              <span style={paddingLeft}>{person.workingHours}</span>
             </div>
-            <div className="holiday" style={{ display: "flex" }}>
+            <div className="holiday" style={displayFlex}>
               <p> Holiday:</p>
-              <span style={{ paddingLeft: "10px" }}>{person.holiday}</span>
+              <span style={paddingLeft}>{person.holiday}</span>
             </div>
-            <div className="nationalHoliday" style={{ display: "flex" }}>
+            <div className="nationalHoliday" style={displayFlex}>
               <p> National Day Holiday:</p>
-              <span style={{ paddingLeft: "10px" }}>
-                {person.holidayNacional}
-              </span>
+              <span style={paddingLeft}>{person.holidayNacional}</span>
             </div>
           </div>
         </div>

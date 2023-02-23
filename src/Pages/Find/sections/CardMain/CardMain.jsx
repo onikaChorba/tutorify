@@ -10,19 +10,25 @@ import CardFrom from "../../components/CardFrom/CardFrom.jsx";
 import { CardStudent } from "../../components/CardStudent/CardStudent";
 import { CardName } from "../../components/CardName/CardName";
 import { FormFreeLessons } from "@/components/Form/FormFreeLessons/FormFreeLessons";
-import { ProfileInfoCard } from "../ProfileInfoCard/ProfileInfoCard";
-import { ProfileInfoBadge } from "@/Pages/Find/components/ProfileInfoBadge/ProfileInfoBadge";
+import { ProfileInfo } from "../ProfileInfo/ProfileInfo";
+
 function CardMain({ person }) {
-  //useState Free Lessons
+  // Free Lessons
   const [isShowFreeLessons, setIsShowFreeLessons] = useState(false);
   const handleClickShowFreeLessons = () => {
     setIsShowFreeLessons((current) => !current);
   };
 
-  //useState show Profile Info
+  // show Profile Info
   const [isShowProfile, setIsShowProfile] = useState(false);
   const handleClickShowProfile = () => {
     setIsShowProfile((current) => !current);
+  };
+
+  const showLessons = {
+    display: "flex",
+    justifyContent: "center",
+    paddingTop: "10%",
   };
   return (
     <section>
@@ -53,17 +59,7 @@ function CardMain({ person }) {
             </div>
           </div>
         </div>
-        <div
-          style={
-            isShowFreeLessons
-              ? {
-                  display: "flex",
-                  justifyContent: "center",
-                  paddingTop: "10%",
-                }
-              : { background: "red" }
-          }
-        >
+        <div style={isShowFreeLessons ? showLessons : null}>
           {isShowFreeLessons && <FormFreeLessons />}
         </div>
         <div className="cardMainInfo">
@@ -78,17 +74,7 @@ function CardMain({ person }) {
           </button>
         </div>
       </div>
-
-      {isShowProfile ? (
-        <div className="profileInfo">
-          <div className="profileInfo__info">
-            <ProfileInfoCard person={person} key={person.toString()} />
-          </div>
-          <div className="profileInfo__badge">
-            <ProfileInfoBadge person={person} key={person.toString()} />
-          </div>
-        </div>
-      ) : null}
+      {isShowProfile && <ProfileInfo person={person} />}
     </section>
   );
 }

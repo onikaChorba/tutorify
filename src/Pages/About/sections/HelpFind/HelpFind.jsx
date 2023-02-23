@@ -3,26 +3,23 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "@/components/Button";
 import tutors from "@/assets/img/tutors.jpg";
-import { FormFreeLessons } from "../../../../components/Form/FormFreeLessons/FormFreeLessons";
+import { FormFreeLessons } from "@/components/Form/FormFreeLessons/FormFreeLessons";
 
 export const HelpFind = () => {
-  //useState Book Lessons
+  // Book Lessons
   const [isShowBookLessons, setIsShowBookLessons] = useState(false);
   const handleBookLessons = () => {
     setIsShowBookLessons((current) => !current);
   };
+
+  const displayCenter = {
+    display: "flex",
+    justifyContent: "center",
+  };
+
   return (
     <section className="helpFindBlock">
-      <div
-        style={
-          isShowBookLessons
-            ? {
-                display: "flex",
-                justifyContent: "center",
-              }
-            : { background: "red" }
-        }
-      >
+      <div style={isShowBookLessons ? displayCenter : null}>
         {isShowBookLessons && <FormFreeLessons />}
       </div>
       <div className="helpFindInfo">

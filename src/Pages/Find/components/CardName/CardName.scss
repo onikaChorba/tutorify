@@ -2,9 +2,10 @@
 .cardName {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .cardName-info {
+  padding-right: 10%;
   &__title {
     @include font-size(600, 20px, 34px);
   }

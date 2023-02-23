@@ -147,14 +147,6 @@ function Search() {
               name={person.name}
               tipo={person.tipo}
             />
-            // <Card
-            //   key={person.id}
-            //   person={person}
-            //   stars={person.stars}
-            //   speaks={person.speaks}
-            //   name={person.name}
-            //   tipo={person.tipo}
-            // />
           ))
           .slice(0, next)}
       </div>
