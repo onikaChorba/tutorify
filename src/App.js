@@ -15,9 +15,9 @@ function App() {
         <div className="main-container">
           <Header />
           <Routes>
-            <Route path={routes.HOME} element={<FrontPage />} />
+            <Route exact path={routes.HOME} element={<FrontPage />} />
             <Route path={routes.LESSONS} element={<Lessons />} />
-            <Route exact path={routes.FIND} element={<Find />} />
+            <Route path={routes.FIND} element={<Find />} />
             <Route path={routes.ABOUT} element={<About />} />
           </Routes>
         </div>

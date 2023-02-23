@@ -21,7 +21,7 @@ export const ProfileInfoBadge = ({ person }) => {
   };
   return (
     <section>
-      <div style={isShowFreeLessons ? displayCenter : { background: "red" }}>
+      <div style={isShowFreeLessons ? displayCenter : null}>
         {isShowFreeLessons && <FormFreeLessons />}
       </div>
       <div className="profileInfoBadge">

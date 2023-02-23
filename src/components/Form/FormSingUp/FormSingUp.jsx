@@ -5,11 +5,11 @@ import "../Form.scss";
 import Button from "@/components/Button";
 
 export const FormSingUp = () => {
-  const [firstName, setFirstName] = useState(null);
-  const [lastName, setLastName] = useState(null);
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
-  const [confirmPassword, setConfirmPassword] = useState(null);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
@@ -38,7 +38,7 @@ export const FormSingUp = () => {
       <div className="formBody">
         <div className="userNameBlock">
           <div className="userName">
-            <label for="firstName">
+            <label>
               <p className="form__label"> First Name</p>
             </label>
             <input
@@ -51,12 +51,11 @@ export const FormSingUp = () => {
             />
           </div>
           <div className="lastName">
-            <label className="form__label" for="lastName">
+            <label className="form__label">
               <p>Last Name</p>
             </label>
             <input
               type="text"
-              name=""
               id="lastName"
               className="form__input"
               placeholder="LastName"
@@ -67,7 +66,7 @@ export const FormSingUp = () => {
         </div>
 
         <div className="email">
-          <label className="form__label" for="email">
+          <label className="form__label">
             <p>Email</p>
           </label>
           <input
@@ -81,7 +80,7 @@ export const FormSingUp = () => {
         </div>
         <div className="userPaswordBlock">
           <div className="password">
-            <label className="form__label" for="password">
+            <label className="form__label">
               <p> Password</p>
             </label>
             <input
@@ -94,7 +93,7 @@ export const FormSingUp = () => {
             />
           </div>
           <div className="confirm-password">
-            <label className="form__label" for="confirmPassword">
+            <label className="form__label">
               <p>Confirm Password</p>
             </label>
             <input
@@ -108,7 +107,7 @@ export const FormSingUp = () => {
           </div>
         </div>
       </div>
-      <div class="buttomForm">
+      <div className="buttomForm">
         <button type="submit" onClick={() => handleSubmit()}>
           <Button orange small>
             <span className="button__text ">Register</span>
